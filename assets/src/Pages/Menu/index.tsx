@@ -18,7 +18,7 @@ const Menu: React.FC<Props> = ({ navigation }) => {
           Meal and Food Manager Lets go for a <FaBeer />?
         </Text>
       </Button>
-      <Button onPress={() => navigation.navigate('SelectMeal')}>
+      <Button onPress={() => navigation.navigate('MealSelection')}>
         <Text>Calculate Insulin Dosage</Text>
       </Button>
     </View>

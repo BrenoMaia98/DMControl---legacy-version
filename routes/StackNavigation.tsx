@@ -3,15 +3,15 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Login from '../assets/src/Login';
-import Menu from '../assets/src/Menu';
-import FoodAndMealManager from '../assets/src/FoodAndMealManager';
-import EditingMeal from '../assets/src/EditingMeal';
-import CreatingMeal from '../assets/src/CreatingMeal';
-import SelectMeal from '../assets/src/SelectMeal';
-import FoodQuantity from '../assets/src/FoodQuantity';
-import FinalQuestions from '../assets/src/FinalQuestions';
-import InsulinDosage from '../assets/src/InsulinDosage';
+import Login from '../assets/src/Pages/Login';
+import Menu from '../assets/src/Pages/Menu';
+import FoodAndMealManager from '../assets/src/Pages/FoodAndMealManager';
+import EditingMeal from '../assets/src/Pages/EditingMeal';
+import CreatingMeal from '../assets/src/Pages/CreatingMeal';
+import MealSelection from '../assets/src/Pages/MealSelection';
+import FoodSelection from '../assets/src/Pages/FoodSelection';
+import FinalQuestions from '../assets/src/Pages/FinalQuestions';
+import InsulinDosage from '../assets/src/Pages/InsulinDosage';
 
 export type StackProps = {
   Login: undefined;
@@ -19,8 +19,8 @@ export type StackProps = {
   FoodAndMealManager: undefined;
   EditingMeal: undefined;
   CreatingMeal: undefined;
-  SelectMeal: undefined;
-  FoodQuantity: undefined;
+  MealSelection: undefined;
+  FoodSelection: undefined;
   FinalQuestions: undefined;
   InsulinDosage: undefined;
 };
@@ -35,8 +35,8 @@ function StackNavigation() {
       <Stack.Screen name="FoodAndMealManager" component={FoodAndMealManager} />
       <Stack.Screen name="EditingMeal" component={EditingMeal} />
       <Stack.Screen name="CreatingMeal" component={CreatingMeal} />
-      <Stack.Screen name="SelectMeal" component={SelectMeal} />
-      <Stack.Screen name="FoodQuantity" component={FoodQuantity} />
+      <Stack.Screen name="MealSelection" component={MealSelection} />
+      <Stack.Screen name="FoodSelection" component={FoodSelection} />
       <Stack.Screen name="FinalQuestions" component={FinalQuestions} />
       <Stack.Screen name="InsulinDosage" component={InsulinDosage} />
     </Stack.Navigator>
