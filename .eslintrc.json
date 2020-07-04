@@ -27,6 +27,7 @@
     "prettier/prettier": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react/prop-types": "off",
+    "no-console": "off",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
     "import/prefer-default-export": "off",

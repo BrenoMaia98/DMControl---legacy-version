@@ -1,10 +1,10 @@
 import LoginPTBR from './Portuguese/LoginPTBR';
 import LoginENUS from './English/LoginENUS';
 
-const Text = {
+const Strings = {
   Login: {
     Portuguese: LoginPTBR,
     English: LoginENUS,
   },
 };
-export default Text;
+export default Strings;

@@ -1,5 +1,1 @@
-export enum ComponentSize {
-  'sm',
-  'md',
-  'lg',
-}
+export type ComponentSize = 'sm' | 'md' | 'lg';

@@ -29,7 +29,7 @@ const IconButton: React.FC<IconButtonProps> = ({
       onPress={() => onPress()}
       color={IconColor}
       BackGroundColor={BackGroundColor}
-      size={size}
+      size={size || 'lg'}
     >
       {icon || customIcon}
     </Touchable>

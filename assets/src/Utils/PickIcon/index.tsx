@@ -25,13 +25,13 @@ const PickIcon: React.FC<PickIconParam> = ({ iconType, size: sizeProps }) => {
   const pickIcon = () => {
     let size;
     switch (sizeProps) {
-      case ComponentSize.sm:
-        size = '1.2em';
+      case 'sm':
+        size = '1em';
         break;
-      case ComponentSize.lg:
+      case 'lg':
         size = '3em';
         break;
-      case ComponentSize.md:
+      case 'md':
       default:
         size = '2em';
         break;
