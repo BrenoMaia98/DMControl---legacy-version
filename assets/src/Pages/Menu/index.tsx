@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { Button } from 'native-base';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { StackProps } from '../../../routes/StackNavigation';
+import { StackProps } from '../../../../routes/StackNavigation';
 
 type ProfileScreenNavigationProp = StackNavigationProp<StackProps, 'Menu'>;
 
@@ -14,9 +14,7 @@ const Menu: React.FC<Props> = ({ navigation }) => {
   return (
     <View>
       <Button onPress={() => navigation.navigate('FoodAndMealManager')}>
-        <Text>
-          Meal and Food Manager Lets go for a <FaBeer />?
-        </Text>
+        <Text>Meal and Food Manager Lets go for a ?</Text>
       </Button>
       <Button onPress={() => navigation.navigate('MealSelection')}>
         <Text>Calculate Insulin Dosage</Text>

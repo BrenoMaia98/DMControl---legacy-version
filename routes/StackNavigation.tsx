@@ -1,7 +1,6 @@
 // In App.js in a new project
 
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Login from '../assets/src/Pages/Login';
 import Menu from '../assets/src/Pages/Menu';
@@ -24,10 +23,9 @@ export type StackProps = {
   FinalQuestions: undefined;
   InsulinDosage: undefined;
 };
-
 const Stack = createStackNavigator<StackProps>();
 
-function StackNavigation() {
+const StackNavigation = (): JSX.Element => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Login" component={Login} />
@@ -41,6 +39,6 @@ function StackNavigation() {
       <Stack.Screen name="InsulinDosage" component={InsulinDosage} />
     </Stack.Navigator>
   );
-}
+};
 
 export default StackNavigation;
