@@ -8,7 +8,8 @@ import { ComponentSize } from '../../Utils/ComponentSize';
 interface IconButtonProps {
   customIcon?: JSX.Element;
   defaultIcon: IconEnum;
-  color?: string;
+  IconColor?: string;
+  BackGroundColor?: string;
   size?: ComponentSize;
   onPress(): void;
 }
@@ -16,14 +17,20 @@ interface IconButtonProps {
 const IconButton: React.FC<IconButtonProps> = ({
   customIcon,
   defaultIcon,
-  color,
+  IconColor,
+  BackGroundColor,
   size,
   onPress,
 }) => {
   const icon = PickIcon({ iconType: defaultIcon, size });
 
   return (
-    <Touchable onPress={() => onPress()} color={color} size={size}>
+    <Touchable
+      onPress={() => onPress()}
+      color={IconColor}
+      BackGroundColor={BackGroundColor}
+      size={size}
+    >
       {icon || customIcon}
     </Touchable>
   );

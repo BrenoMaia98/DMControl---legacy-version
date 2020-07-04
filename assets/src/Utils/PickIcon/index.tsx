@@ -18,7 +18,7 @@ import { ComponentSize } from '../ComponentSize';
 
 interface PickIconParam {
   iconType: IconEnum;
-  size: ComponentSize;
+  size?: ComponentSize;
 }
 
 const PickIcon: React.FC<PickIconParam> = ({ iconType, size: sizeProps }) => {
@@ -26,7 +26,7 @@ const PickIcon: React.FC<PickIconParam> = ({ iconType, size: sizeProps }) => {
     let size;
     switch (sizeProps) {
       case ComponentSize.sm:
-        size = '1em';
+        size = '1.2em';
         break;
       case ComponentSize.lg:
         size = '3em';
