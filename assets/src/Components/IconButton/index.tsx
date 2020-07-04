@@ -1,18 +1,32 @@
 import React from 'react';
 import { Touchable } from './styles';
+import { IconEnum } from '../../Utils/PickIcon/types';
+import PickIcon from '../../Utils/PickIcon';
+import { ComponentSize } from '../../Utils/ComponentSize';
 // import { Container } from './styles';
 
-type IconButtonProps{
-  customIcon: JSX.Element,
-  defaultIcon:
+interface IconButtonProps {
+  customIcon?: JSX.Element;
+  defaultIcon: IconEnum;
+  color?: string;
+  size?: ComponentSize;
+  onPress(): void;
 }
 
-const IconButton: React.FC<IconButtonProps> = ({ icon }) => {
-  const pickIcon(){
+const IconButton: React.FC<IconButtonProps> = ({
+  customIcon,
+  defaultIcon,
+  color,
+  size,
+  onPress,
+}) => {
+  const icon = PickIcon({ iconType: defaultIcon, size });
 
-  }
-
-  return <Touchable>{icon}</Touchable>;
+  return (
+    <Touchable onPress={() => onPress()} color={color} size={size}>
+      {icon || customIcon}
+    </Touchable>
+  );
 };
 
 export default IconButton;
