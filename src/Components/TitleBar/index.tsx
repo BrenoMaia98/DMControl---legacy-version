@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import { ContainerTitleBar } from './styles';
+import { Text, View, Alert } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { ContainerTitleBar, Title, Subtitle, RowAligned } from './styles';
 import { IconEnum } from '../../Utils/PickIcon/types';
 import PickIcon from '../../Utils/PickIcon';
 
@@ -17,15 +18,26 @@ const TitleBar: React.FC<TitleBarProps> = ({ titleIcon, header }) => {
   return (
     <ContainerTitleBar>
       <View>
-        <View>
-          {PickIcon({ iconType: IconEnum.GoBook, size: 'lg' })}
-          <Text>{header.Title}</Text>
-        </View>
-        <Text>{header.Subtitle}</Text>
+        <RowAligned
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          {PickIcon({ iconType: titleIcon, size: 'lg' })}
+          <Title>{header.Title}</Title>
+        </RowAligned>
+        <Subtitle>{header.Subtitle}</Subtitle>
       </View>
-      <View>
-        <Text>{header.Help}</Text>
-      </View>
+      <RowAligned>
+        <Subtitle>{header.Help}</Subtitle>
+        <TouchableOpacity
+          onPress={() => Alert.alert('Status', 'Work in progress')}
+        >
+          {PickIcon({ iconType: IconEnum.MdHelp, size: 'md' })}
+        </TouchableOpacity>
+      </RowAligned>
     </ContainerTitleBar>
   );
 };

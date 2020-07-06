@@ -3,6 +3,9 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import DefaultButton from '../../Components/DefaultButton';
 import { StackProps } from '../../../routes/StackNavigation';
 import { Container } from './styles';
+import TitleBar from '../../Components/TitleBar';
+import Strings from '../../Constants/Texts/Strings';
+import { IconEnum } from '../../Utils/PickIcon/types';
 
 type ProfileScreenNavigationProp = StackNavigationProp<StackProps, 'Menu'>;
 
@@ -11,29 +14,40 @@ type Props = {
 };
 
 const Menu: React.FC<Props> = ({ navigation }) => {
+  const languageScreen = Strings.Menu.English;
+  const {
+    Header,
+    CalculateInsulin,
+    MealAndFoodManager,
+    MeasurementHistory,
+    Profile,
+  } = languageScreen;
   return (
-    <Container>
-      <DefaultButton
-        onPress={() => navigation.push('FoodAndMealManager')}
-        text="Calculate Insulin Dosage"
-        buttonSize="large"
-      />
-      <DefaultButton
-        onPress={() => navigation.push('MealSelection')}
-        text="Meal and Food Manager"
-        buttonSize="large"
-      />
-      <DefaultButton
-        onPress={() => navigation.push('InProgress')}
-        text="Measurement History"
-        buttonSize="large"
-      />
-      <DefaultButton
-        onPress={() => navigation.push('InProgress')}
-        text="Profile"
-        buttonSize="large"
-      />
-    </Container>
+    <>
+      <TitleBar header={Header} titleIcon={IconEnum.MdRestaurantMenu} />
+      <Container>
+        <DefaultButton
+          onPress={() => navigation.push('FoodAndMealManager')}
+          text={CalculateInsulin}
+          buttonSize="large"
+        />
+        <DefaultButton
+          onPress={() => navigation.push('MealSelection')}
+          text={MealAndFoodManager}
+          buttonSize="large"
+        />
+        <DefaultButton
+          onPress={() => navigation.push('InProgress')}
+          text={MeasurementHistory}
+          buttonSize="large"
+        />
+        <DefaultButton
+          onPress={() => navigation.push('InProgress')}
+          text={Profile}
+          buttonSize="large"
+        />
+      </Container>
+    </>
   );
 };
 
