@@ -1,9 +1,11 @@
 import React from 'react';
-import { Text, View, Alert } from 'react-native';
+import { View, Alert } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { ContainerTitleBar, Title, Subtitle, RowAligned } from './styles';
 import { IconEnum } from '../../Utils/PickIcon/types';
 import PickIcon from '../../Utils/PickIcon';
+import ScreenAction, { ScreenActionProps } from './ScreenAction';
+import { Divider } from '../Divider';
 
 interface TitleBarProps {
   titleIcon: IconEnum;
@@ -12,33 +14,45 @@ interface TitleBarProps {
     Subtitle: string;
     Help: string;
   };
+  screenActionProps?: ScreenActionProps;
 }
 
-const TitleBar: React.FC<TitleBarProps> = ({ titleIcon, header }) => {
+const TitleBar: React.FC<TitleBarProps> = ({
+  titleIcon,
+  header,
+  screenActionProps,
+}) => {
   return (
-    <ContainerTitleBar>
-      <View>
-        <RowAligned
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          {PickIcon({ iconType: titleIcon, size: 'lg' })}
-          <Title>{header.Title}</Title>
+    <View>
+      <ContainerTitleBar>
+        <View>
+          <RowAligned
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            {PickIcon({ iconType: titleIcon, size: 'lg' })}
+            <Title>{header.Title}</Title>
+          </RowAligned>
+          <Subtitle>{header.Subtitle}</Subtitle>
+        </View>
+        <RowAligned>
+          <Subtitle>{header.Help}</Subtitle>
+          <TouchableOpacity
+            onPress={() => Alert.alert('Status', 'Work in progress')}
+          >
+            {PickIcon({ iconType: IconEnum.MdHelp, size: 'md' })}
+          </TouchableOpacity>
         </RowAligned>
-        <Subtitle>{header.Subtitle}</Subtitle>
-      </View>
-      <RowAligned>
-        <Subtitle>{header.Help}</Subtitle>
-        <TouchableOpacity
-          onPress={() => Alert.alert('Status', 'Work in progress')}
-        >
-          {PickIcon({ iconType: IconEnum.MdHelp, size: 'md' })}
-        </TouchableOpacity>
-      </RowAligned>
-    </ContainerTitleBar>
+      </ContainerTitleBar>
+      <Divider />
+      <ScreenAction
+        navigateForBackButton={screenActionProps?.navigateForBackButton}
+        buttonProps={screenActionProps?.buttonProps}
+      />
+    </View>
   );
 };
 

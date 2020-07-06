@@ -26,7 +26,6 @@ export type StackProps = {
   InProgress: undefined;
 };
 const Stack = createStackNavigator<StackProps>();
-
 const StackNavigation = (): JSX.Element => {
   return (
     <Stack.Navigator initialRouteName="Menu">
