@@ -1,19 +1,9 @@
 import React from 'react';
 import { ViewDefaultButton, TextDefaultButton } from './styles';
-import { IconEnum } from '../../Utils/PickIcon/types';
 import PickIcon from '../../Utils/PickIcon';
-import { ComponentSize } from '../../Utils/ComponentSize';
+import { DefaultButtonProps } from './types';
 
 // import { Container } from './styles';
-
-interface DefaultButtonProps {
-  iconLeft?: IconEnum;
-  iconSize?: ComponentSize;
-  buttonSize?: 'fit' | 'large';
-  text: string;
-  fontSizeEm?: number;
-  onPress(): void;
-}
 
 const DefaultButton: React.FC<DefaultButtonProps> = ({
   text,
