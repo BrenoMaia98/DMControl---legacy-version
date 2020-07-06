@@ -1,11 +1,13 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Button, Text } from 'native-base';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { StackProps } from '../../../../routes/StackNavigation';
+import { StackProps } from '../../../routes/StackNavigation';
 import IconButton from '../../Components/IconButton';
 import { IconEnum } from '../../Utils/PickIcon/types';
 import DefaultButton from '../../Components/DefaultButton';
+import TitleBar from '../../Components/TitleBar';
+import Strings from '../../Constants/Texts/Strings';
+import PickIcon from '../../Utils/PickIcon';
 
 type ProfileScreenNavigationProp = StackNavigationProp<StackProps, 'Login'>;
 
@@ -15,7 +17,7 @@ interface Props {
 const Login: React.FC<Props> = ({ navigation }) => {
   return (
     <View>
-      <Text>Login</Text>
+      <TitleBar header={Strings.Login} titleIcon={PickIcon()} />
       <IconButton
         defaultIcon={IconEnum.FiEdit}
         onPress={() => {

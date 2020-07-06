@@ -12,7 +12,7 @@ export const ViewDefaultButton = styled.TouchableOpacity<IButtonSize>`
   flex-direction: row;
   border-radius: 4px;
   color: white;
-  max-width: ${(props) =>
+  width: ${(props) =>
     props.buttonSize && props.buttonSize === 'large' ? '80%' : 'max-content'};
 `;
 

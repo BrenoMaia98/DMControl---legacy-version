@@ -1,8 +1,8 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import { Button } from 'native-base';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { StackProps } from '../../../../routes/StackNavigation';
+import DefaultButton from '../../Components/DefaultButton';
+import { StackProps } from '../../../routes/StackNavigation';
+import { Container } from './styles';
 
 type ProfileScreenNavigationProp = StackNavigationProp<StackProps, 'Menu'>;
 
@@ -12,14 +12,28 @@ type Props = {
 
 const Menu: React.FC<Props> = ({ navigation }) => {
   return (
-    <View>
-      <Button onPress={() => navigation.navigate('FoodAndMealManager')}>
-        <Text>Meal and Food Manager Lets go for a ?</Text>
-      </Button>
-      <Button onPress={() => navigation.navigate('MealSelection')}>
-        <Text>Calculate Insulin Dosage</Text>
-      </Button>
-    </View>
+    <Container>
+      <DefaultButton
+        onPress={() => navigation.push('FoodAndMealManager')}
+        text="Calculate Insulin Dosage"
+        buttonSize="large"
+      />
+      <DefaultButton
+        onPress={() => navigation.push('MealSelection')}
+        text="Meal and Food Manager"
+        buttonSize="large"
+      />
+      <DefaultButton
+        onPress={() => navigation.push('InProgress')}
+        text="Measurement History"
+        buttonSize="large"
+      />
+      <DefaultButton
+        onPress={() => navigation.push('InProgress')}
+        text="Profile"
+        buttonSize="large"
+      />
+    </Container>
   );
 };
 
