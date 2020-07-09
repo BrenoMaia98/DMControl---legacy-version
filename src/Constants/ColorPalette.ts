@@ -1,4 +1,4 @@
-export const ColorPallet = {
+export const ColorPalette = {
   purple: '#6558F5',
   gray: '#4B5C6B',
   green: '#1AAE9F',

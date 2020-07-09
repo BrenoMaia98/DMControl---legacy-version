@@ -6,7 +6,7 @@ import { StackProps } from '../../../routes/StackNavigation';
 import DefaultButton from '../../Components/DefaultButton';
 import { Container } from './styles';
 import { IconEnum } from '../../Utils/PickIcon/types';
-import { ColorPallet } from '../../Constants/ColorPallet';
+import { ColorPalette } from '../../Constants/ColorPalette';
 
 type InProgressNavigationProp = StackNavigationProp<StackProps, 'InProgress'>;
 
@@ -19,13 +19,13 @@ const InProgress: React.FC<Props> = ({ navigation }) => {
       <Text
         style={{
           fontSize: '2em',
-          color: ColorPallet.purple,
+          color: ColorPalette.purple,
           fontWeight: 'bold',
         }}
       >
         Work in Progress
       </Text>
-      <FaTools size={200} color={ColorPallet.purple} />
+      <FaTools size={200} color={ColorPalette.purple} />
       <DefaultButton
         onPress={() => navigation.pop()}
         iconLeft={IconEnum.FaArrowLeft}

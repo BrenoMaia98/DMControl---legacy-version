@@ -28,57 +28,17 @@ export type StackProps = {
 const Stack = createStackNavigator<StackProps>();
 const StackNavigation = (): JSX.Element => {
   return (
-    <Stack.Navigator initialRouteName="Menu">
-      <Stack.Screen
-        name="Login"
-        options={{ headerShown: false }}
-        component={Login}
-      />
-      <Stack.Screen
-        name="Menu"
-        options={{ headerShown: false }}
-        component={Menu}
-      />
-      <Stack.Screen
-        name="FoodAndMealManager"
-        options={{ headerShown: false }}
-        component={FoodAndMealManager}
-      />
-      <Stack.Screen
-        name="EditingMeal"
-        options={{ headerShown: false }}
-        component={EditingMeal}
-      />
-      <Stack.Screen
-        name="CreatingMeal"
-        options={{ headerShown: false }}
-        component={CreatingMeal}
-      />
-      <Stack.Screen
-        name="MealSelection"
-        options={{ headerShown: false }}
-        component={MealSelection}
-      />
-      <Stack.Screen
-        name="FoodSelection"
-        options={{ headerShown: false }}
-        component={FoodSelection}
-      />
-      <Stack.Screen
-        name="FinalQuestions"
-        options={{ headerShown: false }}
-        component={FinalQuestions}
-      />
-      <Stack.Screen
-        name="InsulinDosage"
-        options={{ headerShown: false }}
-        component={InsulinDosage}
-      />
-      <Stack.Screen
-        name="InProgress"
-        options={{ headerShown: false }}
-        component={InProgress}
-      />
+    <Stack.Navigator initialRouteName="Login" headerMode="none">
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="Menu" component={Menu} />
+      <Stack.Screen name="FoodAndMealManager" component={FoodAndMealManager} />
+      <Stack.Screen name="EditingMeal" component={EditingMeal} />
+      <Stack.Screen name="CreatingMeal" component={CreatingMeal} />
+      <Stack.Screen name="MealSelection" component={MealSelection} />
+      <Stack.Screen name="FoodSelection" component={FoodSelection} />
+      <Stack.Screen name="FinalQuestions" component={FinalQuestions} />
+      <Stack.Screen name="InsulinDosage" component={InsulinDosage} />
+      <Stack.Screen name="InProgress" component={InProgress} />
     </Stack.Navigator>
   );
 };

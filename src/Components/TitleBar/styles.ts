@@ -1,10 +1,10 @@
 import styled from 'styled-components/native';
-import { ColorPallet } from '../../Constants/ColorPallet';
+import { ColorPalette } from '../../Constants/ColorPalette';
 
 export const ContainerTitleBar = styled.View`
   flex-direction: row;
   justify-content: space-between;
-  color: ${ColorPallet.gray};
+  color: ${ColorPalette.gray};
   padding: 8px;
 `;
 
@@ -12,13 +12,13 @@ export const Title = styled.Text`
   font-size: 2em;
   font-weight: bold;
   padding-left: 5px;
-  color: ${ColorPallet.gray};
+  color: ${ColorPalette.gray};
 `;
 
 export const Subtitle = styled.Text`
   font-size: 1em;
   font-weight: bold;
-  color: ${ColorPallet.gray};
+  color: ${ColorPalette.gray};
 `;
 
 export const RowAligned = styled.View`

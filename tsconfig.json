@@ -16,5 +16,5 @@
     "jsx": "react"
   },
   "include": ["src"],
-  "exclude": ["node_modules", ".expo-shared", ".expo", "web-build"]
+  "exclude": ["node_modules", ".expo-shared", ".expo", "web-build","src/Database/index.ts"]
 }

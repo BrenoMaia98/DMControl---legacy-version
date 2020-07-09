@@ -5,7 +5,7 @@ import DefaultButton from '../../DefaultButton';
 import { DefaultButtonProps } from '../../DefaultButton/types';
 import { IconEnum } from '../../../Utils/PickIcon/types';
 import IconButton from '../../IconButton';
-import { ColorPallet } from '../../../Constants/ColorPallet';
+import { ColorPalette } from '../../../Constants/ColorPalette';
 
 export interface ScreenActionProps {
   buttonProps?: DefaultButtonProps;
@@ -22,7 +22,7 @@ const ScreenAction: React.FC<ScreenActionProps> = ({
         <IconButton
           onPress={() => navigateForBackButton.pop()}
           defaultIcon={IconEnum.FaArrowLeft}
-          IconColor={ColorPallet.gray}
+          IconColor={ColorPalette.gray}
           size="md"
         />
       )}

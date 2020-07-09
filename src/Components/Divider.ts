@@ -1,8 +1,8 @@
 import styled from 'styled-components/native';
-import { ColorPallet } from '../Constants/ColorPallet';
+import { ColorPalette } from '../Constants/ColorPalette';
 
 export const Divider = styled.View`
-  border: 1px solid ${ColorPallet.gray};
+  border: 1px solid ${ColorPalette.gray};
   width: 90%;
   align-self: center;
 `;

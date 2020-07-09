@@ -27,7 +27,7 @@ const IconButton: React.FC<IconButtonProps> = ({
   return (
     <Touchable
       onPress={() => onPress()}
-      color={IconColor}
+      color={IconColor | ColorPalette}
       BackGroundColor={BackGroundColor}
       size={size || 'lg'}
     >

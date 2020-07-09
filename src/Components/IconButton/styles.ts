@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import { ComponentSize } from '../../Utils/ComponentSize';
-import { ColorPallet } from '../../Constants/ColorPallet';
+import { ColorPalette } from '../../Constants/ColorPalette';
 
 interface TouchableProps {
   color: string;
@@ -9,7 +9,7 @@ interface TouchableProps {
 }
 
 export const Touchable = styled.TouchableOpacity<TouchableProps>`
-  color: ${(props) => (props.color ? props.color : ColorPallet.purple)};
+  color: ${(props) => (props.color ? props.color : ColorPalette.purple)};
   background-color: ${(props) =>
     props.BackGroundColor ? props.BackGroundColor : 'rgba(0,0,0,0)'};
   border-radius: 50%;

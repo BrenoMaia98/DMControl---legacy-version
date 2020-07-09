@@ -21,6 +21,7 @@ const TitleBar: React.FC<TitleBarProps> = ({
   titleIcon,
   header,
   screenActionProps,
+  helpAction,
 }) => {
   return (
     <View>
@@ -41,7 +42,9 @@ const TitleBar: React.FC<TitleBarProps> = ({
         <RowAligned>
           <Subtitle>{header.Help}</Subtitle>
           <TouchableOpacity
-            onPress={() => Alert.alert('Status', 'Work in progress')}
+            onPress={() => {
+              return true;
+            }}
           >
             {PickIcon({ iconType: IconEnum.MdHelp, size: 'md' })}
           </TouchableOpacity>

@@ -15,9 +15,19 @@ interface Props {
   navigation: ProfileScreenNavigationProp;
 }
 const Login: React.FC<Props> = ({ navigation }) => {
+  const languageScreen = Strings.Login.English;
+  const {
+    ChangeLanguage,
+    Forgot,
+    Login,
+    LoginBtn,
+    LoginFacebook,
+    LoginGoogle,
+    Password,
+    Title,
+  } = languageScreen;
   return (
-    <View>
-      <TitleBar header={Strings.Login} titleIcon={PickIcon()} />
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <IconButton
         defaultIcon={IconEnum.FiEdit}
         onPress={() => {
@@ -25,8 +35,8 @@ const Login: React.FC<Props> = ({ navigation }) => {
         }}
       />
       <DefaultButton
-        text="Calculate without meal"
-        iconLeft={IconEnum.AiOutlinePlusCircle}
+        text={LoginBtn}
+        buttonSize="large"
         onPress={() => navigation.navigate('Menu')}
       />
     </View>

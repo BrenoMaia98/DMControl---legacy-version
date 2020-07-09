@@ -1,10 +1,10 @@
 import styled from 'styled-components/native';
-import { ColorPallet } from '../../Constants/ColorPallet';
+import { ColorPalette } from '../../Constants/ColorPalette';
 
 type IButtonSize = { buttonSize?: 'fit' | 'large' };
 
 export const ViewDefaultButton = styled.TouchableOpacity<IButtonSize>`
-  background-color: ${ColorPallet.purple};
+  background-color: ${ColorPalette.purple};
   text-align: center;
   justify-content: center;
   align-items: center;

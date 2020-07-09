@@ -24,25 +24,15 @@ const Menu: React.FC<Props> = ({ navigation }) => {
   } = languageScreen;
   return (
     <>
-      <TitleBar
-        header={Header}
-        titleIcon={IconEnum.MdRestaurantMenu}
-        screenActionProps={{
-          buttonProps: {
-            onPress: () => navigation.push('FoodAndMealManager'),
-            text: CalculateInsulin,
-          },
-          navigateForBackButton: navigation,
-        }}
-      />
+      <TitleBar header={Header} titleIcon={IconEnum.MdRestaurantMenu} />
       <Container>
         <DefaultButton
-          onPress={() => navigation.push('FoodAndMealManager')}
+          onPress={() => navigation.push('MealSelection')}
           text={CalculateInsulin}
           buttonSize="large"
         />
         <DefaultButton
-          onPress={() => navigation.push('MealSelection')}
+          onPress={() => navigation.push('FoodAndMealManager')}
           text={MealAndFoodManager}
           buttonSize="large"
         />

@@ -1,12 +1,12 @@
 const FoodAndMealManagerENUS = {
   Header: {
-    Title: 'REGISTER',
-    Subtitle: 'Food and Meal Manager',
+    Title: 'MEALS',
+    Subtitle: 'Edit or create a base meal',
     Help: 'Help',
   },
   ButtonActionScreen: 'Create New Meal',
-  SearchLabel: 'Meal title',
-  ListTitle: 'Select the base meal:',
+  Instruction1: 'Click on the ',
+  Instruction2: ' to edit a meal',
 };
 
 export default FoodAndMealManagerENUS;
