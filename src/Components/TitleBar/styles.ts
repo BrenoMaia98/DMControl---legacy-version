@@ -26,5 +26,4 @@ export const RowAligned = styled.View`
   justify-content: center;
   align-content: center;
   align-items: center;
-  text-align: center;
 `;

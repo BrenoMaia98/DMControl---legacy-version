@@ -1,25 +1,16 @@
 import React from 'react';
-import { View, FlatList } from 'react-native';
-import { StackNavigationProp } from '@react-navigation/stack';
-
-import { StackProps } from '../../../routes/StackNavigation';
+import { View } from 'react-native';
 import Strings from '../../Constants/Texts/Strings';
 import { IconEnum } from '../../Utils/PickIcon/types';
 import TitleBar from '../../Components/TitleBar';
 import PickIcon from '../../Utils/PickIcon';
 import { InstructionText } from './styles';
+import ExpansiveMealPreview from '../../Components/ExpansiveMealPreview';
+import { MealPreviewData, FoodAndMealManagerProps } from './types';
 
-type ProfileScreenNavigationProp = StackNavigationProp<StackProps, 'Login'>;
-
-type Props = {
-  navigation: ProfileScreenNavigationProp;
-};
-type MealPreviewData = {
-  title: string;
-  foodNames: string[];
-};
-
-const FoodAndMealManager: React.FC<Props> = ({ navigation }) => {
+const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
+  navigation,
+}) => {
   const languageScreen = Strings.FoodAndMealManager.English;
   const {
     ButtonActionScreen,
@@ -32,7 +23,7 @@ const FoodAndMealManager: React.FC<Props> = ({ navigation }) => {
 
   React.useEffect(() => {
     setTimeout(() => {
-      const mealData: MealPreviewData[] = [
+      const mockMealData: MealPreviewData[] = [
         {
           title: 'Breakfast',
           foodNames: [
@@ -50,9 +41,10 @@ const FoodAndMealManager: React.FC<Props> = ({ navigation }) => {
           foodNames: ['Pizza Cheese', 'Coke', 'Cassava'],
         },
       ];
-      setMealData();
+      setMealData(mockMealData);
     }, 1000);
   }, []);
+  console.log(mealData);
 
   return (
     <View>
@@ -72,8 +64,15 @@ const FoodAndMealManager: React.FC<Props> = ({ navigation }) => {
         {PickIcon({ iconType: IconEnum.FiEdit, size: 'sm' })}
         {Instruction2}
       </InstructionText>
-
-      <FlatList data={mealData} keyExtractor={(item) => item.id} />
+      <ExpansiveMealPreview
+        onEdit={() => {
+          console.log('Edit');
+        }}
+        onDelete={() => {
+          console.log('Delete');
+        }}
+        meals={mealData}
+      />
     </View>
   );
 };
