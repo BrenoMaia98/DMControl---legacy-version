@@ -3,6 +3,7 @@ import { Touchable } from './styles';
 import { IconEnum } from '../../Utils/PickIcon/types';
 import PickIcon from '../../Utils/PickIcon';
 import { ComponentSize } from '../../Utils/ComponentSize';
+import { ColorPalette } from '../../Constants/ColorPalette';
 // import { Container } from './styles';
 
 interface IconButtonProps {
@@ -27,8 +28,8 @@ const IconButton: React.FC<IconButtonProps> = ({
   return (
     <Touchable
       onPress={() => onPress()}
-      color={IconColor | ColorPalette}
-      BackGroundColor={BackGroundColor}
+      color={IconColor || '#fff'}
+      BackGroundColor={BackGroundColor || ColorPalette.purple}
       size={size || 'lg'}
     >
       {icon || customIcon}
