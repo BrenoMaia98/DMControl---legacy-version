@@ -26,11 +26,7 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
       const mockMealData: MealPreviewData[] = [
         {
           title: 'Breakfast',
-          foodNames: [
-            'Bread and Butter',
-            'Milk with chocolate',
-            'Eggs and Bacon',
-          ],
+          foodNames: ['Bread and Butter', 'Chocolate Milk', 'Eggs and Bacon'],
         },
         {
           title: 'Barbecue',
@@ -53,7 +49,7 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
         titleIcon={IconEnum.GiMeal}
         screenActionProps={{
           buttonProps: {
-            onPress: () => navigation.push('FoodAndMealManager'),
+            onPress: () => navigation.push('CreatingMeal'),
             text: ButtonActionScreen,
           },
           navigateForBackButton: navigation,
@@ -65,7 +61,8 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
         {Instruction2}
       </InstructionText>
       <ExpansiveMealPreview
-        onEdit={() => {
+        onEdit={(meal: MealPreviewData) => {
+          navigation.push('EditingMeal', { meal });
           console.log('Edit');
         }}
         onDelete={() => {

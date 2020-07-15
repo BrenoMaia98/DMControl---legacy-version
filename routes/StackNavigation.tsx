@@ -12,12 +12,13 @@ import FoodSelection from '../src/Pages/FoodSelection';
 import FinalQuestions from '../src/Pages/FinalQuestions';
 import InsulinDosage from '../src/Pages/InsulinDosage';
 import InProgress from '../src/Pages/InProgress';
+import { MealPreviewData } from '../src/Pages/FoodAndMealManager/types';
 
 export type StackProps = {
   Login: undefined;
   Menu: undefined;
   FoodAndMealManager: undefined;
-  EditingMeal: undefined;
+  EditingMeal: { meal: MealPreviewData };
   CreatingMeal: undefined;
   MealSelection: undefined;
   FoodSelection: undefined;
@@ -28,7 +29,7 @@ export type StackProps = {
 const Stack = createStackNavigator<StackProps>();
 const StackNavigation = (): JSX.Element => {
   return (
-    <Stack.Navigator initialRouteName="FoodAndMealManager" headerMode="none">
+    <Stack.Navigator initialRouteName="EditingMeal" headerMode="none">
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Menu" component={Menu} />
       <Stack.Screen name="FoodAndMealManager" component={FoodAndMealManager} />

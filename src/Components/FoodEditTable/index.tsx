@@ -1,9 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
 import { Row } from 'native-base';
+import { Alert } from 'react-native';
 import { FoodEditTableProps } from './types';
-import { TData, TText, TRow, TTitle } from './styles';
+import { TData, TText, TRow, TTitle, JustifyCenter } from './styles';
 import IconButton from '../IconButton';
 import { IconEnum } from '../../Utils/PickIcon/types';
 import { ColorPalette } from '../../Constants/ColorPalette';
@@ -62,6 +62,16 @@ const FoodEditTable: React.FC<FoodEditTableProps> = ({
         )}
         keyExtractor={(item, index) => `${item.name}-${index}`}
       />
+      <JustifyCenter>
+        <IconButton
+          onPress={() => {
+            Alert.alert('Add', 'Work ins Progress');
+          }}
+          IconColor={ColorPalette.green}
+          defaultIcon={IconEnum.AiOutlinePlusCircle}
+          size="lg"
+        />
+      </JustifyCenter>
     </>
   );
 };

@@ -22,3 +22,7 @@ export const TTitle = styled.Text`
   color: ${ColorPalette.gray};
   padding: 10px 20px;
 `;
+export const JustifyCenter = styled.View`
+  align-items: center;
+  padding: 10px;
+`;
