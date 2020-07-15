@@ -6,7 +6,7 @@ const MealSelectionENUS = {
   },
   ButtonActionScreen: 'Calculate with empty meal',
   SearchLabel: 'Meal title',
-  ListTitle: 'Select the base meal:',
+  TableTitle: 'Select the base meal:',
 };
 
 export default MealSelectionENUS;

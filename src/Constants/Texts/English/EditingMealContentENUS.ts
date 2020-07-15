@@ -6,7 +6,12 @@ const EditingMealContentENUS = {
   },
   ButtonActionScreen: 'Create New Meal',
   SearchLabel: 'Meal title',
-  ListTitle: 'Select the base meal:',
+  Table: {
+    TableTitle: 'Select the base meal:',
+    Col1: 'Name',
+    Col2: 'Measure',
+    Col3: 'Actions',
+  },
 };
 
 export default EditingMealContentENUS;
