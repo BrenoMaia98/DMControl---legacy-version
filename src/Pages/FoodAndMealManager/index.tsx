@@ -62,7 +62,7 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
       </InstructionText>
       <ExpansiveMealPreview
         onEdit={(meal: MealPreviewData) => {
-          navigation.push('EditingMeal', { meal });
+          navigation.push('CreateAndCreatingAndEditMeal', { meal });
           console.log('Edit');
         }}
         onDelete={() => {

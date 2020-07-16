@@ -13,15 +13,17 @@ import SelectFoodModal from '../../Components/SelectFoodModal';
 
 type ProfileScreenNavigationProp = StackNavigationProp<
   StackProps,
-  'EditingMeal'
+  'CreateAndEditMeal'
 >;
 
-type EditingMealProps = {
+type CreateAndEditMealProps = {
   navigation: ProfileScreenNavigationProp;
 };
 
-const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
-  const languageScreen = Strings.EditingMealContent.English;
+const CreateAndEditMeal: React.FC<CreateAndEditMealProps> = ({
+  navigation,
+}) => {
+  const languageScreen = Strings.CreateAndEditMealContent.English;
   const { ButtonActionScreen, Header, InputLabel, Table } = languageScreen;
 
   const [foodRows, setFoodRows] = React.useState<foodRowsDTO[]>([]);
@@ -88,4 +90,4 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
   );
 };
 
-export default EditingMeal;
+export default CreateAndEditMeal;

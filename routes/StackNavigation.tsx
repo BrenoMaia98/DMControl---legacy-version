@@ -5,8 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Login from '../src/Pages/Login';
 import Menu from '../src/Pages/Menu';
 import FoodAndMealManager from '../src/Pages/FoodAndMealManager';
-import EditingMeal from '../src/Pages/EditingMeal';
-import CreatingMeal from '../src/Pages/CreatingMeal';
+import CreateAndEditingMeal from '../src/Pages/CreateAndEditMeal';
 import MealSelection from '../src/Pages/MealSelection';
 import FoodSelection from '../src/Pages/FoodSelection';
 import FinalQuestions from '../src/Pages/FinalQuestions';
@@ -18,8 +17,7 @@ export type StackProps = {
   Login: undefined;
   Menu: undefined;
   FoodAndMealManager: undefined;
-  EditingMeal: { meal: MealPreviewData };
-  CreatingMeal: undefined;
+  CreateAndEditingMeal: { meal: MealPreviewData };
   MealSelection: undefined;
   FoodSelection: undefined;
   FinalQuestions: undefined;
@@ -29,12 +27,15 @@ export type StackProps = {
 const Stack = createStackNavigator<StackProps>();
 const StackNavigation = (): JSX.Element => {
   return (
-    <Stack.Navigator initialRouteName="EditingMeal" headerMode="none">
+    <Stack.Navigator initialRouteName="Login" headerMode="none">
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Menu" component={Menu} />
       <Stack.Screen name="FoodAndMealManager" component={FoodAndMealManager} />
-      <Stack.Screen name="EditingMeal" component={EditingMeal} />
-      <Stack.Screen name="CreatingMeal" component={CreatingMeal} />
+      <Stack.Screen
+        name="CreateAndEditingMeal"
+        component={CreateAndEditingMeal}
+      />
+      <Stack.Screen name="CreatingMeal" component={CreateAndEditingMeal} />
       <Stack.Screen name="MealSelection" component={MealSelection} />
       <Stack.Screen name="FoodSelection" component={FoodSelection} />
       <Stack.Screen name="FinalQuestions" component={FinalQuestions} />
