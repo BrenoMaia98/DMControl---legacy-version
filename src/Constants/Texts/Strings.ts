@@ -14,6 +14,8 @@ import FoodSelectionENUS from './English/FoodSelectionENUS';
 import MealSelectionENUS from './English/MealSelectionENUS';
 // import MenuPTBR from './Portuguese/MenuPTBR';
 import MenuENUS from './English/MenuENUS';
+import SelectFoodModalENUS from './English/Components/SelectFoodENUS';
+// import SelectFoodModalPTBR from './Portuguese/Components/SelectFoodENUS'
 
 const Strings = {
   Login: {
@@ -47,6 +49,12 @@ const Strings = {
   Menu: {
     // Portuguese: MenuPTBR,
     English: MenuENUS,
+  },
+  Components: {
+    SelectFoodModal: {
+      // Portuguese: SelectFoodModalPTBR,
+      English: SelectFoodModalENUS,
+    },
   },
 };
 export default Strings;

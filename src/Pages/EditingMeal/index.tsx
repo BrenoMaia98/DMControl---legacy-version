@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, FlatList, Alert } from 'react-native';
+import { View, Alert } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
 
 import { StackProps } from '../../../routes/StackNavigation';
@@ -9,6 +9,7 @@ import { IconEnum } from '../../Utils/PickIcon/types';
 import SearchBar from '../../Components/SearchBar';
 import FoodEditTable from '../../Components/FoodEditTable';
 import { foodRowsDTO } from '../../Components/FoodEditTable/types';
+import SelectFoodModal from '../../Components/SelectFoodModal';
 
 type ProfileScreenNavigationProp = StackNavigationProp<
   StackProps,
@@ -24,6 +25,7 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
   const { ButtonActionScreen, Header, InputLabel, Table } = languageScreen;
 
   const [foodRows, setFoodRows] = React.useState<foodRowsDTO[]>([]);
+  const [visible, setVisible] = React.useState<boolean>(false);
   React.useEffect(() => {
     const mockData: foodRowsDTO[] = [
       { name: 'Bread and Butter', measure: 'unit' },
@@ -43,7 +45,10 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
     setFoodRows(dataCopy.filter((_, indexArr) => index !== indexArr));
   };
 
-  const editFoodFromIndex = (index: number) => {};
+  const editFoodFromIndex = (index: number) => {
+    console.log({ EditIndex: index });
+    setVisible(true);
+  };
 
   return (
     <View>
@@ -69,7 +74,15 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
         foodRows={foodRows}
         editFoodFromIndex={editFoodFromIndex}
         removeFoodFromIndex={removeFoodFromIndex}
+        addFood={() => setVisible(true)}
         Table={Table}
+      />
+      <SelectFoodModal
+        language="ENUS"
+        visible={visible}
+        onClose={() => {
+          setVisible(false);
+        }}
       />
     </View>
   );
