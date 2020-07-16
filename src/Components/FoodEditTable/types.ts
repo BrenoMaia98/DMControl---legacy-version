@@ -8,4 +8,5 @@ export interface FoodEditTableProps {
   foodRows: foodRowsDTO[];
   removeFoodFromIndex(index: number): void;
   editFoodFromIndex(index: number): void;
+  addFood(): void;
 }

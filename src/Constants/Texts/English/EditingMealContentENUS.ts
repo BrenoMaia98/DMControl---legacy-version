@@ -1,13 +1,13 @@
 const EditingMealContentENUS = {
   Header: {
-    Title: 'REGISTER',
-    Subtitle: 'Food and Meal Manager',
+    Title: 'FOODS',
+    Subtitle: 'Editing meal content',
     Help: 'Help',
   },
-  ButtonActionScreen: 'Create New Meal',
-  SearchLabel: 'Meal title',
+  ButtonActionScreen: 'Save Changes',
+  InputLabel: 'Meal title',
   Table: {
-    TableTitle: 'Select the base meal:',
+    TableTitle: 'Food:',
     Col1: 'Name',
     Col2: 'Measure',
     Col3: 'Actions',

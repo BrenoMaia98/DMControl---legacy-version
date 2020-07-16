@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, FlatList, Alert } from 'react-native';
+import { View, Alert } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
 
 import { StackProps } from '../../../routes/StackNavigation';
@@ -9,6 +9,7 @@ import { IconEnum } from '../../Utils/PickIcon/types';
 import SearchBar from '../../Components/SearchBar';
 import FoodEditTable from '../../Components/FoodEditTable';
 import { foodRowsDTO } from '../../Components/FoodEditTable/types';
+import SelectFoodModal from '../../Components/SelectFoodModal';
 
 type ProfileScreenNavigationProp = StackNavigationProp<
   StackProps,
@@ -21,9 +22,10 @@ type EditingMealProps = {
 
 const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
   const languageScreen = Strings.EditingMealContent.English;
-  const { ButtonActionScreen, Header, SearchLabel, Table } = languageScreen;
+  const { ButtonActionScreen, Header, InputLabel, Table } = languageScreen;
 
   const [foodRows, setFoodRows] = React.useState<foodRowsDTO[]>([]);
+  const [visible, setVisible] = React.useState<boolean>(false);
   React.useEffect(() => {
     const mockData: foodRowsDTO[] = [
       { name: 'Bread and Butter', measure: 'unit' },
@@ -34,6 +36,7 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
   }, []);
 
   const onSearch = (value: string): void => {
+    console.log(`${value} \n Work in Progress xD`);
     Alert.alert(`Busca`, `${value} \n Work in Progress xD`);
   };
 
@@ -43,17 +46,19 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
   };
 
   const editFoodFromIndex = (index: number) => {
-    const dataCopy = [...foodRows];
-    setFoodRows(dataCopy.filter((_, indexArr) => index !== indexArr));
+    console.log({ EditIndex: index });
+    setVisible(true);
   };
 
   return (
     <View>
       <TitleBar
         header={Header}
-        titleIcon={IconEnum.GiMeal}
+        titleIcon={IconEnum.FaAppleAlt}
         screenActionProps={{
           buttonProps: {
+            iconSize: 'md',
+            iconLeft: IconEnum.MdSave,
             onPress: () => navigation.push('CreatingMeal'),
             text: ButtonActionScreen,
           },
@@ -61,7 +66,7 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
         }}
       />
       <SearchBar
-        label={SearchLabel}
+        label={InputLabel}
         labelPosition="inlineLabel"
         onSearch={(value: string) => onSearch(value)}
       />
@@ -69,7 +74,15 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
         foodRows={foodRows}
         editFoodFromIndex={editFoodFromIndex}
         removeFoodFromIndex={removeFoodFromIndex}
+        addFood={() => setVisible(true)}
         Table={Table}
+      />
+      <SelectFoodModal
+        language="ENUS"
+        visible={visible}
+        onClose={() => {
+          setVisible(false);
+        }}
       />
     </View>
   );

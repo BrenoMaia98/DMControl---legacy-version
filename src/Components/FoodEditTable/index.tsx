@@ -1,7 +1,6 @@
 import React from 'react';
 import { FlatList } from 'react-native-gesture-handler';
 import { Row } from 'native-base';
-import { Alert } from 'react-native';
 import { FoodEditTableProps } from './types';
 import { TData, TText, TRow, TTitle, JustifyCenter } from './styles';
 import IconButton from '../IconButton';
@@ -13,6 +12,7 @@ const FoodEditTable: React.FC<FoodEditTableProps> = ({
   foodRows,
   removeFoodFromIndex,
   editFoodFromIndex,
+  addFood,
 }) => {
   const { Col1, Col2, Col3, TableTitle } = Table;
   return (
@@ -65,7 +65,7 @@ const FoodEditTable: React.FC<FoodEditTableProps> = ({
       <JustifyCenter>
         <IconButton
           onPress={() => {
-            Alert.alert('Add', 'Work ins Progress');
+            addFood();
           }}
           IconColor={ColorPalette.green}
           defaultIcon={IconEnum.AiOutlinePlusCircle}
