@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Alert } from 'react-native';
+import { View } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { ContainerTitleBar, Title, Subtitle, RowAligned } from './styles';
 import { IconEnum } from '../../Utils/PickIcon/types';

@@ -1,11 +1,6 @@
 import React from 'react';
-import {
-  View,
-  NativeSyntheticEvent,
-  TextInputChangeEventData,
-} from 'react-native';
 
-import { Item, Label, Input } from 'native-base';
+import { Item, Label } from 'native-base';
 import { Container, SearchInput } from './styles';
 import IconButton from '../IconButton';
 import { IconEnum } from '../../Utils/PickIcon/types';

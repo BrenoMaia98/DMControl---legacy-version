@@ -21,7 +21,7 @@ type EditingMealProps = {
 
 const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
   const languageScreen = Strings.EditingMealContent.English;
-  const { ButtonActionScreen, Header, SearchLabel, Table } = languageScreen;
+  const { ButtonActionScreen, Header, InputLabel, Table } = languageScreen;
 
   const [foodRows, setFoodRows] = React.useState<foodRowsDTO[]>([]);
   React.useEffect(() => {
@@ -34,6 +34,7 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
   }, []);
 
   const onSearch = (value: string): void => {
+    console.log(`${value} \n Work in Progress xD`);
     Alert.alert(`Busca`, `${value} \n Work in Progress xD`);
   };
 
@@ -42,18 +43,17 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
     setFoodRows(dataCopy.filter((_, indexArr) => index !== indexArr));
   };
 
-  const editFoodFromIndex = (index: number) => {
-    const dataCopy = [...foodRows];
-    setFoodRows(dataCopy.filter((_, indexArr) => index !== indexArr));
-  };
+  const editFoodFromIndex = (index: number) => {};
 
   return (
     <View>
       <TitleBar
         header={Header}
-        titleIcon={IconEnum.GiMeal}
+        titleIcon={IconEnum.FaAppleAlt}
         screenActionProps={{
           buttonProps: {
+            iconSize: 'md',
+            iconLeft: IconEnum.MdSave,
             onPress: () => navigation.push('CreatingMeal'),
             text: ButtonActionScreen,
           },
@@ -61,7 +61,7 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
         }}
       />
       <SearchBar
-        label={SearchLabel}
+        label={InputLabel}
         labelPosition="inlineLabel"
         onSearch={(value: string) => onSearch(value)}
       />
