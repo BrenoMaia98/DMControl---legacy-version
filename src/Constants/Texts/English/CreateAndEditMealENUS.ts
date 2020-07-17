@@ -1,17 +1,34 @@
-const CreatingMealENUS = {
-  Header: {
-    Title: 'REGISTER',
-    Subtitle: 'Sucessfull register',
-    Help: 'Help',
+const CreateAndEditMealENUS = {
+  Create: {
+    Header: {
+      Title: 'FOODS',
+      Subtitle: 'Adding food to new meal',
+      Help: 'Help',
+    },
+    ButtonActionScreen: 'Confirm new Meal',
+    InputLabel: 'Meal title',
+    Table: {
+      TableTitle: 'Food:',
+      Col1: 'Name',
+      Col2: 'Measure',
+      Col3: 'Actions',
+    },
   },
-  ButtonActionScreen: 'Return to Menu',
-  InsulinLevelsBox: {
-    title: 'Your meal is sucessfully resgistered',
-    content: 'insulin levels after an hour after this meals, should be around',
+  Edit: {
+    Header: {
+      Title: 'FOODS',
+      Subtitle: 'Editing meal content',
+      Help: 'Help',
+    },
+    ButtonActionScreen: 'Save Changes',
+    InputLabel: 'Meal title',
+    Table: {
+      TableTitle: 'Food:',
+      Col1: 'Name',
+      Col2: 'Measure',
+      Col3: 'Actions',
+    },
   },
-  InsulinInfo1: ' To maintain a safe insulin level',
-  InsulinInfo2: ' Is recommended to aply',
-  InsulinInfo3: 'Fast insulin units',
 };
 
-export default CreatingMealENUS;
+export default CreateAndEditMealENUS;

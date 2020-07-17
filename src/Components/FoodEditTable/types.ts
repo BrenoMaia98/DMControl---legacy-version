@@ -1,11 +1,8 @@
-export interface foodRowsDTO {
-  measure: string;
-  name: string;
-}
+import { FoodDTO } from '../../Database';
 
 export interface FoodEditTableProps {
   Table: { TableTitle: string; Col1: string; Col2: string; Col3: string };
-  foodRows: foodRowsDTO[];
+  foodRows: FoodDTO[];
   removeFoodFromIndex(index: number): void;
   editFoodFromIndex(index: number): void;
   addFood(): void;

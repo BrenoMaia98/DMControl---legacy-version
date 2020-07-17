@@ -1,8 +1,10 @@
 import { ModalProps } from 'react-native';
+import { FoodDTO } from '../../Database';
 
 export interface SelectFoodModalProps extends ModalProps {
   language: 'ENUS' | 'PTBR';
   selectedFood?: string;
+  onSelect(item: FoodDTO): void;
   onClose(): void;
 }
 

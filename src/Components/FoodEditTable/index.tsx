@@ -34,7 +34,7 @@ const FoodEditTable: React.FC<FoodEditTableProps> = ({
         renderItem={({ item, index }) => (
           <TRow>
             <TData>
-              <TText>{item.name}</TText>
+              <TText>{item.foodName}</TText>
             </TData>
             <TData>
               <TText>{item.measure}</TText>
@@ -60,7 +60,7 @@ const FoodEditTable: React.FC<FoodEditTableProps> = ({
             </TData>
           </TRow>
         )}
-        keyExtractor={(item, index) => `${item.name}-${index}`}
+        keyExtractor={(item, index) => `${item.foodName}-${index}`}
       />
       <JustifyCenter>
         <IconButton

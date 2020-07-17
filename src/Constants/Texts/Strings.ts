@@ -1,7 +1,7 @@
 // import LoginPTBR from './Portuguese/LoginPTBR';
 import LoginENUS from './English/LoginENUS';
 // import CreateAndEditMealPTBR from './Portuguese/CreateAndEditMealPTBR';
-import CreateAndEditMealENUS from './English/CreateAndEditMealENUS.ts';
+import CreateAndEditMealENUS from './English/CreateAndEditMealENUS';
 // import FinalQuestionsPTBR from './Portuguese/FinalQuestionsPTBR';
 import FinalQuestionsENUS from './English/FinalQuestionsENUS';
 // import FoodAndMealManagerPTBR from './Portuguese/FoodAndMealManagerPTBR';
