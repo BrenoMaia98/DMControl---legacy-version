@@ -8,6 +8,7 @@ import { IconEnum } from '../../Utils/PickIcon/types';
 interface SearchBarProps {
   label: string;
   labelPosition: 'stacked' | 'floating' | 'inlineLabel' | 'fixedLabel';
+  align?: 'center' | 'right' | 'left';
   onSearch(value: string): void;
 }
 
@@ -15,10 +16,11 @@ const SearchBar: React.FC<SearchBarProps> = ({
   label,
   onSearch,
   labelPosition,
+  align,
 }) => {
   const [value, setValue] = React.useState<string>('');
   return (
-    <Container>
+    <Container align={align}>
       <Item
         stackedLabel={labelPosition === 'stacked' || undefined}
         floatingLabel={labelPosition === 'floating' || undefined}
@@ -30,7 +32,6 @@ const SearchBar: React.FC<SearchBarProps> = ({
         <SearchInput
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           onChange={({ currentTarget }: any) => {
-            console.log(String(currentTarget.value));
             setValue(String(currentTarget.value));
           }}
         />

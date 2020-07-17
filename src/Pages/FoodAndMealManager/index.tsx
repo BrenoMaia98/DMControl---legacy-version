@@ -38,9 +38,8 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
         },
       ];
       setMealData(mockMealData);
-    }, 1000);
+    }, 50);
   }, []);
-  console.log(mealData);
 
   return (
     <View>
@@ -63,11 +62,8 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
       <ExpansiveMealPreview
         onEdit={(meal: MealPreviewData) => {
           navigation.push('CreateAndEditMeal', { meal });
-          console.log('Edit');
         }}
-        onDelete={() => {
-          console.log('Delete');
-        }}
+        onDelete={() => {}}
         meals={mealData}
       />
     </View>

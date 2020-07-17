@@ -16,6 +16,7 @@ export const Title = styled.Text`
 `;
 
 export const Subtitle = styled.Text`
+  padding-left: 40px;
   font-size: 1em;
   font-weight: bold;
   color: ${ColorPalette.gray};
