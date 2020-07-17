@@ -28,7 +28,7 @@ export type StackProps = {
 const Stack = createStackNavigator<StackProps>();
 const StackNavigation = (): JSX.Element => {
   return (
-    <Stack.Navigator initialRouteName="MealSelection" headerMode="none">
+    <Stack.Navigator initialRouteName="FinalQuestions" headerMode="none">
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Menu" component={Menu} />
       <Stack.Screen name="FoodAndMealManager" component={FoodAndMealManager} />

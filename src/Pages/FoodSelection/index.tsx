@@ -169,7 +169,7 @@ const FoodSelection: React.FC<FoodSelectionPageProps> = ({
           buttonProps: {
             iconLeft: IconEnum.AiOutlinePlusCircle,
             iconSize: 'md',
-            onPress: () => navigation.navigate('MealSelection'),
+            onPress: () => navigation.navigate('FinalQuestions'),
             text: ButtonActionScreen,
           },
           navigateForBackButton: navigation,
