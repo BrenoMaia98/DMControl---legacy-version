@@ -83,6 +83,12 @@ const CreateAndEditMeal: React.FC<CreateAndEditMealProps> = ({
     setVisible(true);
   };
 
+  const addFood = (item: FoodDTO) => {
+    const dataCopy = [...foodRows];
+    dataCopy.push(item);
+    setFoodRows(dataCopy);
+  };
+
   return (
     <View>
       <TitleBar
@@ -92,7 +98,7 @@ const CreateAndEditMeal: React.FC<CreateAndEditMealProps> = ({
           buttonProps: {
             iconSize: 'md',
             iconLeft: IconEnum.MdSave,
-            onPress: () => navigation.push('FoodAndMealManager'),
+            onPress: () => navigation.navigate('FoodAndMealManager'),
             text: meal ? EditButtonActionScreen : CreateButtonActionScreen,
           },
           navigateForBackButton: navigation,
@@ -111,7 +117,7 @@ const CreateAndEditMeal: React.FC<CreateAndEditMealProps> = ({
         Table={Table}
       />
       <SelectFoodModal
-        onSelect={() => addFood}
+        onSelect={(item) => addFood(item)}
         language="ENUS"
         visible={visible}
         onClose={() => {

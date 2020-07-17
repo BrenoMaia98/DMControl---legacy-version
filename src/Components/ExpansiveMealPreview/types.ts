@@ -1,7 +1,7 @@
-import { MealPreviewData } from '../../Pages/FoodAndMealManager/types';
+import { MealDataDTO } from '../../Pages/MealSelection/types';
 
 export interface ExpansiveMealPreviewProps {
-  onEdit(meal: MealPreviewData): void;
+  onEdit(meal: MealDataDTO): void;
   onDelete(): void;
-  meals: MealPreviewData[];
+  meals: MealDataDTO[];
 }

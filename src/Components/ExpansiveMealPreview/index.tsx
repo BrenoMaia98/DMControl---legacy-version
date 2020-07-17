@@ -13,14 +13,14 @@ import {
 import IconButton from '../IconButton';
 import { ColorPalette } from '../../Constants/ColorPalette';
 import { IconEnum } from '../../Utils/PickIcon/types';
-import { MealPreviewData } from '../../Pages/FoodAndMealManager/types';
+import { MealDataDTO } from '../../Pages/MealSelection/types';
 
 const ExpansiveMealPreview: React.FC<ExpansiveMealPreviewProps> = ({
   onEdit,
   meals,
   onDelete,
 }) => {
-  const renderExpansive = (item: MealPreviewData) => {
+  const renderExpansive = (item: MealDataDTO) => {
     return (
       <Container>
         <RowAlignLeft>
@@ -37,8 +37,8 @@ const ExpansiveMealPreview: React.FC<ExpansiveMealPreviewProps> = ({
           />
         </RowAlignLeft>
         <FoodNamesContainer>
-          {item.foodNames.map((food) => (
-            <FoodName>{food}</FoodName>
+          {item.foods.map((food) => (
+            <FoodName>{food.foodName}</FoodName>
           ))}
         </FoodNamesContainer>
       </Container>

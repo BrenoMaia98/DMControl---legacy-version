@@ -27,22 +27,22 @@ const Menu: React.FC<Props> = ({ navigation }) => {
       <TitleBar header={Header} titleIcon={IconEnum.MdRestaurantMenu} />
       <Container>
         <DefaultButton
-          onPress={() => navigation.push('MealSelection')}
+          onPress={() => navigation.navigate('MealSelection')}
           text={CalculateInsulin}
           buttonSize="large"
         />
         <DefaultButton
-          onPress={() => navigation.push('FoodAndMealManager')}
+          onPress={() => navigation.navigate('FoodAndMealManager')}
           text={MealAndFoodManager}
           buttonSize="large"
         />
         <DefaultButton
-          onPress={() => navigation.push('InProgress')}
+          onPress={() => navigation.navigate('InProgress')}
           text={MeasurementHistory}
           buttonSize="large"
         />
         <DefaultButton
-          onPress={() => navigation.push('InProgress')}
+          onPress={() => navigation.navigate('InProgress')}
           text={Profile}
           buttonSize="large"
         />

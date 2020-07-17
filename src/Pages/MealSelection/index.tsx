@@ -5,7 +5,7 @@ import { IconEnum } from '../../Utils/PickIcon/types';
 import TitleBar from '../../Components/TitleBar';
 import { InstructionText } from './styles';
 import ExpansiveMealPreview from '../../Components/ExpansiveMealPreview';
-import { MealPreviewData, MealSelectionProps } from './types';
+import { MealDataDTO, MealSelectionProps } from './types';
 import SearchBar from '../../Components/SearchBar';
 
 const MealSelection: React.FC<MealSelectionProps> = ({ navigation }) => {
@@ -17,40 +17,116 @@ const MealSelection: React.FC<MealSelectionProps> = ({ navigation }) => {
     Instruction1,
   } = languageScreen;
 
-  const [mealData, setMealData] = React.useState<MealPreviewData[]>([]);
+  const [mealData, setMealData] = React.useState<MealDataDTO[]>([]);
 
   React.useEffect(() => {
     setTimeout(() => {
-      const mockMealData: MealPreviewData[] = [
+      const mockMealData: MealDataDTO[] = [
         {
           title: 'Breakfast',
-          foodNames: ['Bread and Butter', 'Chocolate Milk', 'Eggs and Bacon'],
+          foods: [
+            {
+              foodName: 'Bread and Butter',
+              measure: 'unit',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Chocolate Milk',
+              measure: '350ml',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Eggs and Bacon',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+          ],
         },
         {
           title: 'Barbecue',
-          foodNames: ['Garlic bread', 'Filet Steak', 'Cassava', 'Fanta'],
+          foods: [
+            {
+              foodName: 'Garlic bread',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Filet Steak',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Cassava',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Fanta',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+          ],
         },
         {
           title: `Monday's Dinner`,
-          foodNames: ['Pizza Cheese', 'Coke', 'Cassava'],
+          foods: [
+            {
+              foodName: 'Pizza Cheese',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Coke',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Cassava',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+          ],
         },
       ];
       setMealData(mockMealData);
     }, 50);
   }, []);
 
-  const onSearchMeal = (value: string) => {};
+  const onSearchMeal = (value: string) => {
+    console.log(value);
+  };
 
   return (
     <View>
       <TitleBar
         header={Header}
-        titleIcon={IconEnum.GoBook}
+        titleIcon={IconEnum.FaAppleAlt}
         screenActionProps={{
           buttonProps: {
             iconLeft: IconEnum.AiOutlinePlusCircle,
             iconSize: 'md',
-            onPress: () => navigation.push('FoodSelection'),
+            onPress: () =>
+              navigation.navigate('FoodSelection', { foodData: [] }),
             text: ButtonActionScreen,
           },
           navigateForBackButton: navigation,
@@ -64,8 +140,8 @@ const MealSelection: React.FC<MealSelectionProps> = ({ navigation }) => {
       />
       <InstructionText>{Instruction1}</InstructionText>
       <ExpansiveMealPreview
-        onEdit={(meal: MealPreviewData) => {
-          navigation.push('CreateAndEditMeal', { meal });
+        onEdit={(meal: MealDataDTO) => {
+          navigation.navigate('FoodSelection', { foodData: meal.foods });
         }}
         onDelete={() => {}}
         meals={mealData}

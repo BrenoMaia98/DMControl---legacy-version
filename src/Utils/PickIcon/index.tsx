@@ -11,74 +11,76 @@ import {
   MdClose,
   MdRestaurantMenu,
 } from 'react-icons/md';
-import { GrDocumentText } from 'react-icons/gr';
+import { GrDocumentText, GrApple } from 'react-icons/gr';
 import { FaArrowLeft, FaAppleAlt } from 'react-icons/fa';
 import { IconEnum } from './types';
 import { ComponentSize } from '../ComponentSize';
 
-interface PickIconParam {
+type PickIconParam = {
   iconType: IconEnum;
   size?: ComponentSize;
-}
+};
 
-const PickIcon: React.FC<PickIconParam> = ({ iconType, size: sizeProps }) => {
-  const pickIcon = () => {
-    let size;
-    switch (sizeProps) {
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+const PickIcon = ({ iconType, size }: PickIconParam) => {
+  console.log({ iconType, size });
+  const pickIconFunction = () => {
+    let sizeProps;
+    switch (size) {
       case 'sm':
-        size = '1em';
+        sizeProps = '1em';
         break;
       case 'lg':
-        size = '3em';
+        sizeProps = '3em';
         break;
       case 'md':
       default:
-        size = '2em';
+        sizeProps = '2em';
         break;
     }
     switch (iconType) {
       case IconEnum.GiPill:
-        return <GiPill size={size} />;
+        return <GiPill size={sizeProps} />;
       case IconEnum.GiHotMeal:
-        return <GiHotMeal size={size} />;
+        return <GiHotMeal size={sizeProps} />;
       case IconEnum.GoGraph:
-        return <GoGraph size={size} />;
+        return <GoGraph size={sizeProps} />;
       case IconEnum.GoPencil:
-        return <GoPencil size={size} />;
+        return <GoPencil size={sizeProps} />;
       case IconEnum.GoBook:
-        return <GoBook size={size} />;
+        return <GoBook size={sizeProps} />;
       case IconEnum.GoSearch:
-        return <GoSearch size={size} />;
+        return <GoSearch size={sizeProps} />;
       case IconEnum.GiMeal:
-        return <GiMeal size={size} />;
+        return <GiMeal size={sizeProps} />;
       case IconEnum.BsPersonFill:
-        return <BsPersonFill size={size} />;
+        return <BsPersonFill size={sizeProps} />;
       case IconEnum.AiOutlinePlusCircle:
-        return <AiOutlinePlusCircle size={size} />;
+        return <AiOutlinePlusCircle size={sizeProps} />;
       case IconEnum.FiEdit:
-        return <FiEdit size={size} />;
+        return <FiEdit size={sizeProps} />;
       case IconEnum.MdHelp:
-        return <MdHelp size={size} />;
+        return <MdHelp size={sizeProps} />;
       case IconEnum.MdDelete:
-        return <MdDelete size={size} />;
+        return <MdDelete size={sizeProps} />;
       case IconEnum.MdSave:
-        return <MdSave size={size} />;
+        return <MdSave size={sizeProps} />;
       case IconEnum.MdRestaurantMenu:
-        return <MdRestaurantMenu size={size} />;
+        return <MdRestaurantMenu size={sizeProps} />;
       case IconEnum.MdClose:
-        return <MdClose size={size} />;
+        return <MdClose size={sizeProps} />;
       case IconEnum.GrDocumentText:
-        return <GrDocumentText size={size} />;
+        return <GrDocumentText size={sizeProps} />;
       case IconEnum.FaArrowLeft:
-        return <FaArrowLeft size={size} />;
+        return <FaArrowLeft size={sizeProps} />;
       case IconEnum.FaAppleAlt:
-        return <FaAppleAlt size={size} />;
+        return <GrApple size={sizeProps} />;
       default:
         return null;
     }
   };
 
-  return pickIcon();
+  return pickIconFunction();
 };
 
 export default PickIcon;
