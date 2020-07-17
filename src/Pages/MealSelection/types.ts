@@ -3,10 +3,10 @@ import { StackProps } from '../../../routes/StackNavigation';
 
 export type ProfileScreenNavigationProp = StackNavigationProp<
   StackProps,
-  'FoodAndMealManager'
+  'MealSelection'
 >;
 
-export interface FoodAndMealManagerProps {
+export interface MealSelectionProps {
   navigation: ProfileScreenNavigationProp;
 }
 export interface MealPreviewData {
