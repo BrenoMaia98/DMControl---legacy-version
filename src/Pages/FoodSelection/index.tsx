@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, FlatList, CheckBox } from 'react-native';
+import { View, FlatList, CheckBox, ScrollView, Dimensions } from 'react-native';
 import { Text, Row, Col, Radio } from 'native-base';
 import Strings from '../../Constants/Texts/Strings';
 import { IconEnum } from '../../Utils/PickIcon/types';
@@ -11,9 +11,11 @@ import {
   InputsRows,
   TableTitle,
   RowContainer,
+  JustifyCenter,
 } from './styles';
 import IconButton from '../../Components/IconButton';
 import { ColorPalette } from '../../Constants/ColorPalette';
+import SelectFoodModal from '../../Components/SelectFoodModal';
 
 const FoodSelection: React.FC<FoodSelectionPageProps> = ({
   navigation,
@@ -24,6 +26,7 @@ const FoodSelection: React.FC<FoodSelectionPageProps> = ({
 
   const [foodData, setFoodData] = React.useState<FoodDTO[]>([]);
   const [quantity, setQuantity] = React.useState<string[]>([]);
+  const [visible, setVisible] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     const foods = route.params.foodData || [
@@ -72,6 +75,15 @@ const FoodSelection: React.FC<FoodSelectionPageProps> = ({
     setFoodData(foodData.filter((_, index) => index !== indexToRemove));
   };
 
+  const addFood = (item: FoodDTO) => {
+    const dataCopy = [...foodData];
+    dataCopy.push(item);
+    setFoodData(dataCopy);
+    const quantityCopy = [...quantity];
+    quantityCopy.push('');
+    setQuantity(quantityCopy);
+  };
+
   const renderFoodRowQuantity = (item: FoodDTO, index: number) => (
     <RowContainer>
       <Row>
@@ -91,21 +103,54 @@ const FoodSelection: React.FC<FoodSelectionPageProps> = ({
       </Row>
       <Text>Quantity:</Text>
       <InputsRows>
-        <Text>1</Text>
-        <Radio
-          selected={quantity[index] === '1'}
-          onPress={() => onQuantityChange(index, '1', quantity[index] === '1')}
-        />
-        <Text>2</Text>
-        <Radio
-          selected={quantity[index] === '2'}
-          onPress={() => onQuantityChange(index, '2', quantity[index] === '2')}
-        />
-        <Text>3</Text>
-        <Radio
-          selected={quantity[index] === '3'}
-          onPress={() => onQuantityChange(index, '3', quantity[index] === '3')}
-        />
+        <Row>
+          <Text
+            style={{
+              paddingRight: 5,
+              alignSelf: 'center',
+            }}
+          >
+            1
+          </Text>
+          <Radio
+            selected={quantity[index] === '1'}
+            onPress={() => {
+              onQuantityChange(index, '1', quantity[index] === '1');
+            }}
+          />
+        </Row>
+        <Row>
+          <Text
+            style={{
+              paddingRight: 5,
+              alignSelf: 'center',
+            }}
+          >
+            2
+          </Text>
+          <Radio
+            selected={quantity[index] === '2'}
+            onPress={() => {
+              onQuantityChange(index, '2', quantity[index] === '2');
+            }}
+          />
+        </Row>
+        <Row>
+          <Text
+            style={{
+              paddingRight: 5,
+              alignSelf: 'center',
+            }}
+          >
+            3
+          </Text>
+          <Radio
+            selected={quantity[index] === '3'}
+            onPress={() => {
+              onQuantityChange(index, '3', quantity[index] === '3');
+            }}
+          />
+        </Row>
         <OtherQuantityinput
           keyboardType="numeric"
           placeholder="Other quantity"
@@ -116,7 +161,7 @@ const FoodSelection: React.FC<FoodSelectionPageProps> = ({
   );
 
   return (
-    <View>
+    <View style={{ height: Dimensions.get('screen').height }}>
       <TitleBar
         header={Header}
         titleIcon={IconEnum.GoBook}
@@ -130,21 +175,42 @@ const FoodSelection: React.FC<FoodSelectionPageProps> = ({
           navigateForBackButton: navigation,
         }}
       />
-      <Row>
-        <Col>
-          <TableTitle>{Table.colum01}</TableTitle>
-        </Col>
-        <Col>
-          <TableTitle>{Table.colum02}</TableTitle>
-        </Col>
-        <Col>
-          <TableTitle>{Table.colum03}</TableTitle>
-        </Col>
-      </Row>
-      <FlatList
-        data={foodData}
-        renderItem={({ item, index }) => renderFoodRowQuantity(item, index)}
-        keyExtractor={(item, index) => `${item.foodName}-${index}`}
+      <ScrollView style={{ flex: 1 }}>
+        <Row style={{ marginTop: 50 }}>
+          <Col>
+            <TableTitle>{Table.colum01}</TableTitle>
+          </Col>
+          <Col>
+            <TableTitle>{Table.colum02}</TableTitle>
+          </Col>
+          <Col>
+            <TableTitle>{Table.colum03}</TableTitle>
+          </Col>
+        </Row>
+        <FlatList
+          data={foodData}
+          extraData={foodData}
+          renderItem={({ item, index }) => renderFoodRowQuantity(item, index)}
+          keyExtractor={(item, index) => `${item.foodName}-${index}`}
+        />
+      </ScrollView>
+      <JustifyCenter>
+        <IconButton
+          onPress={() => {
+            setVisible(true);
+          }}
+          IconColor={ColorPalette.green}
+          defaultIcon={IconEnum.AiOutlinePlusCircle}
+          size="lg"
+        />
+      </JustifyCenter>
+      <SelectFoodModal
+        onSelect={(item) => addFood(item)}
+        language="ENUS"
+        visible={visible}
+        onClose={() => {
+          setVisible(false);
+        }}
       />
     </View>
   );
