@@ -48,7 +48,7 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
         titleIcon={IconEnum.GiMeal}
         screenActionProps={{
           buttonProps: {
-            onPress: () => navigation.push('CreateAndEditMeal'),
+            onPress: () => navigation.navigate('CreateAndEditMeal'),
             text: ButtonActionScreen,
           },
           navigateForBackButton: navigation,
@@ -61,7 +61,7 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
       </InstructionText>
       <ExpansiveMealPreview
         onEdit={(meal: MealPreviewData) => {
-          navigation.push('CreateAndEditMeal', { meal });
+          navigation.navigate('CreateAndEditMeal', { meal });
         }}
         onDelete={() => {}}
         meals={mealData}

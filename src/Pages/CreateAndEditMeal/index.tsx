@@ -92,7 +92,7 @@ const CreateAndEditMeal: React.FC<CreateAndEditMealProps> = ({
           buttonProps: {
             iconSize: 'md',
             iconLeft: IconEnum.MdSave,
-            onPress: () => navigation.push('FoodAndMealManager'),
+            onPress: () => navigation.navigate('FoodAndMealManager'),
             text: meal ? EditButtonActionScreen : CreateButtonActionScreen,
           },
           navigateForBackButton: navigation,

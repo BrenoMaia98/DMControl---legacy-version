@@ -34,7 +34,7 @@ const TitleBar: React.FC<TitleBarProps> = ({
               alignItems: 'center',
             }}
           >
-            {PickIcon({ iconType: titleIcon, size: 'lg' })}
+            {titleIcon && PickIcon({ iconType: titleIcon, size: 'lg' })}
             <Title>{header.Title}</Title>
           </RowAligned>
           <Subtitle>{header.Subtitle}</Subtitle>
