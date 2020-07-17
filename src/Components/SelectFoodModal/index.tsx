@@ -3,7 +3,9 @@ import React from 'react';
 import { FlatList, Text } from 'react-native';
 import {
   ModalContainer,
+  TitleText,
   TitleInput,
+  InputText,
   FoodName,
   Content,
   FoodRow,
@@ -39,8 +41,8 @@ const SelectFoodModal: React.FC<SelectFoodModalProps> = ({
           }}
         >
           <Content>
-            <Text>{Title}</Text>
-            <Text>{InputLabel}</Text>
+            <TitleText>{Title}</TitleText>
+            <InputText>{InputLabel}</InputText>
             <TitleInput
               value={inputValue}
               // eslint-disable-next-line @typescript-eslint/no-explicit-any

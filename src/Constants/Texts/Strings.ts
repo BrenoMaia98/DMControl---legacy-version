@@ -1,9 +1,7 @@
 // import LoginPTBR from './Portuguese/LoginPTBR';
 import LoginENUS from './English/LoginENUS';
-// import CreatingMealPTBR from './Portuguese/CreatingMealPTBR';
-import CreatingMealENUS from './English/CreatingMealENUS';
-// import EditingMealContentPTBR from './Portuguese/EditingMealContentPTBR';
-import EditingMealContentENUS from './English/EditingMealContentENUS';
+// import CreateAndEditMealPTBR from './Portuguese/CreateAndEditMealPTBR';
+import CreateAndEditMealENUS from './English/CreateAndEditMealENUS';
 // import FinalQuestionsPTBR from './Portuguese/FinalQuestionsPTBR';
 import FinalQuestionsENUS from './English/FinalQuestionsENUS';
 // import FoodAndMealManagerPTBR from './Portuguese/FoodAndMealManagerPTBR';
@@ -22,13 +20,9 @@ const Strings = {
     // Portuguese: LoginPTBR,
     English: LoginENUS,
   },
-  CreatingMeal: {
-    // Portuguese: CreatingMealPTBR,
-    English: CreatingMealENUS,
-  },
-  EditingMealContent: {
-    // Portuguese: EditingMealContentPTBR,
-    English: EditingMealContentENUS,
+  CreateAndEditMeal: {
+    // Portuguese: CreateAndEditMealPTBR,
+    English: CreateAndEditMealENUS,
   },
   FinalQuestions: {
     // Portuguese: FinalQuestionsPTBR,

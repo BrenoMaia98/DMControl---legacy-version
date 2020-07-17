@@ -31,7 +31,7 @@ const ExpansiveMealPreview: React.FC<ExpansiveMealPreviewProps> = ({
             size="md"
           />
           <IconButton
-            onPress={() => onEdit()}
+            onPress={() => onEdit(item)}
             defaultIcon={IconEnum.FiEdit}
             size="md"
           />

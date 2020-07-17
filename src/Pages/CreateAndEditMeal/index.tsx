@@ -10,27 +10,60 @@ import SearchBar from '../../Components/SearchBar';
 import FoodEditTable from '../../Components/FoodEditTable';
 import { foodRowsDTO } from '../../Components/FoodEditTable/types';
 import SelectFoodModal from '../../Components/SelectFoodModal';
+import { MealPreviewData } from '../FoodAndMealManager/types';
+import { FoodDTO } from '../../Database';
 
 type ProfileScreenNavigationProp = StackNavigationProp<
   StackProps,
-  'EditingMeal'
+  'CreateAndEditMeal'
 >;
 
-type EditingMealProps = {
+export interface CreateAndEditMealProps {
+  meal: MealPreviewData;
   navigation: ProfileScreenNavigationProp;
-};
+}
 
-const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
-  const languageScreen = Strings.EditingMealContent.English;
-  const { ButtonActionScreen, Header, InputLabel, Table } = languageScreen;
+const CreateAndEditMeal: React.FC<CreateAndEditMealProps> = ({
+  meal,
+  navigation,
+}) => {
+  const languageScreen = Strings.CreateAndEditMeal.English;
+  const {
+    ButtonActionScreen: CreateButtonActionScreen,
+    Header: CreateHeader,
+  } = languageScreen.Create;
+  const {
+    ButtonActionScreen: EditButtonActionScreen,
+    Header: EditHeader,
+    InputLabel,
+    Table,
+  } = languageScreen.Edit;
 
-  const [foodRows, setFoodRows] = React.useState<foodRowsDTO[]>([]);
+  const [foodRows, setFoodRows] = React.useState<FoodDTO[]>([]);
   const [visible, setVisible] = React.useState<boolean>(false);
   React.useEffect(() => {
-    const mockData: foodRowsDTO[] = [
-      { name: 'Bread and Butter', measure: 'unit' },
-      { name: 'Chocolate Milk', measure: '350ml' },
-      { name: 'Eggs and Bacon', measure: '-' },
+    const mockData: FoodDTO[] = [
+      {
+        foodName: 'Bread and Butter',
+        measure: 'unit',
+        cho: 1,
+        kcal: 1,
+        volumeMlOrGram: '-',
+      },
+      {
+        foodName: 'Chocolate Milk',
+        measure: '350ml',
+        cho: 1,
+        kcal: 1,
+        volumeMlOrGram: '-',
+      },
+      {
+        foodName: 'Eggs and Bacon',
+        measure: '-',
+        cho: 1,
+        kcal: 1,
+        volumeMlOrGram: '-',
+      },
     ];
     setFoodRows(mockData);
   }, []);
@@ -53,14 +86,14 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
   return (
     <View>
       <TitleBar
-        header={Header}
+        header={meal ? EditHeader : CreateHeader}
         titleIcon={IconEnum.FaAppleAlt}
         screenActionProps={{
           buttonProps: {
             iconSize: 'md',
             iconLeft: IconEnum.MdSave,
-            onPress: () => navigation.push('CreatingMeal'),
-            text: ButtonActionScreen,
+            onPress: () => navigation.push('FoodAndMealManager'),
+            text: meal ? EditButtonActionScreen : CreateButtonActionScreen,
           },
           navigateForBackButton: navigation,
         }}
@@ -78,6 +111,7 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
         Table={Table}
       />
       <SelectFoodModal
+        onSelect={() => addFood}
         language="ENUS"
         visible={visible}
         onClose={() => {
@@ -88,4 +122,4 @@ const EditingMeal: React.FC<EditingMealProps> = ({ navigation }) => {
   );
 };
 
-export default EditingMeal;
+export default CreateAndEditMeal;
