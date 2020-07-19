@@ -15,9 +15,12 @@ const FinalQuestionsENUS = {
     title: 'Have you aplied any insulin recently',
     option01: 'Fast insulin',
     option02: 'Slow insulin',
-    Units: 'Units:',
-    Text01: 'hour',
-    Text02: 'minutes ago',
+    Label01: 'Units:',
+    placeholder01: 'Dosage (units)',
+    Label02: 'hour',
+    placeholder02: '00',
+    Label03: 'minutes ago',
+    placeholder03: '00',
   },
 };
 

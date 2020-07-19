@@ -6,7 +6,7 @@ import TitleBar from '../../Components/TitleBar';
 import PickIcon from '../../Utils/PickIcon';
 import { InstructionText } from './styles';
 import ExpansiveMealPreview from '../../Components/ExpansiveMealPreview';
-import { MealPreviewData, FoodAndMealManagerProps } from './types';
+import { MealData, FoodAndMealManagerProps } from './types';
 
 const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
   navigation,
@@ -19,22 +19,95 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
     Instruction2,
   } = languageScreen;
 
-  const [mealData, setMealData] = React.useState<MealPreviewData[]>([]);
+  const [mealData, setMealData] = React.useState<MealData[]>([]);
 
   React.useEffect(() => {
     setTimeout(() => {
-      const mockMealData: MealPreviewData[] = [
+      const mockMealData: MealDataDTO[] = [
         {
           title: 'Breakfast',
-          foodNames: ['Bread and Butter', 'Chocolate Milk', 'Eggs and Bacon'],
+          foods: [
+            {
+              foodName: 'Bread and Butter',
+              measure: 'unit',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Chocolate Milk',
+              measure: '350ml',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Eggs and Bacon',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+          ],
         },
         {
           title: 'Barbecue',
-          foodNames: ['Garlic bread', 'Filet Steak', 'Cassava', 'Fanta'],
+          foods: [
+            {
+              foodName: 'Garlic bread',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Filet Steak',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Cassava',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Fanta',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+          ],
         },
         {
           title: `Monday's Dinner`,
-          foodNames: ['Pizza Cheese', 'Coke', 'Cassava'],
+          foods: [
+            {
+              foodName: 'Pizza Cheese',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Coke',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+            {
+              foodName: 'Cassava',
+              measure: '-',
+              cho: 1,
+              kcal: 1,
+              volumeMlOrGram: '-',
+            },
+          ],
         },
       ];
       setMealData(mockMealData);
@@ -60,7 +133,7 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
         {Instruction2}
       </InstructionText>
       <ExpansiveMealPreview
-        onEdit={(meal: MealPreviewData) => {
+        onEdit={(meal: MealData) => {
           navigation.navigate('CreateAndEditMeal', { meal });
         }}
         onDelete={() => {}}

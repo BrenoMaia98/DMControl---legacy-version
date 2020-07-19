@@ -9,7 +9,7 @@ export const ContainerTitleBar = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: 2em;
+  font-size: 32px;
   font-weight: bold;
   padding-left: 5px;
   color: ${ColorPalette.gray};
@@ -17,7 +17,7 @@ export const Title = styled.Text`
 
 export const Subtitle = styled.Text`
   padding-left: 40px;
-  font-size: 1em;
+  font-size: 16px;
   font-weight: bold;
   color: ${ColorPalette.gray};
 `;

@@ -14,11 +14,11 @@ export const TData = styled(Col)`
   align-items: center;
 `;
 export const TText = styled.Text`
-  font-size: 1em;
+  font-size: 16px;
   text-align: center;
 `;
 export const TTitle = styled.Text`
-  font-size: 1.5em;
+  font-size: 24px;
   color: ${ColorPalette.gray};
   padding: 10px 20px;
 `;

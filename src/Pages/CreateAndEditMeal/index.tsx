@@ -10,7 +10,7 @@ import SearchBar from '../../Components/SearchBar';
 import FoodEditTable from '../../Components/FoodEditTable';
 import { foodRowsDTO } from '../../Components/FoodEditTable/types';
 import SelectFoodModal from '../../Components/SelectFoodModal';
-import { MealPreviewData } from '../FoodAndMealManager/types';
+import { MealData } from '../FoodAndMealManager/types';
 import { FoodDTO } from '../../Database';
 
 type ProfileScreenNavigationProp = StackNavigationProp<
@@ -19,7 +19,7 @@ type ProfileScreenNavigationProp = StackNavigationProp<
 >;
 
 export interface CreateAndEditMealProps {
-  meal: MealPreviewData;
+  meal: MealData;
   navigation: ProfileScreenNavigationProp;
 }
 
