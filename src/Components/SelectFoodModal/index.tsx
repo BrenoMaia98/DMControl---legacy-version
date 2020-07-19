@@ -1,0 +1,69 @@
+import React from 'react';
+
+import { FlatList, Text } from 'react-native';
+import {
+  ModalContainer,
+  TitleText,
+  TitleInput,
+  InputText,
+  FoodName,
+  Content,
+  FoodRow,
+} from './styles';
+import { SelectFoodModalProps, mockFoodData } from './types';
+import { FoodDTO } from '../../Database';
+import Strings from '../../Constants/Texts/Strings';
+
+const SelectFoodModal: React.FC<SelectFoodModalProps> = ({
+  visible,
+  selectedFood,
+  onClose,
+}) => {
+  const [inputValue, setInputValue] = React.useState<string>('Batata');
+  const [foodData, setFoodData] = React.useState<FoodDTO[]>([]);
+  const componentLanguage = Strings.Components.SelectFoodModal.English;
+  const { InputLabel, Title } = componentLanguage;
+
+  React.useEffect(() => {
+    setFoodData((JSON.parse(mockFoodData) as FoodDTO[]) || []);
+  }, []);
+
+  React.useEffect(() => {
+    setInputValue(selectedFood || '');
+  }, [selectedFood]);
+
+  return (
+    <>
+      {visible && (
+        <ModalContainer>
+          <Content>
+            <TitleText>{Title}</TitleText>
+            <InputText>{InputLabel}</InputText>
+            <TitleInput
+              value={inputValue}
+              onChangeText={(value) => {
+                setInputValue(value);
+              }}
+            />
+
+            <FlatList
+              data={foodData}
+              renderItem={({ item }) => (
+                <FoodRow
+                  onPress={() => {
+                    onClose();
+                  }}
+                >
+                  <FoodName>{item.foodName}</FoodName>
+                </FoodRow>
+              )}
+              keyExtractor={(item, index) => `${item}-${index}`}
+            />
+          </Content>
+        </ModalContainer>
+      )}
+    </>
+  );
+};
+
+export default SelectFoodModal;
