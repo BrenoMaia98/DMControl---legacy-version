@@ -68,10 +68,10 @@ const InsulinDosage: React.FC<Props> = ({ navigation }) => {
     <View style={{ height: Dimensions.get('screen').height }}>
       <TitleBar
         header={Header}
-        titleIcon={IconEnum.GoBook}
+        titleIcon={IconEnum.Pill}
         screenActionProps={{
           buttonProps: {
-            iconLeft: IconEnum.GiPill,
+            iconLeft: IconEnum.Pill,
             iconSize: 'md',
             onPress: () => navigation.navigate('Menu'),
             text: ButtonActionScreen,

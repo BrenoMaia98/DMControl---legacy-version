@@ -3,7 +3,7 @@ import { Row } from 'native-base';
 import { ColorPalette } from '../../Constants/ColorPalette';
 
 export const ContainerQuestion = styled.View<{ bgc?: string }>`
-  background-color: ${(props) => props.bgc || '#fff'};
+  background-color: ${(props) => props.bgc || ColorPalette.lightGray};
   border-bottom-width: 1px;
   border-top-width: 1px;
   border-bottom-color: ${ColorPalette.gray};
@@ -12,7 +12,7 @@ export const ContainerQuestion = styled.View<{ bgc?: string }>`
 `;
 
 export const TextInputQuestion01 = styled.TextInput.attrs(() => ({
-  placeholderTextColor: '#ccc',
+  placeholderTextColor: ColorPalette.lightGray,
 }))`
   font-size: 18px;
   max-width: 70%;
@@ -43,7 +43,7 @@ export const RowQuestionTime = styled(RowQuestion)`
 
 export const RowQuestionTimeBorderBottom = styled(RowQuestionTime)`
   border-bottom-width: 2px;
-  border-bottom-color: #ccc;
+  border-bottom-color: ${ColorPalette.lightGray};
 `;
 
 export const QuestionTextOption = styled.Text`

@@ -6,6 +6,6 @@ export interface DefaultButtonProps {
   iconSize?: ComponentSize;
   buttonSize?: 'fit' | 'large';
   text: string;
-  fontSizeEm?: number;
+  fontSizePx?: number;
   onPress(): void;
 }

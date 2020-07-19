@@ -6,6 +6,7 @@ import { IconEnum } from '../../Utils/PickIcon/types';
 import PickIcon from '../../Utils/PickIcon';
 import ScreenAction, { ScreenActionProps } from './ScreenAction';
 import { Divider } from '../Divider';
+import { ColorPalette } from '../../Constants/ColorPalette';
 
 interface TitleBarProps {
   titleIcon: IconEnum;
@@ -34,7 +35,12 @@ const TitleBar: React.FC<TitleBarProps> = ({
               alignItems: 'center',
             }}
           >
-            {titleIcon && PickIcon({ iconType: titleIcon, size: 'lg' })}
+            {titleIcon &&
+              PickIcon({
+                iconType: titleIcon,
+                size: 'lg',
+                colorIcon: ColorPalette.gray,
+              })}
             <Title>{header.Title}</Title>
           </RowAligned>
           <Subtitle>{header.Subtitle}</Subtitle>
@@ -46,7 +52,11 @@ const TitleBar: React.FC<TitleBarProps> = ({
               return true;
             }}
           >
-            {PickIcon({ iconType: IconEnum.MdHelp, size: 'md' })}
+            {PickIcon({
+              iconType: IconEnum.Help,
+              size: 'md',
+              colorIcon: ColorPalette.gray,
+            })}
           </TouchableOpacity>
         </RowAligned>
       </ContainerTitleBar>

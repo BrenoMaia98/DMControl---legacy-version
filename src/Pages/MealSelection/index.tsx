@@ -120,10 +120,10 @@ const MealSelection: React.FC<MealSelectionProps> = ({ navigation }) => {
     <View>
       <TitleBar
         header={Header}
-        titleIcon={IconEnum.FaAppleAlt}
+        titleIcon={IconEnum.Apple}
         screenActionProps={{
           buttonProps: {
-            iconLeft: IconEnum.AiOutlinePlusCircle,
+            iconLeft: IconEnum.PlusCircle,
             iconSize: 'md',
             onPress: () =>
               navigation.navigate('FoodSelection', { foodData: [] }),

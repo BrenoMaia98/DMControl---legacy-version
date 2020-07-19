@@ -28,7 +28,7 @@ const Login: React.FC<Props> = ({ navigation }) => {
   } = languageScreen;
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <IconButton defaultIcon={IconEnum.FiEdit} onPress={() => {}} />
+      <IconButton defaultIcon={IconEnum.Edit} onPress={() => {}} />
       <DefaultButton
         text={LoginBtn}
         buttonSize="large"

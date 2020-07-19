@@ -95,7 +95,7 @@ const FoodSelection: React.FC<FoodSelectionPageProps> = ({
         <Col>
           <IconButton
             onPress={() => deleteFoodAtIndex(index)}
-            defaultIcon={IconEnum.MdDelete}
+            defaultIcon={IconEnum.Delete}
             IconColor={ColorPalette.red}
           />
         </Col>
@@ -163,10 +163,10 @@ const FoodSelection: React.FC<FoodSelectionPageProps> = ({
     <View style={{ height: Dimensions.get('screen').height }}>
       <TitleBar
         header={Header}
-        titleIcon={IconEnum.GoBook}
+        titleIcon={IconEnum.Book}
         screenActionProps={{
           buttonProps: {
-            iconLeft: IconEnum.AiOutlinePlusCircle,
+            iconLeft: IconEnum.PlusCircle,
             iconSize: 'md',
             onPress: () => navigation.navigate('FinalQuestions'),
             text: ButtonActionScreen,
@@ -199,7 +199,7 @@ const FoodSelection: React.FC<FoodSelectionPageProps> = ({
             setVisible(true);
           }}
           IconColor={ColorPalette.green}
-          defaultIcon={IconEnum.AiOutlinePlusCircle}
+          defaultIcon={IconEnum.PlusCircle}
           size="lg"
         />
       </JustifyCenter>

@@ -1,79 +1,218 @@
 import React from 'react';
-import { GiPill, GiMeal, GiHotMeal } from 'react-icons/gi';
-import { GoGraph, GoPencil, GoBook, GoSearch } from 'react-icons/go';
-import { BsPersonFill } from 'react-icons/bs';
-import { AiOutlinePlusCircle } from 'react-icons/ai';
-import { FiEdit } from 'react-icons/fi';
-import {
-  MdHelp,
-  MdDelete,
-  MdSave,
-  MdClose,
-  MdRestaurantMenu,
-} from 'react-icons/md';
-import { GrDocumentText, GrApple } from 'react-icons/gr';
-import { FaArrowLeft } from 'react-icons/fa';
+import { Icon } from 'native-base';
 import { IconEnum } from './types';
 import { ComponentSize } from '../ComponentSize';
 
 type PickIconParam = {
   iconType: IconEnum;
+  colorIcon?: string;
   size?: ComponentSize;
 };
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-const PickIcon = ({ iconType, size }: PickIconParam) => {
+const PickIcon = ({ iconType, size, colorIcon }: PickIconParam) => {
   const pickIconFunction = () => {
     let sizeProps;
     switch (size) {
       case 'sm':
-        sizeProps = '1em';
+        sizeProps = 16;
         break;
       case 'lg':
-        sizeProps = '3em';
+        sizeProps = 48;
         break;
       case 'md':
       default:
-        sizeProps = '2em';
+        sizeProps = 32;
         break;
     }
     switch (iconType) {
-      case IconEnum.GiPill:
-        return <GiPill size={sizeProps} />;
-      case IconEnum.GiHotMeal:
-        return <GiHotMeal size={sizeProps} />;
-      case IconEnum.GoGraph:
-        return <GoGraph size={sizeProps} />;
-      case IconEnum.GoPencil:
-        return <GoPencil size={sizeProps} />;
-      case IconEnum.GoBook:
-        return <GoBook size={sizeProps} />;
-      case IconEnum.GoSearch:
-        return <GoSearch size={sizeProps} />;
-      case IconEnum.GiMeal:
-        return <GiMeal size={sizeProps} />;
-      case IconEnum.BsPersonFill:
-        return <BsPersonFill size={sizeProps} />;
-      case IconEnum.AiOutlinePlusCircle:
-        return <AiOutlinePlusCircle size={sizeProps} />;
-      case IconEnum.FiEdit:
-        return <FiEdit size={sizeProps} />;
-      case IconEnum.MdHelp:
-        return <MdHelp size={sizeProps} />;
-      case IconEnum.MdDelete:
-        return <MdDelete size={sizeProps} />;
-      case IconEnum.MdSave:
-        return <MdSave size={sizeProps} />;
-      case IconEnum.MdRestaurantMenu:
-        return <MdRestaurantMenu size={sizeProps} />;
-      case IconEnum.MdClose:
-        return <MdClose size={sizeProps} />;
-      case IconEnum.GrDocumentText:
-        return <GrDocumentText size={sizeProps} />;
-      case IconEnum.FaArrowLeft:
-        return <FaArrowLeft size={sizeProps} />;
-      case IconEnum.FaAppleAlt:
-        return <GrApple size={sizeProps} />;
+      case IconEnum.Pill:
+        return (
+          <Icon
+            type="MaterialCommunityIcons"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="pill"
+          />
+        );
+      case IconEnum.Graph:
+        return (
+          <Icon
+            type="Entypo"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="area-graph"
+          />
+        );
+      case IconEnum.Pencil:
+        return (
+          <Icon
+            type="FontAwesome"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="pencil"
+          />
+        );
+      case IconEnum.Book:
+        return (
+          <Icon
+            type="Feather"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="book-open"
+          />
+        );
+      case IconEnum.Search:
+        return (
+          <Icon
+            type="EvilIcons"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="search"
+          />
+        );
+      case IconEnum.Meal:
+        return (
+          <Icon
+            type="MaterialCommunityIcons"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="food"
+          />
+        );
+      case IconEnum.Person:
+        return (
+          <Icon
+            type="MaterialIcons"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="person-outline"
+          />
+        );
+      case IconEnum.PlusCircle:
+        return (
+          <Icon
+            type="Feather"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="plus-circle"
+          />
+        );
+      case IconEnum.Edit:
+        return (
+          <Icon
+            type="Feather"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="edit"
+          />
+        );
+      case IconEnum.Help:
+        return (
+          <Icon
+            type="Ionicons"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="help-circle"
+          />
+        );
+      case IconEnum.Delete:
+        return (
+          <Icon
+            type="AntDesign"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="delete"
+          />
+        );
+      case IconEnum.Save:
+        return (
+          <Icon
+            type="Feather"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="save"
+          />
+        );
+      case IconEnum.RestaurantMenu:
+        return (
+          <Icon
+            type="MaterialCommunityIcons"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="silverware-fork-knife"
+          />
+        );
+      case IconEnum.Close:
+        return (
+          <Icon
+            type="MaterialCommunityIcons"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="close"
+          />
+        );
+      case IconEnum.DocumentText:
+        return (
+          <Icon
+            type="Ionicons"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="document-text-outline"
+          />
+        );
+      case IconEnum.ArrowLeft:
+        return (
+          <Icon
+            type="Entypo"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="arrow-left"
+          />
+        );
+      case IconEnum.Apple:
+        return (
+          <Icon
+            type="MaterialCommunityIcons"
+            style={{
+              fontSize: sizeProps,
+              color: colorIcon || '#fff',
+            }}
+            name="food-apple"
+          />
+        );
       default:
         return null;
     }

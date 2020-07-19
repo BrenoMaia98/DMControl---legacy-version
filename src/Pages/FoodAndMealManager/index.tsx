@@ -119,10 +119,10 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
     <View>
       <TitleBar
         header={Header}
-        titleIcon={IconEnum.GiMeal}
+        titleIcon={IconEnum.Meal}
         screenActionProps={{
           buttonProps: {
-            iconLeft: IconEnum.AiOutlinePlusCircle,
+            iconLeft: IconEnum.PlusCircle,
             iconSize: 'md',
             onPress: () => navigation.navigate('CreateAndEditMeal'),
             text: ButtonActionScreen,
@@ -132,7 +132,7 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
       />
       <InstructionText>
         {Instruction1}
-        {PickIcon({ iconType: IconEnum.FiEdit, size: 'sm' })}
+        {PickIcon({ iconType: IconEnum.Edit, size: 'sm' })}
         {Instruction2}
       </InstructionText>
       <ExpansiveMealPreview

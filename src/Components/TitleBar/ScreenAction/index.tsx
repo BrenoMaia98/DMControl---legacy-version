@@ -21,7 +21,7 @@ const ScreenAction: React.FC<ScreenActionProps> = ({
       {navigateForBackButton && (
         <IconButton
           onPress={() => navigateForBackButton.pop()}
-          defaultIcon={IconEnum.FaArrowLeft}
+          defaultIcon={IconEnum.ArrowLeft}
           IconColor={ColorPalette.gray}
           size="md"
         />
