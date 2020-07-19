@@ -6,6 +6,8 @@
   Diabetes Melittus helper
 </h4>
 
+![MenuIcon](https://github.com/BrenoMaia98/DMControl/blob/Bug%2FIconFix/README%20Images/MenuOptions.png)
+
 ## :bulb:	Main Features
 This pre-version of the app contain statically the main features:
  - Register new Base Meal
@@ -46,14 +48,15 @@ For this app version, it's reccommended to execute in expo web browser.
 
 To do so, you need to start pressing an web server like the image bellow:
 
-[]
+![RunWebBrowser](https://github.com/BrenoMaia98/DMControl/blob/Bug%2FIconFix/README%20Images/RunInWebBrowser.png)
 
 to have a better perspective, it's reccomended to view App in Mobile version in your web browser. 
 
   - mouse right-click
   - Inspect or inspect elements
   - toggle mobile vision 
-    [] image
+  
+![ToggleMobile](https://github.com/BrenoMaia98/DMControl/blob/Bug%2FIconFix/README%20Images/ActivateMabileVision.png)
   
 ---
 
