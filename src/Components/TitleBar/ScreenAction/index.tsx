@@ -9,7 +9,7 @@ import { ColorPalette } from '../../../Constants/ColorPalette';
 
 export interface ScreenActionProps {
   buttonProps?: DefaultButtonProps;
-  navigateForBackButton: any;
+  navigateForBackButton?: any;
 }
 
 const ScreenAction: React.FC<ScreenActionProps> = ({
@@ -17,7 +17,7 @@ const ScreenAction: React.FC<ScreenActionProps> = ({
   navigateForBackButton,
 }) => {
   return (
-    <ScreenActionContainer>
+    <ScreenActionContainer hasBoth={!!(navigateForBackButton && buttonProps)}>
       {navigateForBackButton && (
         <IconButton
           onPress={() => navigateForBackButton.pop()}

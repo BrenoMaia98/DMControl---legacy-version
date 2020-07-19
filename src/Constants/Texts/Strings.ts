@@ -10,6 +10,8 @@ import FoodAndMealManagerENUS from './English/FoodAndMealManagerENUS';
 import FoodSelectionENUS from './English/FoodSelectionENUS';
 // import MealSelectionPTBR from './Portuguese/MealSelectionPTBR';
 import MealSelectionENUS from './English/MealSelectionENUS';
+// import InsulinDosagePTBR from './Portuguese/InsulinDosagePTBR';
+import InsulinDosageENUS from './English/InsulinDosageENUS';
 // import MenuPTBR from './Portuguese/MenuPTBR';
 import MenuENUS from './English/MenuENUS';
 import SelectFoodModalENUS from './English/Components/SelectFoodENUS';
@@ -27,6 +29,10 @@ const Strings = {
   FinalQuestions: {
     // Portuguese: FinalQuestionsPTBR,
     English: FinalQuestionsENUS,
+  },
+  InsulinDosage: {
+    // Portuguese: InsulinDosagePTBR,
+    English: InsulinDosageENUS,
   },
   FoodAndMealManager: {
     // Portuguese: FoodAndMealManagerPTBR,

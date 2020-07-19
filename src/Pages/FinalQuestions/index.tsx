@@ -60,7 +60,7 @@ const FinalQuestions: React.FC<Props> = ({ navigation }) => {
           buttonProps: {
             iconLeft: IconEnum.GiPill,
             iconSize: 'md',
-            onPress: () => navigation.navigate('InProgress'),
+            onPress: () => navigation.navigate('InsulinDosage'),
             text: ButtonActionScreen,
           },
           navigateForBackButton: navigation,
