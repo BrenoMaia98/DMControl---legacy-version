@@ -25,7 +25,7 @@ const SelectFoodModal: React.FC<SelectFoodModalProps> = ({
   const { InputLabel, Title } = componentLanguage;
 
   React.useEffect(() => {
-    setFoodData(JSON.parse(mockFoodData) as FoodDTO[]);
+    setFoodData((JSON.parse(mockFoodData) as FoodDTO[]) || []);
   }, []);
 
   React.useEffect(() => {
@@ -35,19 +35,14 @@ const SelectFoodModal: React.FC<SelectFoodModalProps> = ({
   return (
     <>
       {visible && (
-        <ModalContainer
-          onPress={() => {
-            onClose();
-          }}
-        >
+        <ModalContainer>
           <Content>
             <TitleText>{Title}</TitleText>
             <InputText>{InputLabel}</InputText>
             <TitleInput
               value={inputValue}
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              onChange={({ currentTarget }: any) => {
-                setInputValue(String(currentTarget.value));
+              onChangeText={(value) => {
+                setInputValue(value);
               }}
             />
 

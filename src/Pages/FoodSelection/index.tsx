@@ -29,7 +29,7 @@ const FoodSelection: React.FC<FoodSelectionPageProps> = ({
   const [visible, setVisible] = React.useState<boolean>(false);
 
   React.useEffect(() => {
-    const foods = route.params.foodData || [
+    const foods = route.params?.foodData || [
       {
         foodName: 'Pizza Cheese',
         measure: '-',

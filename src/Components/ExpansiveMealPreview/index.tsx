@@ -8,7 +8,7 @@ import {
   FoodNamesContainer,
   FoodName,
   CustomAccordion,
-  TitleRow,
+  BorderTopFoodItem,
 } from './styles';
 import IconButton from '../IconButton';
 import { ColorPalette } from '../../Constants/ColorPalette';
@@ -22,10 +22,10 @@ const ExpansiveMealPreview: React.FC<ExpansiveMealPreviewProps> = ({
 }) => {
   const renderExpansive = (item: MealDataDTO) => {
     return (
-      <Container>
+      <Container onPress={() => onEdit(item)}>
         <RowAlignLeft>
           <IconButton
-            onPress={() => onDelete()}
+            onPress={() => onDelete(item.title)}
             IconColor={ColorPalette.red}
             defaultIcon={IconEnum.MdDelete}
             size="md"
@@ -37,9 +37,15 @@ const ExpansiveMealPreview: React.FC<ExpansiveMealPreviewProps> = ({
           />
         </RowAlignLeft>
         <FoodNamesContainer>
-          {item.foods.map((food) => (
-            <FoodName>{food.foodName}</FoodName>
-          ))}
+          {item.foods.map((food, index) => {
+            if (index !== 0)
+              return (
+                <BorderTopFoodItem>
+                  <FoodName>{food.foodName}</FoodName>
+                </BorderTopFoodItem>
+              );
+            return <FoodName>{food.foodName}</FoodName>;
+          })}
         </FoodNamesContainer>
       </Container>
     );

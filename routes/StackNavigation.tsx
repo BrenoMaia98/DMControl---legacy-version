@@ -18,7 +18,7 @@ export type StackProps = {
   Login: undefined;
   Menu: undefined;
   FoodAndMealManager: undefined;
-  CreateAndEditMeal: { meal?: MealDataDTO[] } | undefined;
+  CreateAndEditMeal: { meal?: MealDataDTO } | undefined;
   MealSelection: undefined;
   FoodSelection: FoodSelectionRouteParams;
   FinalQuestions: undefined;
@@ -28,7 +28,7 @@ export type StackProps = {
 const Stack = createStackNavigator<StackProps>();
 const StackNavigation = (): JSX.Element => {
   return (
-    <Stack.Navigator initialRouteName="InsulinDosage" headerMode="none">
+    <Stack.Navigator initialRouteName="Login" headerMode="none">
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="Menu" component={Menu} />
       <Stack.Screen name="FoodAndMealManager" component={FoodAndMealManager} />

@@ -6,7 +6,8 @@ import TitleBar from '../../Components/TitleBar';
 import PickIcon from '../../Utils/PickIcon';
 import { InstructionText } from './styles';
 import ExpansiveMealPreview from '../../Components/ExpansiveMealPreview';
-import { MealData, FoodAndMealManagerProps } from './types';
+import { FoodAndMealManagerProps } from './types';
+import { MealDataDTO } from '../MealSelection/types';
 
 const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
   navigation,
@@ -19,7 +20,7 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
     Instruction2,
   } = languageScreen;
 
-  const [mealData, setMealData] = React.useState<MealData[]>([]);
+  const [mealData, setMealData] = React.useState<MealDataDTO[]>([]);
 
   React.useEffect(() => {
     setTimeout(() => {
@@ -121,6 +122,8 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
         titleIcon={IconEnum.GiMeal}
         screenActionProps={{
           buttonProps: {
+            iconLeft: IconEnum.AiOutlinePlusCircle,
+            iconSize: 'md',
             onPress: () => navigation.navigate('CreateAndEditMeal'),
             text: ButtonActionScreen,
           },
@@ -133,10 +136,14 @@ const FoodAndMealManager: React.FC<FoodAndMealManagerProps> = ({
         {Instruction2}
       </InstructionText>
       <ExpansiveMealPreview
-        onEdit={(meal: MealData) => {
+        onEdit={(meal: MealDataDTO) => {
           navigation.navigate('CreateAndEditMeal', { meal });
         }}
-        onDelete={() => {}}
+        onDelete={(mealTitle: string) => {
+          setMealData(
+            mealData.filter((mealitem) => mealitem.title !== mealTitle)
+          );
+        }}
         meals={mealData}
       />
     </View>

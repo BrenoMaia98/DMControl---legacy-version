@@ -9,8 +9,3 @@ export type ProfileScreenNavigationProp = StackNavigationProp<
 
 export interface FoodAndMealManagerProps {
   navigation: ProfileScreenNavigationProp;
-}
-export interface MealData {
-  title: string;
-  foodNames: FoodDTO[];
-}
