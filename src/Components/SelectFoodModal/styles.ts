@@ -1,10 +1,10 @@
 import styled from 'styled-components/native';
 import { Input } from 'native-base';
+import { Dimensions } from 'react-native';
 import { ColorPalette } from '../../Constants/ColorPalette';
 
-export const ModalContainer = styled.TouchableOpacity`
-  height: 100%;
-  width: 100%;
+export const ModalContainer = styled.View`
+  height: ${Dimensions.get('screen').height}px;
   align-items: center;
   justify-content: center;
   position: absolute;

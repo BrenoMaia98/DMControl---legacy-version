@@ -2,29 +2,27 @@ import React from 'react';
 import { View, Alert } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
 
+import { RouteProp } from '@react-navigation/native';
 import { StackProps } from '../../../routes/StackNavigation';
 import TitleBar from '../../Components/TitleBar';
 import Strings from '../../Constants/Texts/Strings';
 import { IconEnum } from '../../Utils/PickIcon/types';
 import SearchBar from '../../Components/SearchBar';
 import FoodEditTable from '../../Components/FoodEditTable';
-import { foodRowsDTO } from '../../Components/FoodEditTable/types';
 import SelectFoodModal from '../../Components/SelectFoodModal';
-import { MealData } from '../FoodAndMealManager/types';
 import { FoodDTO } from '../../Database';
 
-type ProfileScreenNavigationProp = StackNavigationProp<
-  StackProps,
-  'CreateAndEditMeal'
->;
+type stackNavigationProp = StackNavigationProp<StackProps, 'CreateAndEditMeal'>;
+
+type routeProps = RouteProp<StackProps, 'CreateAndEditMeal'>;
 
 export interface CreateAndEditMealProps {
-  meal: MealData;
-  navigation: ProfileScreenNavigationProp;
+  navigation: stackNavigationProp;
+  route: routeProps;
 }
 
 const CreateAndEditMeal: React.FC<CreateAndEditMealProps> = ({
-  meal,
+  route,
   navigation,
 }) => {
   const languageScreen = Strings.CreateAndEditMeal.English;
@@ -42,29 +40,31 @@ const CreateAndEditMeal: React.FC<CreateAndEditMealProps> = ({
   const [foodRows, setFoodRows] = React.useState<FoodDTO[]>([]);
   const [visible, setVisible] = React.useState<boolean>(false);
   React.useEffect(() => {
-    const mockData: FoodDTO[] = [
-      {
-        foodName: 'Bread and Butter',
-        measure: 'unit',
-        cho: 1,
-        kcal: 1,
-        volumeMlOrGram: '-',
-      },
-      {
-        foodName: 'Chocolate Milk',
-        measure: '350ml',
-        cho: 1,
-        kcal: 1,
-        volumeMlOrGram: '-',
-      },
-      {
-        foodName: 'Eggs and Bacon',
-        measure: '-',
-        cho: 1,
-        kcal: 1,
-        volumeMlOrGram: '-',
-      },
-    ];
+    const mockData: FoodDTO[] =
+      route.params?.meal?.foods ||
+      [
+        // {
+        //   foodName: 'Bread and Butter',
+        //   measure: 'unit',
+        //   cho: 1,
+        //   kcal: 1,
+        //   volumeMlOrGram: '-',
+        // },
+        // {
+        //   foodName: 'Chocolate Milk',
+        //   measure: '350ml',
+        //   cho: 1,
+        //   kcal: 1,
+        //   volumeMlOrGram: '-',
+        // },
+        // {
+        //   foodName: 'Eggs and Bacon',
+        //   measure: '-',
+        //   cho: 1,
+        //   kcal: 1,
+        //   volumeMlOrGram: '-',
+        // },
+      ];
     setFoodRows(mockData);
   }, []);
 
@@ -92,14 +92,16 @@ const CreateAndEditMeal: React.FC<CreateAndEditMealProps> = ({
   return (
     <View>
       <TitleBar
-        header={meal ? EditHeader : CreateHeader}
+        header={route.params?.meal ? EditHeader : CreateHeader}
         titleIcon={IconEnum.FaAppleAlt}
         screenActionProps={{
           buttonProps: {
             iconSize: 'md',
             iconLeft: IconEnum.MdSave,
             onPress: () => navigation.navigate('FoodAndMealManager'),
-            text: meal ? EditButtonActionScreen : CreateButtonActionScreen,
+            text: route.params?.meal
+              ? EditButtonActionScreen
+              : CreateButtonActionScreen,
           },
           navigateForBackButton: navigation,
         }}
