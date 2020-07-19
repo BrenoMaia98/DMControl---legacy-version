@@ -1,13 +1,6 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  Dimensions,
-  ScrollView,
-  TextInput,
-  CheckBox,
-} from 'react-native';
-import { Button, Radio, Row } from 'native-base';
+import { View, Text, Dimensions, CheckBox } from 'react-native';
+import { Radio, Row } from 'native-base';
 import { StackNavigationProp } from '@react-navigation/stack';
 
 import { StackProps } from '../../../routes/StackNavigation';
@@ -15,7 +8,18 @@ import TitleBar from '../../Components/TitleBar';
 import Strings from '../../Constants/Texts/Strings';
 import { ColorPalette } from '../../Constants/ColorPalette';
 import { IconEnum } from '../../Utils/PickIcon/types';
-import { InputText } from '../../Components/SelectFoodModal/styles';
+import {
+  ContainerQuestion,
+  TextInputQuestion01,
+  RowQuestion,
+  QuestionTextOption,
+  QuestionText,
+  InputLabel,
+  TextInputQuestion02,
+  RowAlign,
+  RowQuestionTimeBorderBottom,
+  RowQuestionTime,
+} from './styles';
 
 type ProfileScreenNavigationProp = StackNavigationProp<
   StackProps,
@@ -25,10 +29,28 @@ type ProfileScreenNavigationProp = StackNavigationProp<
 type Props = {
   navigation: ProfileScreenNavigationProp;
 };
+type InsulinInputs = {
+  checked: boolean;
+  units: string;
+  hoursAgo: string;
+  minutesAgo: string;
+};
 
 const FinalQuestions: React.FC<Props> = ({ navigation }) => {
   const languageScreen = Strings.FinalQuestions.English;
   const { ButtonActionScreen, Header, Question01, Question02 } = languageScreen;
+  const [fastInsulin, setFastInsulin] = React.useState<InsulinInputs>({
+    checked: false,
+    hoursAgo: '',
+    minutesAgo: '',
+    units: '',
+  });
+  const [slowInsulin, setSlowInsulin] = React.useState<InsulinInputs>({
+    checked: false,
+    hoursAgo: '',
+    minutesAgo: '',
+    units: '',
+  });
   return (
     <View style={{ height: Dimensions.get('screen').height }}>
       <TitleBar
@@ -36,7 +58,7 @@ const FinalQuestions: React.FC<Props> = ({ navigation }) => {
         titleIcon={IconEnum.GoBook}
         screenActionProps={{
           buttonProps: {
-            iconLeft: IconEnum.AiOutlinePlusCircle,
+            iconLeft: IconEnum.GiPill,
             iconSize: 'md',
             onPress: () => navigation.navigate('InProgress'),
             text: ButtonActionScreen,
@@ -44,153 +66,103 @@ const FinalQuestions: React.FC<Props> = ({ navigation }) => {
           navigateForBackButton: navigation,
         }}
       />
-      <ScrollView style={{ flex: 1 }}>
-        <View
-          style={{
-            backgroundColor: '#DFE6ED',
-            borderBottomWidth: 1,
-            borderTopWidth: 1,
-            borderBottomColor: ColorPalette.gray,
-            borderTopColor: ColorPalette.gray,
-            padding: 10,
-          }}
-        >
-          <Text
-            style={{
-              color: ColorPalette.gray,
-              fontSize: 24,
-              textAlign: 'center',
-            }}
-          >
-            {Question01.title}
-          </Text>
+      <ContainerQuestion bgc="#dfe6ed">
+        <QuestionText>{Question01.title}</QuestionText>
 
-          <Row style={{ alignItems: 'center', justifyContent: 'space-around' }}>
-            <Row
-              style={{
-                alignItems: 'center',
-                justifyContent: 'center',
-                flex: 1,
-              }}
-            >
-              <Text style={{ fontSize: 16, paddingRight: 5 }}>
-                {Question01.option01}
-              </Text>
+        <Row>
+          <RowQuestion>
+            <Row>
+              <QuestionTextOption>{Question01.option01}</QuestionTextOption>
               <Radio selected onPress={() => {}} />
-              <TextInput
-                placeholder={Question01.placeholderOption01}
-                style={{
-                  fontSize: 18,
-                  maxWidth: '70%',
-                  margin: 5,
-                  padding: 5,
-                  borderWidth: 1,
-                  borderColor: ColorPalette.gray,
-                  backgroundColor: '#fff',
-                }}
-              />
             </Row>
-            <Row style={{ alignItems: 'center', justifyContent: 'center' }}>
-              <Text style={{ fontSize: 16 }}>{Question01.option02}</Text>
-              <Radio selected={false} onPress={() => {}} />
-            </Row>
-          </Row>
-        </View>
-        <View
-          style={{
-            borderBottomWidth: 1,
-            borderTopWidth: 1,
-            borderBottomColor: ColorPalette.gray,
-            borderTopColor: ColorPalette.gray,
-            padding: 10,
-          }}
-        >
-          <Text
-            style={{
-              color: ColorPalette.gray,
-              fontSize: 24,
-              textAlign: 'center',
-            }}
-          >
-            {Question02.title}
-          </Text>
+            <TextInputQuestion01 placeholder={Question01.placeholderOption01} />
+          </RowQuestion>
+          <RowQuestion center>
+            <QuestionTextOption>{Question01.option02}</QuestionTextOption>
+            <Radio selected={false} onPress={() => {}} />
+          </RowQuestion>
+        </Row>
+      </ContainerQuestion>
+      <ContainerQuestion>
+        <QuestionText>{Question02.title}</QuestionText>
 
-          <View
-            style={{ alignItems: 'center', justifyContent: 'space-around' }}
-          >
-            <Row
-              style={{
-                width: '100%',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            >
+        <View style={{ alignItems: 'center', justifyContent: 'space-around' }}>
+          <RowQuestion>
+            <Row>
               <CheckBox
-                style={{ height: 24, width: 24, paddingRight: 5 }}
-                value
-              />
-              <Text style={{ fontSize: 12, paddingRight: 5 }}>
-                {Question02.option01}
-              </Text>
-              <Text style={{ marginLeft: 30, fontSize: 12, paddingRight: 5 }}>
-                {Question02.Units}
-              </Text>
-              <TextInput
-                placeholder={Question01.placeholderOption01}
-                style={{
-                  fontSize: 18,
-                  maxWidth: '70%',
-                  margin: 5,
-                  padding: 5,
-                  borderWidth: 1,
-                  borderColor: ColorPalette.gray,
-                  backgroundColor: '#fff',
+                style={{ height: 24, width: 24 }}
+                value={fastInsulin.checked}
+                onValueChange={(checked) => {
+                  setFastInsulin({
+                    ...fastInsulin,
+                    checked,
+                  });
                 }}
               />
+              <QuestionTextOption>{Question02.option01}</QuestionTextOption>
             </Row>
-            <Row
-              style={{
-                width: '100%',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
+            {fastInsulin.checked && (
+              <Row>
+                <InputLabel>{Question02.Label01}</InputLabel>
+                <TextInputQuestion02
+                  placeholder={Question01.placeholderOption01}
+                />
+              </Row>
+            )}
+          </RowQuestion>
+          {fastInsulin.checked && (
+            <RowQuestionTimeBorderBottom>
+              <Row>
+                <InputLabel>{Question02.Label02}</InputLabel>
+                <TextInputQuestion02
+                  placeholder={Question01.placeholderOption01}
+                />
+              </Row>
+              <Row>
+                <InputLabel>{Question02.Label03}</InputLabel>
+                <TextInputQuestion02
+                  placeholder={Question01.placeholderOption01}
+                />
+              </Row>
+            </RowQuestionTimeBorderBottom>
+          )}
+          <RowQuestion>
+            <RowAlign
+              aligItems={slowInsulin.checked ? 'undefined' : 'flex-start'}
             >
               <CheckBox
-                style={{ height: 24, width: 24, paddingRight: 5 }}
-                value
-              />
-              <Text style={{ fontSize: 12, paddingRight: 5 }}>
-                {Question02.option02}
-              </Text>
-              <Text style={{ marginLeft: 30, fontSize: 12, paddingRight: 5 }}>
-                {Question02.Units}
-              </Text>
-              <TextInput
-                placeholder={Question01.placeholderOption01}
-                style={{
-                  fontSize: 18,
-                  maxWidth: '70%',
-                  margin: 5,
-                  padding: 5,
-                  borderWidth: 1,
-                  borderColor: ColorPalette.gray,
-                  backgroundColor: '#fff',
+                style={{ height: 24, width: 24 }}
+                value={slowInsulin.checked}
+                onValueChange={(checked) => {
+                  setSlowInsulin({
+                    ...slowInsulin,
+                    checked,
+                  });
                 }}
               />
-            </Row>
-          </View>
+              <QuestionTextOption>{Question02.option02}</QuestionTextOption>
+            </RowAlign>
+            {slowInsulin.checked && (
+              <Row>
+                <InputLabel>{Question02.Label01}</InputLabel>
+                <TextInputQuestion02 placeholder={Question02.placeholder01} />
+              </Row>
+            )}
+          </RowQuestion>
+          {slowInsulin.checked && (
+            <RowQuestionTime>
+              <Row>
+                <InputLabel>{Question02.Label02}</InputLabel>
+                <TextInputQuestion02 placeholder={Question02.placeholder02} />
+              </Row>
+              <Row>
+                <InputLabel>{Question02.Label03}</InputLabel>
+                <TextInputQuestion02 placeholder={Question02.placeholder03} />
+              </Row>
+            </RowQuestionTime>
+          )}
         </View>
-        <Text
-          style={{
-            flex: 1,
-            textAlign: 'center',
-            color: ColorPalette.purple,
-            fontSize: 32,
-          }}
-        >
-          WORK IN PROGRESS
-        </Text>
-      </ScrollView>
+      </ContainerQuestion>
     </View>
   );
 };

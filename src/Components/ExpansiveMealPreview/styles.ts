@@ -23,7 +23,7 @@ export const FoodNamesContainer = styled.View`
 export const FoodName = styled.Text`
   text-decoration: underline;
   text-decoration-color: ${ColorPalette.gray};
-  font-size: 1.2em;
+  font-size: 19px;
 `;
 
 export const CustomAccordion = styled(Accordion)`
@@ -36,7 +36,7 @@ export const TitleRow = styled.View`
   margin: 16px 8px;
   flex-direction: row;
   text-align: center;
-  font-size: 2em;
+  font-size: 32px;
   background-color: #fff;
   border: 1px solid ${ColorPalette.gray};
 `;

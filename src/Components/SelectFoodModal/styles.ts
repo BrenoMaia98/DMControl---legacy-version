@@ -11,19 +11,19 @@ export const ModalContainer = styled.TouchableOpacity`
 `;
 
 export const TitleText = styled.Text`
-  font-size: 1.2em;
+  font-size: 19px;
   font-weight: bolder;
   padding: 4px;
 `;
 export const InputText = styled.Text`
-  font-size: 1em;
+  font-size: 16px;
   font-weight: bolder;
   text-align: left;
   padding: 4px;
 `;
 export const TitleInput = styled(Input)`
   border: 1px solid ${ColorPalette.gray};
-  font-size: 1.2em;
+  font-size: 19px;
   padding: 4px;
 `;
 export const FoodRow = styled.TouchableOpacity`
@@ -33,7 +33,7 @@ export const FoodRow = styled.TouchableOpacity`
   padding: 20px;
 `;
 export const FoodName = styled.Text`
-  font-size: 1.2em;
+  font-size: 19px;
   color: ${ColorPalette.gray};
   text-align: center;
 `;

@@ -12,7 +12,7 @@ import {
   MdRestaurantMenu,
 } from 'react-icons/md';
 import { GrDocumentText, GrApple } from 'react-icons/gr';
-import { FaArrowLeft, FaAppleAlt } from 'react-icons/fa';
+import { FaArrowLeft } from 'react-icons/fa';
 import { IconEnum } from './types';
 import { ComponentSize } from '../ComponentSize';
 
@@ -23,7 +23,6 @@ type PickIconParam = {
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const PickIcon = ({ iconType, size }: PickIconParam) => {
-  console.log({ iconType, size });
   const pickIconFunction = () => {
     let sizeProps;
     switch (size) {

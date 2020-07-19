@@ -54,7 +54,6 @@ const FoodSelection: React.FC<FoodSelectionPageProps> = ({
     ];
     setFoodData(foods);
     const selectedArray = Array(foods.length).fill('');
-    console.log({ selectedArray });
     setQuantity(selectedArray);
   }, []);
 

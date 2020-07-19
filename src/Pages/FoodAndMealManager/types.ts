@@ -1,5 +1,6 @@
 import { StackNavigationProp } from '@react-navigation/stack';
 import { StackProps } from '../../../routes/StackNavigation';
+import { FoodDTO } from '../../Database';
 
 export type ProfileScreenNavigationProp = StackNavigationProp<
   StackProps,
@@ -9,7 +10,7 @@ export type ProfileScreenNavigationProp = StackNavigationProp<
 export interface FoodAndMealManagerProps {
   navigation: ProfileScreenNavigationProp;
 }
-export interface MealPreviewData {
+export interface MealData {
   title: string;
-  foodNames: string[];
+  foodNames: FoodDTO[];
 }

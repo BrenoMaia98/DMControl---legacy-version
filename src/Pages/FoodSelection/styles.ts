@@ -10,7 +10,7 @@ export const OtherQuantityinput = styled(Input)`
 
 export const TableTitle = styled.Text`
   color: ${ColorPalette.gray};
-  font-size: 1.2em;
+  font-size: 19px;
   border-bottom-width: 1px;
   border-bottom-color: ${ColorPalette.gray};
 `;
