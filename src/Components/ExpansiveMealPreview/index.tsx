@@ -27,12 +27,12 @@ const ExpansiveMealPreview: React.FC<ExpansiveMealPreviewProps> = ({
           <IconButton
             onPress={() => onDelete(item.title)}
             IconColor={ColorPalette.red}
-            defaultIcon={IconEnum.MdDelete}
+            defaultIcon={IconEnum.Delete}
             size="md"
           />
           <IconButton
             onPress={() => onEdit(item)}
-            defaultIcon={IconEnum.FiEdit}
+            defaultIcon={IconEnum.Edit}
             size="md"
           />
         </RowAlignLeft>

@@ -13,12 +13,12 @@ export const ViewDefaultButton = styled.TouchableOpacity<IButtonSize>`
   border-radius: 4px;
   color: white;
   width: ${(props) =>
-    props.buttonSize && props.buttonSize === 'large' ? '80%' : 'max-content'};
+    props.buttonSize && props.buttonSize === 'large' ? '80%' : 'undefined'};
 `;
 
 export const TextDefaultButton = styled.Text<{ fontSize?: number }>`
   color: white;
   margin-left: 5px;
   font-weight: bold;
-  font-size: ${(props) => (props.fontSize ? `${props.fontSize}em` : '1em')};
+  font-size: ${(props) => (props.fontSize ? `${props.fontSize}px` : '16px')};
 `;

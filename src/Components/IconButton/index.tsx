@@ -23,12 +23,15 @@ const IconButton: React.FC<IconButtonProps> = ({
   size,
   onPress,
 }) => {
-  const icon = PickIcon({ iconType: defaultIcon, size });
+  const icon = PickIcon({
+    iconType: defaultIcon,
+    size,
+    colorIcon: IconColor || ColorPalette.gray,
+  });
 
   return (
     <Touchable
       onPress={() => onPress()}
-      color={IconColor || ColorPalette.gray}
       BackGroundColor={BackGroundColor || 'rgba(0,0,0,0)'}
       size={size || 'lg'}
     >

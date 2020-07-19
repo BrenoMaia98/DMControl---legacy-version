@@ -55,10 +55,10 @@ const FinalQuestions: React.FC<Props> = ({ navigation }) => {
     <View style={{ height: Dimensions.get('screen').height }}>
       <TitleBar
         header={Header}
-        titleIcon={IconEnum.GoBook}
+        titleIcon={IconEnum.Book}
         screenActionProps={{
           buttonProps: {
-            iconLeft: IconEnum.GiPill,
+            iconLeft: IconEnum.Pill,
             iconSize: 'md',
             onPress: () => navigation.navigate('InsulinDosage'),
             text: ButtonActionScreen,

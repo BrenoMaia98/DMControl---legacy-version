@@ -31,7 +31,7 @@ export const GreenText = styled(InfoText)`
 export const Quantity = styled.View`
   background-color: #fff;
   padding: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid ${ColorPalette.lightGray};
   margin: 0px 15px;
 `;
 

@@ -10,12 +10,13 @@ const DefaultButton: React.FC<DefaultButtonProps> = ({
   buttonSize,
   iconLeft,
   iconSize,
-  fontSizeEm,
+  fontSizePx: fontSizeEm,
   onPress,
 }) => {
   return (
     <ViewDefaultButton onPress={() => onPress()} buttonSize={buttonSize}>
-      {iconLeft && PickIcon({ iconType: iconLeft, size: iconSize || 'sm' })}
+      {iconLeft !== undefined &&
+        PickIcon({ iconType: iconLeft, size: iconSize || 'sm' })}
       <TextDefaultButton fontSize={fontSizeEm}>{text}</TextDefaultButton>
     </ViewDefaultButton>
   );

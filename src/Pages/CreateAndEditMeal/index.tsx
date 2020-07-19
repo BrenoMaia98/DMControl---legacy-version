@@ -93,11 +93,11 @@ const CreateAndEditMeal: React.FC<CreateAndEditMealProps> = ({
     <View>
       <TitleBar
         header={route.params?.meal ? EditHeader : CreateHeader}
-        titleIcon={IconEnum.FaAppleAlt}
+        titleIcon={IconEnum.Apple}
         screenActionProps={{
           buttonProps: {
             iconSize: 'md',
-            iconLeft: IconEnum.MdSave,
+            iconLeft: IconEnum.Save,
             onPress: () => navigation.navigate('FoodAndMealManager'),
             text: route.params?.meal
               ? EditButtonActionScreen

@@ -40,7 +40,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
         onPress={() => {
           onSearch(value);
         }}
-        defaultIcon={IconEnum.GoSearch}
+        defaultIcon={IconEnum.Search}
       />
     </Container>
   );

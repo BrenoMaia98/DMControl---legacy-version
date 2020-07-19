@@ -47,14 +47,14 @@ const FoodEditTable: React.FC<FoodEditTableProps> = ({
                   }}
                   IconColor={ColorPalette.red}
                   BackGroundColor="rgba(0,0,0,0)"
-                  defaultIcon={IconEnum.MdDelete}
+                  defaultIcon={IconEnum.Delete}
                 />
                 <IconButton
                   onPress={() => {
                     editFoodFromIndex(index);
                   }}
                   IconColor={ColorPalette.green}
-                  defaultIcon={IconEnum.GoPencil}
+                  defaultIcon={IconEnum.Pencil}
                 />
               </Row>
             </TData>
@@ -68,7 +68,7 @@ const FoodEditTable: React.FC<FoodEditTableProps> = ({
             addFood();
           }}
           IconColor={ColorPalette.green}
-          defaultIcon={IconEnum.AiOutlinePlusCircle}
+          defaultIcon={IconEnum.PlusCircle}
           size="lg"
         />
       </JustifyCenter>

@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { FaTools } from 'react-icons/fa';
 import { StackNavigationProp } from '@react-navigation/stack';
+import { Icon } from 'native-base';
 import { StackProps } from '../../../routes/StackNavigation';
 import DefaultButton from '../../Components/DefaultButton';
 import { Container } from './styles';
@@ -18,17 +19,24 @@ const InProgress: React.FC<Props> = ({ navigation }) => {
     <Container>
       <Text
         style={{
-          fontSize: '2em',
+          fontSize: 32,
           color: ColorPalette.purple,
           fontWeight: 'bold',
         }}
       >
         Work in Progress
       </Text>
-      <FaTools size={200} color={ColorPalette.purple} />
+      <Icon
+        type="MaterialCommunityIcons"
+        style={{
+          fontSize: 200,
+          color: ColorPalette.purple,
+        }}
+        name="wrench"
+      />
       <DefaultButton
         onPress={() => navigation.pop()}
-        iconLeft={IconEnum.FaArrowLeft}
+        iconLeft={IconEnum.ArrowLeft}
         buttonSize="large"
         text="Back"
       />
