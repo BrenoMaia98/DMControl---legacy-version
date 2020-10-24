@@ -8,6 +8,11 @@
 
 ![MenuIcon](https://github.com/BrenoMaia98/DMControl/blob/Bug%2FIconFix/README%20Images/MenuOptions.png)
 
+
+## 	Prototype
+
+[Link to wireframe](https://whimsical.com/T65fx24u5Q9WQV87kLjU7J)
+
 ## :bulb:	Main Features
 This pre-version of the app contain statically the main features:
  - Register new Base Meal
