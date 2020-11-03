@@ -32,7 +32,7 @@ This project was developed with the following technologies:
 
 ## :information_source: How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Expo][] or higher + [Yarn v1.19][yarn] or higher installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com), [Expo][expo] or higher + [Yarn v1.19][yarn] or higher installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
