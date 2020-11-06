@@ -4,7 +4,7 @@ import { ColorPalette } from '../../Constants/ColorPalette';
 
 export const Container = styled.View<{ align?: 'center' | 'right' | 'left' }>`
   flex-direction: row;
-  align-self: ${(props) => props.align || undefined};
+  align-self: ${(props) => props.align || 'flex-start'};
 `;
 
 export const SearchInput = styled(Input)`

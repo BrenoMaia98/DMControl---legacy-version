@@ -42,7 +42,7 @@ export const BloodSugarLevel = styled.Text`
 
 export const InsulinDosageText = styled.Text`
   color: ${ColorPalette.purple};
-  font-weight: bolder;
+  font-weight: 900;
   font-size: 32px;
 `;
 

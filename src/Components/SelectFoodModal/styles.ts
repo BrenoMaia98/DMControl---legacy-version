@@ -12,12 +12,12 @@ export const ModalContainer = styled.View`
 
 export const TitleText = styled.Text`
   font-size: 19px;
-  font-weight: bolder;
+  font-weight: 900;
   padding: 4px;
 `;
 export const InputText = styled.Text`
   font-size: 16px;
-  font-weight: bolder;
+  font-weight: 900;
   text-align: left;
   padding: 4px;
 `;
