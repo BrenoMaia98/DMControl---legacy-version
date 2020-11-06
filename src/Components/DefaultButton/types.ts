@@ -4,7 +4,7 @@ import { ComponentSize } from '../../Utils/ComponentSize';
 export interface DefaultButtonProps {
   iconLeft?: IconEnum;
   iconSize?: ComponentSize;
-  buttonSize?: 'fit' | 'large';
+  large?: boolean;
   text: string;
   fontSizePx?: number;
   onPress(): void;

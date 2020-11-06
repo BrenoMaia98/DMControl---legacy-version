@@ -31,7 +31,7 @@ const Login: React.FC<Props> = ({ navigation }) => {
       <IconButton defaultIcon={IconEnum.Edit} onPress={() => {}} />
       <DefaultButton
         text={LoginBtn}
-        buttonSize="large"
+        large
         onPress={() => navigation.navigate('Menu')}
       />
     </View>

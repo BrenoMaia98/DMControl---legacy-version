@@ -1,10 +1,10 @@
 import styled from 'styled-components/native';
-import { Input } from 'native-base';
 import { Dimensions } from 'react-native';
 import { ColorPalette } from '../../Constants/ColorPalette';
 
 export const ModalContainer = styled.View`
   height: ${Dimensions.get('screen').height}px;
+  width: ${Dimensions.get('screen').width}px;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -21,8 +21,9 @@ export const InputText = styled.Text`
   text-align: left;
   padding: 4px;
 `;
-export const TitleInput = styled(Input)`
+export const TitleInput = styled.TextInput`
   border: 1px solid ${ColorPalette.gray};
+  width: 80%;
   font-size: 19px;
   padding: 4px;
 `;

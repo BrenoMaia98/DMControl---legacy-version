@@ -37,7 +37,7 @@ const InProgress: React.FC<Props> = ({ navigation }) => {
       <DefaultButton
         onPress={() => navigation.pop()}
         iconLeft={IconEnum.ArrowLeft}
-        buttonSize="large"
+        large
         text="Back"
       />
     </Container>

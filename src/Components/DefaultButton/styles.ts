@@ -6,19 +6,20 @@ type IButtonSize = { buttonSize?: 'fit' | 'large' };
 export const ViewDefaultButton = styled.TouchableOpacity<IButtonSize>`
   background-color: ${ColorPalette.purple};
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 10px;
+  padding: 10px 20px;
   flex-direction: row;
   border-radius: 4px;
   color: white;
-  width: ${(props) =>
-    props.buttonSize && props.buttonSize === 'large' ? '80%' : 'undefined'};
+  min-width: 50%;
+  max-width: 80%;
+  ${({ buttonSize }) => buttonSize && 'width:80%'};
 `;
 
 export const TextDefaultButton = styled.Text<{ fontSize?: number }>`
   color: white;
   margin-left: 5px;
   font-weight: bold;
-  font-size: ${(props) => (props.fontSize ? `${props.fontSize}px` : '16px')};
+  font-size: ${({ fontSize }) => (fontSize ? `${fontSize}px` : '16px')};
 `;

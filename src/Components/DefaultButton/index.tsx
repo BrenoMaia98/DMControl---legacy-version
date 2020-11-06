@@ -7,7 +7,7 @@ import { DefaultButtonProps } from './types';
 
 const DefaultButton: React.FC<DefaultButtonProps> = ({
   text,
-  buttonSize,
+  large: buttonSize,
   iconLeft,
   iconSize,
   fontSizePx: fontSizeEm,

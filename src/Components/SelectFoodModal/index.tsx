@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { FlatList, Text } from 'react-native';
+import { FlatList, View } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import {
   ModalContainer,
   TitleText,
@@ -13,6 +14,9 @@ import {
 import { SelectFoodModalProps, mockFoodData } from './types';
 import { FoodDTO } from '../../Database';
 import Strings from '../../Constants/Texts/Strings';
+import { IconEnum } from '../../Utils/PickIcon/types';
+import PickIcon from '../../Utils/PickIcon';
+import { ColorPalette } from '../../Constants/ColorPalette';
 
 const SelectFoodModal: React.FC<SelectFoodModalProps> = ({
   visible,
@@ -37,6 +41,15 @@ const SelectFoodModal: React.FC<SelectFoodModalProps> = ({
       {visible && (
         <ModalContainer>
           <Content>
+            <View style={{ position: 'absolute', right: 0, top: 0 }}>
+              <TouchableOpacity onPress={onClose}>
+                {PickIcon({
+                  iconType: IconEnum.Close,
+                  size: 'lg',
+                  colorIcon: ColorPalette.gray,
+                })}
+              </TouchableOpacity>
+            </View>
             <TitleText>{Title}</TitleText>
             <InputText>{InputLabel}</InputText>
             <TitleInput
