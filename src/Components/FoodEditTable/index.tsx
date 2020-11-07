@@ -49,13 +49,6 @@ const FoodEditTable: React.FC<FoodEditTableProps> = ({
                   BackGroundColor="rgba(0,0,0,0)"
                   defaultIcon={IconEnum.Delete}
                 />
-                <IconButton
-                  onPress={() => {
-                    editFoodFromIndex(index);
-                  }}
-                  IconColor={ColorPalette.green}
-                  defaultIcon={IconEnum.Pencil}
-                />
               </Row>
             </TData>
           </TRow>

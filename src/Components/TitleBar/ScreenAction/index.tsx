@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
-import { ScreenActionContainer } from './styles';
-import DefaultButton from '../../DefaultButton';
+import { ScreenActionButton, ScreenActionContainer } from './styles';
 import { DefaultButtonProps } from '../../DefaultButton/types';
 import { IconEnum } from '../../../Utils/PickIcon/types';
 import IconButton from '../../IconButton';
@@ -26,7 +25,7 @@ const ScreenAction: React.FC<ScreenActionProps> = ({
           size="md"
         />
       )}
-      {buttonProps && <DefaultButton {...buttonProps} />}
+      {buttonProps && <ScreenActionButton {...buttonProps} />}
     </ScreenActionContainer>
   );
 };

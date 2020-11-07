@@ -29,7 +29,7 @@ const Menu: React.FC<Props> = ({ navigation }) => {
         <DefaultButton
           onPress={() => navigation.navigate('MealSelection')}
           text={CalculateInsulin}
-          buttonSize="large"
+          large
           iconLeft={IconEnum.Meal}
           iconSize="md"
         />
@@ -37,7 +37,7 @@ const Menu: React.FC<Props> = ({ navigation }) => {
         <DefaultButton
           onPress={() => navigation.navigate('FoodAndMealManager')}
           text={MealAndFoodManager}
-          buttonSize="large"
+          large
           iconLeft={IconEnum.Pill}
           iconSize="md"
         />
@@ -45,7 +45,7 @@ const Menu: React.FC<Props> = ({ navigation }) => {
         <DefaultButton
           onPress={() => navigation.navigate('InProgress')}
           text={MeasurementHistory}
-          buttonSize="large"
+          large
           iconLeft={IconEnum.Graph}
           iconSize="md"
         />
@@ -53,7 +53,7 @@ const Menu: React.FC<Props> = ({ navigation }) => {
         <DefaultButton
           onPress={() => navigation.navigate('InProgress')}
           text={Profile}
-          buttonSize="large"
+          large
           iconLeft={IconEnum.Person}
           iconSize="md"
         />
