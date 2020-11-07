@@ -17,6 +17,5 @@ export const InputsRows = styled(Row)`
 `;
 
 export const RowContainer = styled.View`
-  margin-top: 10px;
   padding: 10px;
 `;
