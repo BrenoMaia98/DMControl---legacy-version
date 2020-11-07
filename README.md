@@ -5,8 +5,8 @@
 <h4 align="center">
   Diabetes Melittus helper
 </h4>
-
-![MenuIcon](https://github.com/BrenoMaia98/DMControl/blob/Bug%2FIconFix/README%20Images/MenuOptions.png)
+  
+![MenuIcon](https://github.com/BrenoMaia98/DMControl/blob/master/README%20Images/MenuOptions.png)
 
 
 ## 	Prototype
@@ -53,7 +53,7 @@ For this app version, it's reccommended to execute in expo web browser.
 
 To do so, you need to start pressing an web server like the image bellow:
 
-![RunWebBrowser](https://github.com/BrenoMaia98/DMControl/blob/Bug%2FIconFix/README%20Images/RunInWebBrowser.png)
+![RunWebBrowser](https://github.com/BrenoMaia98/DMControl/blob/master/README%20Images/RunInWebBrowser.png)
 
 to have a better perspective, it's reccomended to view App in Mobile version in your web browser. 
 
@@ -61,7 +61,7 @@ to have a better perspective, it's reccomended to view App in Mobile version in 
   - Inspect or inspect elements
   - toggle mobile vision 
   
-![ToggleMobile](https://github.com/BrenoMaia98/DMControl/blob/Bug%2FIconFix/README%20Images/ActivateMabileVision.png)
+![ToggleMobile](https://github.com/BrenoMaia98/DMControl/blob/master/README%20Images/ActivateMabileVision.png)
   
 ---
 
