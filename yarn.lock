@@ -1490,6 +1490,11 @@
   dependencies:
     react-icons "*"
 
+"@types/react-native-sqlite-storage@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-native-sqlite-storage/-/react-native-sqlite-storage-5.0.0.tgz#85f8ec1350cf91cfed01cbab100e9339287943ac"
+  integrity sha512-kn5J+oLU//Jk9YshL9bcrm1Pxy4fp/7Pk8+yGZIeu/aEG8SmG75nxDzpfTopEluThDtjPDxFUWVDD0Ij/eCNJg==
+
 "@types/react-native-vector-icons@^6.4.5":
   version "6.4.5"
   resolved "https://registry.yarnpkg.com/@types/react-native-vector-icons/-/react-native-vector-icons-6.4.5.tgz#74cbfc564bd8435e43ad6728572a0e5b49c335d1"

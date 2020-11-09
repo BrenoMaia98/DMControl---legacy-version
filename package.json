@@ -36,6 +36,7 @@
     "@types/react": "~16.9.35",
     "@types/react-icons": "^3.0.0",
     "@types/react-native": "~0.63.2",
+    "@types/react-native-sqlite-storage": "^5.0.0",
     "@types/react-navigation": "^3.4.0",
     "@types/styled-components": "^5.1.0",
     "@typescript-eslint/eslint-plugin": "^3.5.0",
