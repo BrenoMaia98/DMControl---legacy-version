@@ -1,0 +1,8281 @@
+/*
+[
+  INSERT INTO Food (
+    foodName,
+    measure,
+            volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abacate (picado)",
+     "colher de sopa cheia",
+             45,
+     3,
+     79
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abacaxi",
+     "fatia média",
+     75,
+10,
+     44
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abacaxi em calda",
+     "fatia média",
+     64,
+19,
+     78
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abacaxi, polpa, congelada",
+     "unidade",
+     100,
+8,
+     31
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abadejo assado",
+     "filé médio",
+     100,
+0,
+     112
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abaráv",
+     "unidade média",
+     170,
+24,
+     414
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abiu cru",
+     "unidade",
+     100,
+15,
+     62
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abobora cabotian, cozida",
+     "colher de sopa",
+     36,
+3,
+     14
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abobora Cabotian, crua",
+     "colher de sopa",
+     36,
+4,
+     17
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abóbora d’água (picada)",
+     "colher de sopa cheia",
+     36,
+0,
+     10
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abóbora doce (picada)",
+     "colher de sopa cheia",
+     36,
+4,
+     18
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abóbora moranga (picada)",
+     "colher de sopa cheia",
+     36,
+1,
+     7
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abobrinha recheada",
+     "unidade",
+     100,
+6,
+     89
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abobrinha, italiana, cozida",
+     "colher de sopa",
+     20,
+0,
+     3
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abobrinha, italiana, crua",
+     "colher de sopa",
+     20,
+1,
+     4
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abobrinha, paulista, crua",
+     "colher de sopa",
+     20,
+2,
+     6
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Abricó-do-pará",
+     "fatia média",
+     100,
+13,
+     64
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Açafrão em pó",
+     "colher de sopa cheia",
+     16,
+12,
+     54
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Açaí (polpa) com xarope de guarana e glicose",
+     "taça pequena",
+     100,
+21,
+     110
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Açai natural Frooty ®",
+     "6 colheres de sopa rasas",
+     60,
+13,
+     62
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Açaí polpa congelada",
+     "unidade",
+     100,
+6,
+     58
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Açaí, suco de",
+     "copo duplo cheio",
+     240,
+72,
+     438
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Acarajé",
+     "unidade média",
+     100,
+22,
+     282
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Acelga (picada)",
+     "colher de sopa cheia",
+     6,
+0,
+     2
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Acém magro cozido",
+     "pedaço médio",
+     100,
+0,
+     215
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Acerola",
+     "unidade",
+     12,
+1,
+     4
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Achocolatado Diet Gold ®",
+     "colher de sopa",
+     9,
+6,
+     35
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Achocolatado Diet Linea ®",
+     "colher de sopa",
+     12,
+5,
+     30
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Açúcar branco refinado",
+     "colher de sopa cheia",
+     30,
+30,
+     116
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Açúcar cristal",
+     "colher de sopa cheia",
+     24,
+24,
+     96
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Açúcar mascavo",
+     "colher de sopa cheia",
+     19,
+17,
+     70
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Agrião (picado)",
+     "colher de sopa cheia",
+     7,
+0,
+     2
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Agriao refogado",
+     "colher de sopa cheia",
+     25,
+1,
+     19
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Água-de-coco verde",
+     "copo duplo",
+     240,
+10,
+     43
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Aipim cozido",
+     "pedaço médio",
+     100,
+29,
+     120
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Aipo inteiro (picado)",
+     "colher de sopa cheia",
+     10,
+0,
+     2
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Alcachofra",
+     "pedaco médio",
+     20,
+1,
+     6
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Alcaparra",
+     "colher de sopa cheia",
+     27,
+1,
+     10
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Alface, americana, crua",
+     "folha média",
+     10,
+0,
+     1
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Alface, crespa, crua",
+     "folha média",
+     10,
+0,
+     1
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Alface, lisa, crua",
+     "folha média",
+     10,
+0,
+     1
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Alface, roxa, crua",
+     "folha média",
+     10,
+0,
+     1
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Alfajor ao leite Cacau Show®",
+     "unidade",
+     40,
+23,
+     120
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Alfajor recheado com doce de leite",
+     "unidade",
+     25,
+15,
+     98
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Alfajor® recheado com doce de leite",
+     "unidade",
+     25,
+15,
+     98
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Alfavaca crua",
+     "folha média",
+     10,
+0,
+     3
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Algodão Doce",
+     "unidade",
+     30,
+30,
+     116
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Algodão doce (Mavalério®)",
+     "embalagem",
+     35,
+35,
+     140
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Algodão doce tuti - frutti Snow Sugar®",
+     "1/2 chícara de chá",
+     5,
+5,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Algodão doce uva Snow Sugar®",
+     "1/2 chícara de chá",
+     5,
+5,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Alho, cru",
+     "2 dentes",
+     10,
+3,
+     11
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Alho-poró cru",
+     "porcao pequena",
+     20,
+3,
+     11
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Ambrosia",
+     "2 colheres de sopa cheias",
+     80,
+33,
+     207
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Ameixa de queijo",
+     "unidade",
+     12,
+7,
+     36
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Ameixa em calda",
+     "01 unidade média",
+     7,
+5,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Ameixa em calda 01",
+     "unidade média",
+     7,
+5,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Ameixa preta fresca",
+     "unidade media",
+     42,
+4,
+     18
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Amêndoa",
+     "01 unidade média",
+     3,
+1,
+     13
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Amendoim caramelizado",
+     "pacote pequeno",
+     20,
+14,
+     95
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Amendoim caramelizado ",
+     "pacote pequeno",
+     20,
+14,
+     95
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Amendoim cozido",
+     "2 colheres de sopa",
+     34,
+7,
+     108
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Amendoim, grão, cru",
+     "2 colheres de sopa",
+     34,
+5,
+     194
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Amendoim, torrado, salgado",
+     "2 colheres de sopa",
+     34,
+5,
+     194
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Amido de arroz",
+     "colher de sopa cheia",
+     20,
+17,
+     70
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Amido de milho",
+     "colher de sopa cheia",
+     20,
+17,
+     69
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Amora (branca, preta e vermelha)",
+     "unidade média",
+     8,
+1,
+     5
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Amora, geléia de",
+     "colher de sopa cheia",
+     40,
+23,
+     93
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Angu",
+     "colher de sopa cheia",
+     35,
+9,
+     44
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Angus bacon (Mc’Donalds®)",
+     "unidade",
+    ",
+     57,
+     861
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Angus DeLuxe (Mc’Donalds®)",
+     "unidade",
+    ",
+     56,
+     863
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Antepasto abobrinha escabeche",
+     "colher de sopa cheia",
+     30,
+4,
+     57
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Antepasto alichella",
+     "colher de sopa cheia",
+     30,
+1,
+     106
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Antepasto berinjela",
+     "colher de sopa cheia",
+     30,
+4,
+     88
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Antepasto sardella",
+     "colher de sopa cheia",
+     30,
+5,
+     160
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Apfelstrudell (folheado de maçã)",
+     "porção grande",
+     220,
+59,
+     396
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Apfelstrudell® (folheado de maçã)",
+     "porção grande",
+     220,
+59,
+     396
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Apresuntado",
+     "fatia média",
+     15,
+0,
+     69
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz à grega",
+     "colher de servir",
+     60,
+18,
+     75
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz à grega",
+     "01 colher de sopa cheia",
+     25,
+7,
+     35
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz à grega",
+     "colher de servir",
+     60,
+18,
+     75
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz branco cozido",
+     "colher de sopa cheia",
+     20,
+5,
+     26
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz branco cozido",
+     "colher de servir arroz",
+     45,
+13,
+     58
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz carreteiro",
+     "colher de servir",
+     45,
+5,
+     70
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz com amendoas",
+     "colher de servir",
+     60,
+18,
+     75
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz com lentilha",
+     "colher de servir arroz",
+     45,
+12,
+     71
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz com lingüiça",
+     "3 colheres de arroz cheias",
+     180,
+36,
+     349
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz com pequi",
+     "3 colheres de arroz cheias",
+     180,
+50,
+     292
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz integral cozido",
+     "colher de sopa cheia",
+     20,
+5,
+     25
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz selvagem Tio João®",
+     "porção",
+     50,
+35,
+     170
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz sírio",
+     "colher de servir arroz",
+     45,
+13,
+     69
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz, farinha de",
+     "colher de sopa cheia",
+     17,
+14,
+     62
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz, flocos de",
+     "colher de sopa cheia",
+     14,
+11,
+     49
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Arroz-doce",
+     "colher de sopa cheia",
+     40,
+13,
+     66
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Aspargo em conserva",
+     "unidade média",
+     7,
+0,
+     2
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Ataif",
+     "porção",
+     100,
+13,
+     124
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Atum em água",
+     "colher de sopa cheia",
+     16,
+0,
+     45
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Aveia em flocos crua",
+     "colher de sopa cheia",
+     15,
+10,
+     56
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Aveia, farinha de (crua)",
+     "colher de sopa cheia",
+     18,
+12,
+     71
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Aveia, flocos cozidos de",
+     "colher de sopa cheia",
+     15,
+2,
+     9
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Avelã",
+     "unidade média",
+     1,
+0,
+     6
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Azeite de dendê industrializado",
+     "colher de sopa cheia",
+     8,
+0,
+     71
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Azeite de oliva (extra)",
+     "colher de sopa cheia",
+     8,
+0,
+     72
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Azeitona preta (parte comest.)",
+     "unidade média",
+     3,
+0,
+     7
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Azeitona verde (parte comest.)",
+     "unidade média",
+     4,
+0,
+     12
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Baba de moça",
+     "colher de sopa cheia",
+     30,
+27,
+     150
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Babaganuche",
+     "1 porção",
+     100,
+6,
+     84
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bacalhoada",
+     "colher de sopa",
+     30,
+2,
+     51
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bacallhau cozido",
+     "escumadeira média",
+     60,
+0,
+     88
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bacon",
+     "fatia média",
+     15,
+0,
+     99
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bacon (Baked Potato®)",
+     "concha",
+     20,
+0,
+     92
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bacuri",
+     "polpa de 1 fruto médio",
+     90,
+0,
+     870
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Baguete congelada Qualita®",
+     "unidade pequena",
+     50,
+25,
+     124
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Baião de dois",
+     "escumadeira cheia",
+     100,
+20,
+     136
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala de banana",
+     "3 unidades",
+     50,
+12,
+     46
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala de caramelo",
+     "unidade",
+     6,
+5,
+     27
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala de caramelo Embare®",
+     "unidade",
+     6,
+5,
+     27
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala de coco (industrializada)",
+     "unidade",
+     5,
+5,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala de coco (industrializada) Junco®",
+     "unidade",
+     5,
+5,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala de goma",
+     "unidade",
+     3,
+3,
+     11
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala de mel Arcor®",
+     "unidade",
+     6,
+6,
+     22
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala Delícia",
+     "unidade",
+     5,
+4,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala Delícia®",
+     "unidade",
+     5,
+4,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala Halls®",
+     "unidade",
+     3,
+3,
+     13
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala Jujuba",
+     "unidade",
+     3,
+3,
+     12
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala macia",
+     "unidade",
+     5,
+5,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bala Toffe® Chocolate",
+     "unidade",
+     6,
+22,
+     151
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bambu, brotos de",
+     "pires de chá",
+     10,
+0,
+     3
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banana à milanesa",
+     "unidade média",
+     100,
+24,
+     185
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banana caramelada",
+     "unidade média",
+     50,
+29,
+     114
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banana frita da terra",
+     "fatia media",
+     31,
+10,
+     68
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banana pacova madura cozida sem casca",
+     "colher de sopa cheia",
+     35,
+12,
+     48
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banana pacova madura frita (picada)",
+     "colher de sopa cheia",
+     35,
+18,
+     96
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banana pacova madura in natura (picada)",
+     "colher de sopa cheia",
+     30,
+11,
+     45
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banana pacova verde frita",
+     "colher de sopa cheia",
+     35,
+30,
+     138
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banana-caturra ou Nanica",
+     "unidade média",
+     86,
+20,
+     79
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bananada",
+     "unidade media",
+     40,
+27,
+     115
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banana-da-terra crua",
+     "unidade grande",
+     100,
+27,
+     117
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banana-maçã",
+     "unidade média",
+     65,
+15,
+     72
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banana-ouro",
+     "unidade pequena",
+     40,
+9,
+     42
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banana-prata crua",
+     "unidade média",
+     50,
+13,
+     49
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Banha de porco",
+     "colher de sopa cheia",
+     10,
+0,
+     90
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Barra de Cereal Diet Linea® Avela, Castanha e Chocolate",
+     "unidade",
+     25,
+17,
+     75
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Barra de cereal Diet Linea® banana com aveia",
+     "unidade",
+     25,
+18,
+     65
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata (Baked Potato®)",
+     "unidade",
+     470,
+83,
+     369
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata doce frita",
+     "fatia media",
+     65,
+39,
+     249
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata frita (Bob’s®)",
+     "porção grande",
+     115,
+41,
+     259
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata frita (Bob’s®)",
+     "porção média",
+     95,
+34,
+     214
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata frita (Bob’s®)",
+     "porção pequena",
+     55,
+20,
+     124
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata frita (Burguer King®)",
+     "porção",
+    ",
+     37,
+     318
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata frita (Habib’s®)",
+     "porção pequena",
+     40,
+10,
+     86
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata frita chips",
+     "punhado",
+     13,
+6,
+     70
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata fritas (Mc’ Donalds®)",
+     "porção pequena",
+    ",
+     25,
+     206
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata fritas (Mc’ Donalds®)",
+     "porção média",
+    ",
+     35,
+     288
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata fritas (Mc’ Donalds®)",
+     "porção grande",
+    ",
+     49,
+     412
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata fritas McFritas Kids (Mc’ Donalds®)",
+     "porção",
+    ",
+     11,
+     87
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata inglesa cozida picada",
+     "colher de sopa cheia",
+     80,
+6,
+     68
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata inglesa fritta",
+     "escumadeira media cheia",
+     65,
+23,
+     182
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata inglesa fritta®",
+     "escumadeira media cheia",
+     65,
+23,
+     182
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata inglesa Saute®",
+     "colher de sopa cheia",
+     25,
+4,
+     37
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata smiles Mccain®",
+     "01 unidade",
+     21,
+7,
+     42
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata smiles Mccain®",
+     "01 unidade",
+     21,
+7,
+     42
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata, amido de",
+     "colher de sopa cheia",
+     16,
+13,
+     53
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata, fécula de",
+     "colher de sopa cheia",
+     20,
+16,
+     66
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata-baroa ou mandioquinha (picada)",
+     "colher de sopa cheia",
+     35,
+10,
+     44
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata-doce amarela assada (picada)",
+     "colher de sopa cheia",
+     30,
+10,
+     43
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata-doce branca cozida (picada)",
+     "colher de sopa cheia",
+     30,
+8,
+     38
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata-doce cozida",
+     "colher sopa cheia",
+     42,
+10,
+     43
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Batata-doce, doce de",
+     "colher de sopa cheia",
+     40,
+24,
+     94
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Baton (chocolate ao leite Garoto®)",
+     "unidade",
+     16,
+9,
+     86
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Beijinho",
+     "unidade média",
+     25,
+11,
+     105
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Beijinho",
+     "unidade pequena",
+     6,
+3,
+     25
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Beijinho",
+     "unidade",
+     25,
+11,
+     105
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Beijinho",
+     "unidade pequena",
+     6,
+3,
+     25
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Beijinho diet",
+     "unidade pequena",
+     6,
+2,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Beijinho-de-coco Nestle®",
+     "colher de sopa",
+     20,
+11,
+     63
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Beiju",
+     "unidade media",
+     100,
+87,
+     359
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Beiju de queijo com manteiga",
+     "unidade média",
+     150,
+87,
+     518
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Beirute Habib’s®",
+     "unidade",
+     415,
+51,
+     714
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bekleua",
+     "1 porção",
+     100,
+20,
+     290
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bekleua",
+     "1 porção",
+     100,
+20,
+     290
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bem casado",
+     "01 unidade",
+     40,
+25,
+     160
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bergamota ou Mexerica",
+     "unidade grande",
+     100,
+15,
+     58
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Berinjela cozida sem sal",
+     "colher de sopa cheia",
+     25,
+2,
+     8
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Berinjela frita",
+     "rodela média",
+     13,
+1,
+     10
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Beterraba cozida (picada)",
+     "colher de sopa cheia",
+     20,
+2,
+     9
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Beterraba crua",
+     "colher de sopa cheia",
+     16,
+1,
+     7
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bib’s dog (Habib’s®)",
+     "unidade",
+     105,
+21,
+     246
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bib’s salad (Habib’s®)",
+     "unidade",
+     300,
+36,
+     209
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bife à milanesa",
+     "unidade pequena",
+     80,
+8,
+     230
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bife de boi",
+     "unidade média",
+     100,
+0,
+     228
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bife de fígado",
+     "unidade média",
+     100,
+6,
+     216
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bife Role",
+     "unidade grande",
+     150,
+4,
+     268
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Big Bob picanha 100g (Bob’s®)",
+     "unidade",
+     235,
+35,
+     513
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Big Bob picanha 200g (Bob’s®)",
+     "unidade",
+     344,
+38,
+     728
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Big king (Burguer King®)",
+     "unidade",
+    ",
+     31,
+     555
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Big tasty (Mc’ Donalds®)",
+     "unidade",
+    ",
+     43,
+     841
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito de água e sal",
+     "unidade",
+     8,
+5,
+     34
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito de aveia e mel Nestle®",
+     "unidade",
+     6,
+4,
+     26
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito de polvilho (rosquinha)",
+     "unidade",
+     3,
+2,
+     13
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito de queijo",
+     "unidade",
+     12,
+6,
+     51
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito leite Nestlé®",
+     "unidade",
+     8,
+5,
+     38
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito maisena Nestlé®",
+     "unidade",
+     5,
+4,
+     22
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito maria Nestlé®",
+     "unidade",
+     6,
+4,
+     26
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito milho verde Nestlé®",
+     "unidade",
+     6,
+4,
+     27
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito passatempo® sem recheio",
+     "unidade",
+     6,
+4,
+     22
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito prestígio recheado São Luiz Nestlé®",
+     "unidade",
+     15,
+10,
+     71
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito prestígio® wafer Nestlé®",
+     "unidade",
+     8,
+5,
+     43
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito recheado chocolate",
+     "unidade",
+     13,
+9,
+     62
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito salclic aperitivo São Luiz Nestle®",
+     "unidade",
+     5,
+3,
+     24
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito salgado integral gergelim Piraquê®",
+     "unidade",
+     7,5,
+5,
+     38
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito suíço creme de avelã São Luiz Nestlé®",
+     "unidade",
+     13,
+7,
+     73
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito tipo cookies Baunilha Toddy®",
+     "unidade",
+     10,
+6,
+     46
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito tostines cream cracker São Luiz Nestlé®",
+     "unidade",
+     8,
+5,
+     37
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito tostines® leite",
+     "unidade",
+     8,
+6,
+     37
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito tostines® recheado Chocolate",
+     "unidade",
+     13  ,
+9,
+     64
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito tostines® surpresa fun",
+     "unidade",
+     8,
+6,
+     37
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoito tostines® wafer chocolate",
+     "unidade",
+     8,
+5,
+     42
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoitos de farinha integral",
+     "unidade",
+     10,
+7,
+     40
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoitos de glúten a 40%",
+     "unidade",
+     10,
+3,
+     29
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Biscoitos de glúten puro",
+     "unidade",
+     10,
+8,
+     35
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bisnaguinha Seven Boys®",
+     "unidade",
+     20,
+11,
+     62
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "BKTM batata suprema (Burguer King®)",
+     "porção",
+    ",
+     59,
+     604
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "BKTM cheddar duplo (Burguer King®)",
+     "unidade",
+    ",
+     54,
+     660
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "BKTM chicken crisp (Burguer King®)",
+     "unidade",
+    ",
+     68,
+     667
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "BKTM chicken crisp furioso (Burguer King®)",
+     "unidade",
+    ",
+     80,
+     930
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "BKTM chicken sandwich (Burguer King®)",
+     "unidade",
+    ",
+     53,
+     609
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "BKTM fish (Burguer King®)",
+     "unidade",
+    ",
+     63,
+     573
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "BKTM grilled chicken (Burguer King®)",
+     "unidade",
+    ",
+     56,
+     508
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "BKTM nuggets (Burguer King®)",
+     "porção",
+    ",
+     12,
+     148
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "BKTM pepperoni (Burguer King®)",
+     "unidade",
+    ",
+     30,
+     270
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "BKTM picanha (Burguer King®)",
+     "unidade",
+    ",
+     53,
+     922
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "BKTM stacker triplo com bacon (Burguer King®)",
+     "unidade",
+    ",
+     35,
+     1529
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Blis Frutas Vermelhas",
+     "unidade",
+     180,
+29,
+     158
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bliss morango",
+     "unidade",
+     200,
+31,
+     168
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bob’s crispy (Bob’s®)",
+     "unidade",
+     251,
+48,
+     641
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bob’s picanha gourmet 100g (Bob’s®)",
+     "unidade",
+     258,
+35,
+     480
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bob’s picanha gourmet 200g (Bob’s®)",
+     "unidade",
+     373,
+36,
+     727
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolacha de nata Panco®",
+     "unidade",
+     5,
+4,
+     22
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolacha sabor mais morango Trakinas®",
+     "unidade",
+     12,
+8,
+     61
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolinha de queijo",
+     "unidade pequena",
+     10,
+3,
+     27
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolinho de aipim com carne seca",
+     "unidade média",
+     45,
+12,
+     86
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolinho de arroz",
+     "unidade",
+     40,
+20,
+     164
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolinho de bacalhau",
+     "unidade media",
+     15,
+3,
+     42
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolinho de bacalhau (Habib’s®)",
+     "unidade",
+     30,
+5,
+     87
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolinho de carne",
+     "unidade",
+     50,
+8,
+     67
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolinho de chuva",
+     "unidade pequena",
+     30,
+13,
+     81
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolinho de estudante (Bolinho Ana Maria®)",
+     "unidade média",
+     80,
+49,
+     292
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolinho de Presunto e Queijo",
+     "unidade",
+     50,
+12,
+     73
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolinho de Queijo",
+     "unidade",
+     50,
+16,
+     137
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolinho de soja tipo salsicha 350g (Ta’amti) -Albee®",
+     "4 unidades",
+     90,
+28,
+     232
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo alemão",
+     "fatia",
+     60,
+30,
+     227
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo branco simples",
+     "fatia média",
+     100,
+55,
+     318
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de aipim com coco",
+     "fatia media",
+     80,
+37,
+     243
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de arroz",
+     "fatia média",
+     70,
+39,
+     197
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de banana",
+     "fatia média",
+     70,
+33,
+     211
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de batata-doce",
+     "fatia média",
+     90,
+43,
+     292
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de Brigadeiro",
+     "fatia pequena",
+     50,
+20,
+     147
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de brigadeiro (festa) Amor aos Pedaços®",
+     "fatia pequena",
+     60,
+33,
+     211
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de casamento",
+     "01 fatia pequena",
+     75,
+42,
+     285
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de cenoura",
+     "fatia média",
+     60,
+38,
+     227
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de cenoura com chocolate Dr. Oetiker®",
+     "fatia média",
+     60,
+38,
+     227
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de cenoura com chocolate Dr. Otcker®",
+     "fatia média",
+     60,
+38,
+     227
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de chocolate (recheio/cobertura)",
+     "fatia média",
+     100,
+54,
+     320
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de Chocolate e Nozes",
+     "fatia pequena",
+     50,
+17,
+     175
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de chocolate sem glacê",
+     "fatia média",
+     60,
+34,
+     306
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de coco",
+     "fatia grande",
+     100,
+54,
+     317
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de festa (recheio/cobertura)",
+     "fatia média",
+     100,
+54,
+     320
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de festa diet (recheio/cobertura)",
+     "fatia média",
+     80,
+20,
+     220
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de fubá",
+     "fatia média",
+     50,
+20,
+     160
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de limão",
+     "fatia média",
+     60,
+37,
+     233
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de mandioca (aipim)",
+     "pedaço grande",
+     100,
+48,
+     324
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de milho",
+     "fatia",
+     100,
+54,
+     290
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo de nozes",
+     "fatia média",
+     50,
+28,
+     200
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo Floresta Branca com Cereja",
+     "fatia pequena",
+     50,
+19,
+     183
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo Floresta Negra com Morango",
+     "fatia pequena",
+     50,
+10,
+     106
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo Merengue",
+     "fatia peqquena",
+     50,
+11,
+     116
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo Mousse de Chocolate",
+     "fatia pequena",
+     50,
+20,
+     173
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo mousse de chocolate Amor aos Pedaços®",
+     "fatia pequena",
+     60,
+23,
+     185
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bolo simples",
+     "fatia média",
+     60,
+33,
+     263
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom Alpino",
+     "unidade",
+     13,
+8,
+     70
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom Alpino®",
+     "unidade",
+     13,
+8,
+     70
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom banana Caribe Garoto®",
+     "unidade",
+     17,
+12,
+     65
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom bopinho de torrone",
+     "unidade",
+     10,
+6,
+     54
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom charge Nestlé®",
+     "unidade",
+     40,
+24,
+     187
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom Chokito®",
+     "unidade",
+     32,
+25,
+     140
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom Copinho de Torrone",
+     "unidade",
+     10,
+6,
+     54
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom de Brigadeiro",
+     "unidade",
+     10,
+6,
+     48
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom diet Cacau Show®",
+     "unidade",
+     13,
+7,
+     56
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom Ferrero Rocher®",
+     "unidade",
+     12,
+6,
+     72
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom Flocos",
+     "unidade",
+     10,
+6,
+     52
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom It coco Garoto®",
+     "unidade",
+     17,
+11,
+     80
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom Ouro Branco®",
+     "unidade",
+     22,
+13,
+     117
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom Prestígio",
+     "unidade",
+     10,
+5,
+     51
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom prestígio Nestle®",
+     "unidade",
+     33,
+21,
+     154
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom Raffaello®",
+     "unidade",
+     10,
+4,
+     62
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom Sonho de Valsa®",
+     "unidade",
+     22,
+13,
+     113
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom Trufa de Cereja",
+     "unidade",
+     10,
+6,
+     45
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Bombom truffa de creme de cereja Cacau Show®",
+     "unidade",
+     25,
+12,
+     123
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Brezel (Pretzel)",
+     "17 unidades pequenos",
+     28,
+23,
+     110
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Brigadeiro",
+     "01 unidade médio",
+     30,
+16,
+     103
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Brigadeiro",
+     "unidade",
+     10,
+6,
+     36
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Brigadeiro de Flocos",
+     "unidade",
+     15,
+9,
+     60
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Brigadeiro de Morango",
+     "unidade",
+     15,
+9,
+     60
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Brigadeiro diet",
+     "unidade pequena",
+     10,
+4,
+     25
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Broa de Milho",
+     "unidade",
+     50,
+25,
+     128
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Brócolis com cottage (Baked Potato®)",
+     "concha",
+     80,
+3,
+     31
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Brócolis cozido (picado)",
+     "colher de sopa cheia",
+     10,
+0,
+     4
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cacau em pó Mae Terra®",
+     "colher de sopa cheia",
+     10,
+3,
+     31
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cachorro-quente (média)",
+     "unidade",
+     125,
+31,
+     330
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Café com leite sem açúcar",
+     "xícara de chá cheia",
+     200,
+7,
+     88
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Café infusão 10%",
+     "xicara de café",
+     50,
+1,
+     4
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Café solúvel pó",
+     "colher de sopa cheia",
+     4,
+1,
+     6
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Caipirinha sem açúcar",
+     "copo",
+     200,
+54,
+     436
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cajá manga",
+     "unidade grande",
+     75,
+9,
+     38
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cajá polpa congelada",
+     "porção",
+     100,
+12,
+     46
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cajá-umbu",
+     "unidade media",
+     22,
+2,
+     10
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cajú",
+     "unidade grande",
+     100,
+10,
+     43
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Caju polpa congelada",
+     "porção",
+     100,
+12,
+     46
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Caju, suco concentrado",
+     "copo duplo cheio",
+     240,
+25,
+     108
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cajuzinho",
+     "unidade pequena",
+     12,
+6,
+     44
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Calda de chocolate",
+     "colher de sopa",
+     10,
+5,
+     31
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Caldo de carne Knorr®",
+     "unidade",
+     9,
+2,
+     24
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Caldo de galinha Knorr®",
+     "unidade",
+     9,
+1,
+     24
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Caldo verde ",
+     "concha média cheia",
+     130,
+7,
+     79
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Caldo-de-cana",
+     "copo duplo",
+     240,
+49,
+     201
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Camarão (Baked Potato®)",
+     "concha",
+     90,
+0,
+     42
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Camarão cozido",
+     "unidade grande",
+     30,
+0,
+     27
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Camarão cozido",
+     "colher de sopa",
+     20,
+0,
+     18
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Camarão frito",
+     "colher de sopa",
+     20,
+0,
+     37
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Camarão grande cru",
+     "unidade",
+     30,
+0,
+     25
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Camembert (Baked Potato®)",
+     "4 fatias",
+     60,
+0,
+     188
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Camu-camu",
+     "6 unidades",
+     48,
+3,
+     15
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Canapé de capaccio",
+     "01 torrada",
+     3,
+2,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Canela em pau Kitano®",
+     "unidade",
+     2,
+1,
+     5
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Canelone de frango",
+     "unidade média",
+     45,
+9,
+     87
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Canelone de ricota",
+     "unidade média",
+     30,
+7,
+     74
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Canja de galinha",
+     "concha média cheia",
+     130,
+12,
+     110
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Canjica pronta",
+     "colher de sopa cheia",
+     25,
+5,
+     29
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Capelete de carne Frescarini®",
+     "escumadeira",
+     50,
+26,
+     141
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Capelete de frango Frescarini®",
+     "escumadeira",
+     50,
+26,
+     140
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cappuccino classic 3 corações® po",
+     "2 colheres de sopa",
+     20,
+14,
+     84
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cappuccino classic diet 3 corações® pó",
+     "2 colheres de sopa",
+     14,
+6,
+     66
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Caqui",
+     "unidade média",
+     110,
+22,
+     95
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cará cozido picado",
+     "colher de sopa cheia",
+     35,
+7,
+     28
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carambola",
+     "unidade grande",
+     100,
+11,
+     46
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Caranguejo cozido",
+     "porção",
+     100,
+0,
+     83
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Caranguejo cozido",
+     "porção",
+     100,
+0,
+     83
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne assada",
+     "pedaco medio",
+     90,
+0,
+     259
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne bovina, acem, moído, cru",
+     "colher de sopa cheia",
+     25,
+0,
+     49
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne bovina, costela assada",
+     "pedaço médio",
+     100,
+0,
+     373
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne bovina, picanha, com gordura, grelhada",
+     "pedaço médio",
+     100,
+0,
+     289
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne com chilli (Baked Potato®)",
+     "concha",
+     65,
+28,
+     98
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de bezerro",
+     "porção",
+     100,
+0,
+     115
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de boi moída",
+     "colher de sopa cheia",
+     25,
+0,
+     49
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de boi, lagarto",
+     "porção",
+     100,
+0,
+     117
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de boi, lagarto cozido",
+     "fatia média",
+     100,
+0,
+     222
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de boi, maminha",
+     "filé médio",
+     100,
+0,
+     199
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de boi, paleta",
+     "porção",
+     100,
+0,
+     307
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de boi, paleta",
+     "porção",
+     100,
+0,
+     307
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de boi, paleta cozida",
+     "filé médio",
+     100,
+0,
+     194
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de boi, picanha (Friboi®)",
+     "porção",
+     100,
+1,9,
+     323
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de cabrito magra",
+     "pedaço médio",
+     100,
+0,
+     179
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de cordeiro magra",
+     "pedaço médio",
+     100,
+0,
+     162
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de porco, lombo assado",
+     "pedaço médio",
+     100,
+0,
+     210
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne de vaca, maminha",
+     "porção",
+     100,
+0,
+     159
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne ensopada com legumes",
+     "colher sopa cheia",
+     35,
+3,
+     57
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carne vegetal (de soja)",
+     "colher de sopa cheia",
+     25,
+2,
+     29
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carpa assada",
+     "filé médio",
+     100,
+0,
+     110
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carpaccio de Haddock",
+     "fatia média",
+     15,
+0,
+     17
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Carpaccio de salmão",
+     "fatia média",
+     15,
+0,
+     21
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Caruru (hortaliça crua picada)",
+     "colher de sopa cheia",
+     25,
+2,
+     9
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Caruru (prato baiano)",
+     "colher de sopa",
+     30,
+1,
+     64
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Casquinha de siri",
+     "unidade",
+     55,
+1,
+     92
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Castanha de caju",
+     "01 unidade média",
+     3,
+1,
+     13
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Castanha de pequi",
+     "unidade média",
+     14,
+3,
+     12
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Castanha do pará",
+     "01 unidade média",
+     6,
+1,
+     42
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Castanha portuguesa",
+     "01 unidade",
+     10,
+5,
+     21
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Catchup",
+     "colher de sopa cheia",
+     15,
+4,
+     15
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Catupiry",
+     "fatia média",
+     35,
+0,
+     88
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "CBO (Mc’Donalds®)",
+     "unidade",
+    ",
+     56,
+     665
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cebola picada",
+     "colher de sopa cheia",
+     10,
+1,
+     4
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cebolinha crua (picada)",
+     "colher de sopa cheia",
+     8,
+0,
+     2
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cenoura cozida",
+     "colher de sopa cheia",
+     25,
+2,
+     8
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cenoura crua ralada",
+     "colher de sopa cheia",
+     12,
+1,
+     4
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cenouritas (Mc’ Donalds®)",
+     "porção",
+     70,
+3,
+     18
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Centeio, farinha clara de",
+     "xícara",
+     102,
+79,
+     355
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereal barra Nestlé® banana, aveia e mel",
+     "unidade",
+     20,
+11,
+     64
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereal barra Nutry® coco com chocolate",
+     "unidade",
+     22,
+16,
+     90
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereal barra Trio® light morango com chocolate",
+     "unidade",
+     20,
+15,
+     78
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereal de arroz e milho Nestlé®",
+     "colher de sopa",
+     7,
+6,
+     27
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereal infantil 3 cereais Nestlé®",
+     "colher de sopa",
+     7,
+5,
+     29
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereal infantil 3 frutas Nestlé®",
+     "colher de sopa",
+     7,
+6,
+     27
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereal matinal all bran Kellogg’s®",
+     "3/4 de xícara",
+     40,
+18,
+     108
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereal matinal chocokrispis Kellogg’s®",
+     "3/4 de xícara",
+     30,
+25,
+     110
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereal matinal corn flakes Kellogg’s®",
+     "1 xícara",
+     30,
+24,
+     108
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereal matinal crunch Nestlé®",
+     "3/4 xícara",
+     30,
+23,
+     120
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereal matinal Kellness® granola tradicional",
+     "1/2 xícara",
+     40,
+27,
+     147
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereja em conserva",
+     "unidade",
+     5,
+2,
+     8
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cereja fresca",
+     "unidade",
+     4,
+1,
+     4
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cerveja",
+     "lata",
+     350,
+12,
+     143
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cevada, infuso de",
+     "xícara de chá cheia",
+     200,
+5,
+     24
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chá mate (infusão sem açúcar)",
+     "xícara de chá cheia",
+     200,
+1,
+     6
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chá sem açúcar (média)",
+     "xícara de chá cheia",
+     200,
+1,
+     4
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chambinho",
+     "unidade",
+     45,
+4,
+     40
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Champanhe",
+     "taça",
+     100,
+3,
+     82
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Champanhe tipo sidra",
+     "taça",
+     100,
+3,
+     82
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Champignon (Backed Potato®)",
+     "concha",
+     60,
+1,
+     6
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Champignon (conserva)",
+     "colher de sopa",
+     10,
+0,
+     2
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chandelle chocolate",
+     "unidade",
+     75,
+18,
+     151
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chantilly",
+     "colher de sopa",
+     20,
+4,
+     60
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Charutinho de folha de uva",
+     "porcao",
+     100,
+3,
+     99
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Charutinho de folha de uva",
+     "porcao",
+     100,
+3,
+     99
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Charutinho de repolho",
+     "porcao",
+     100,
+2,
+     67
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Charuto folha de uva Habib’s®",
+     "porção",
+     245,
+19,
+     263
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Charuto repolho Habib’s®",
+     "porção",
+     285,
+23,
+     295
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cheddar McMelt (Mc’ Donalds®)",
+     "unidade",
+    ",
+     29,
+     481
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cheeseburger",
+     "unidade",
+     140,
+40,
+     358
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cheeseburguer (Bob’s®)",
+     "unidade",
+     120,
+30,
+     329
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cheeseburguer (Burguer King®)",
+     "unidade",
+     116,
+32,
+     280
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cheeseburguer (Mc’ Donalds®)",
+     "unidade",
+    ",
+     30,
+     295
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cheeseburguer com bacon (Burguer King®)",
+     "unidade",
+     119,
+32,
+     310
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cheeseburguer duplo com bacon (Burguer King®)",
+     "unidade",
+     160,
+32,
+     440
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cheesecake com Mirtilo® (sorvete)",
+     "01 bola",
+     60,
+18,
+     140
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cheetos sabor natural",
+     "1 e 1/2 xícara",
+     25,
+17,
+     121
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chester",
+     "fatia",
+     15,
+0,
+     31
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chester",
+     "colher sp ch desfiado",
+     20,
+0,
+     34
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chicken bacon crispy McWrap (Mc’ Donalds®)",
+     "unidade",
+     249,
+54,
+     565
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chicken bacon grilled McWrap (Mc’ Donalds®)",
+     "unidade",
+     235,
+32,
+     440
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chicken classic crispy Sandwich (Mc’ Donalds®)",
+     "unidade",
+    ",
+     55,
+     510
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chicken Junior Sandwich (Mc’ Donalds®)",
+     "unidade",
+    ",
+     38,
+     380
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chiclete",
+     "unidade",
+     5,
+4,
+     16
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chiclete sabor sortido Bubbaloo®",
+     "unidade",
+     5,
+4,
+     16
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chiclete Trident® tuti-frutti",
+     "unidade",
+     2,
+1,
+     3
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chicória refogada",
+     "colher de sopa",
+     45,
+3,
+     39
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chimarrão",
+     "cuia média",
+     200,
+0,
+     12
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate alpino diet Nestlé®",
+     "unidade",
+     30,
+17,
+     143
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate ao leite",
+     "barra pequena",
+     30,
+18,
+     160
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate ao leite diet",
+     "barra pequena",
+     30,
+13,
+     157
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate ao leite diet",
+     "barra pequena",
+     30,
+13,
+     157
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate ao leite diet Gold®",
+     "unidade",
+     25,
+14,
+     122
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate Batom®",
+     "unidade",
+     16,
+10,
+     86
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate Bis®",
+     "unidade",
+     7,
+5,
+     37
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate caramelo Twix®",
+     "unidade",
+     16,
+9,
+     77
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate Classic Zero açúcar",
+     "1 unidade",
+     22,
+8,
+     94
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate Diamante Negro®",
+     "barra pequena",
+     30,
+19,
+     156
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate Diamante Negro®",
+     "barra pequena",
+     30,
+19,
+     156
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate em pó",
+     "colher de sopa",
+     15,
+9,
+     52
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate Ferrero Rocher®",
+     "unidade",
+     13,
+6,
+     71
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate Galak®",
+     "barra pequena",
+     30,
+15,
+     169
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate meio amargo",
+     "barra pequena",
+     30,
+17,
+     154
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate quente com leite (Mc’ Donalds®)",
+     "copo grande",
+     250,
+24,
+     178
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate Suflair ®",
+     "unidade",
+     30,
+15,
+     132
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate Suflair®",
+     "unidade",
+     30,
+15,
+     132
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate Talento diet®",
+     "barra pequena",
+     25,
+12,
+     129
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate Talento®",
+     "1/4 barra",
+     25,
+13,
+     137
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocolate Talento® diet",
+     "barra pequena",
+     25,
+12,
+     129
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chocotone Bauducco®",
+     "01 fatia pequena",
+     100,
+49,
+     396
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chopp escuro",
+     "tulipa",
+     290,
+11,
+     148
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chouriço",
+     "gomo",
+     60,
+1,
+     227
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chuchu à milanesa",
+     "fatia média",
+     70,
+10,
+     127
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chuchu ao molho branco",
+     "colher de sopa cheia",
+     30,
+3,
+     28
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Chucrute",
+     "xícara",
+     120,
+5,
+     24
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Churros com doce de leite",
+     "unidade aperitivo",
+     30,
+13,
+     97
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cidra",
+     "porção",
+     100,
+10,
+     40
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Ciriguela",
+     "unidade",
+     20,
+4,
+     15
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Coalhada integral Itambé®",
+     "pote",
+     130,
+17,
+     120
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Coalhada seca natural Alibey ®",
+     "colher de sopa",
+     15,
+1,
+     19
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Coalhada seca natural Alibey®",
+     "colher de sopa",
+     15,
+1,
+     19
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cobertura de chocolate ao leite Garoto®",
+     "colher de sopa cheia",
+     25,
+14,
+     140
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Coca-Cola®",
+     "copo",
+     200,
+20,
+     80
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cocada",
+     "unidade média",
+     70,
+37,
+     405
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cocada light Santa Helena®",
+     "unidade média",
+     70,
+37,
+     405
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cocada queimada Brasil Caipira®",
+     "unidade",
+     20,
+11,
+     86
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Coco fresco ralado",
+     "xícara",
+     100,
+15,
+     354
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Coco-da-baía, água-de",
+     "copo",
+     200,
+10,
+     44
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cogumelo em conserva",
+     "colher de sopa",
+     27,
+1,
+     5
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Colomba Pascal frutas (Bauducco®)",
+     "fatia",
+     80,
+41,
+     298
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Colomba Pascal gotas de chocolate (Bauducco®)",
+     "fatia",
+     80,
+40,
+     350
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Colomba Pascal salgada",
+     "porção",
+     100,
+20,
+     228
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Colomba Pascal® salgada",
+     "porção",
+     100,
+20,
+     228
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Conhaque",
+     "dose",
+     50,
+0,
+     115
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cookie aveia e passas (Subway®)",
+     "unidade",
+     33,
+28,
+     190
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cookie cheescake com framboesa (Subway®)",
+     "unidade",
+     33,
+28,
+     200
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cookie chocolate (Subway®)",
+     "unidade",
+     33,
+29,
+     210
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cookies integral quinua e banana Taeq®",
+     "6 unidades",
+     30,
+17,
+     123
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Coração de frango",
+     "01 unidade média",
+     5,
+0,
+     7
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Coração de galinha cozido",
+     "unidade média",
+     5,
+0,
+     8
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Costela de boi assada",
+     "pedaço pequeno",
+     30,
+0,
+     136
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Costela de porco defumada",
+     "pedaço pequeno",
+     15,
+0,
+     62
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Couve (“Kraut”)®",
+     "folha média",
+     20,
+1,
+     10
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Couve crua",
+     "folha média",
+     20,
+1,
+     10
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Couve refogada",
+     "folha média",
+     25,
+4,
+     36
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Couve-flor à milanesa",
+     "ramo médio",
+     90,
+11,
+     136
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Couve-flor cozida",
+     "ramo médio",
+     60,
+4,
+     25
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Coxa de frango assada",
+     "média",
+     100,
+0,
+     215
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Coxinha de frango",
+     "unidade grande",
+     110,
+40,
+     487
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Coxinha de frango (festa)",
+     "unidade pequena",
+     10,
+4,
+     37
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cream Cheese",
+     "colher de sopa",
+     30,
+1,
+     84
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Creme de abacate sem açúcar",
+     "colher sopa cheia",
+     25,
+3,
+     43
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Creme de amendoim",
+     "colher de sopa rasa",
+     20,
+4,
+     125
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Creme de amendoim",
+     "unidade",
+     25,
+17,
+     108
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Creme de leite",
+     "colher de sopa rasa",
+     15,
+1,
+     46
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Creme de milho",
+     "colher de sopa cheia",
+     33,
+5,
+     35
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Creme vegetal de chantilly Vigor®",
+     "colher de sopa",
+     20,
+2,
+     56
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cremogema chocolate",
+     "colher de sopa cheia",
+     20,
+17,
+     72
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Crepe de maçã diet",
+     "unidade",
+     100,
+18,
+     110
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Croissant",
+     "unidade grande",
+     80,
+32,
+     328
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Croissant",
+     "unidade grande",
+     80,
+32,
+     328
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Croissant de chocolate",
+     "unidade pequena",
+     57,
+24,
+     237
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Croissant de queijo",
+     "unidade média",
+     80,
+32,
+     388
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Croquete de Carne",
+     "unidade grande",
+     55,
+21,
+     190
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Croquete de carne/milho",
+     "unidade pequena",
+     10,
+4,
+     35
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cuca alemã",
+     "fatia",
+     100,
+33,
+     209
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cup noodles®",
+     "unidade comercial",
+     65,
+38,
+     300
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cupuaçu (creme)",
+     "colher de sopa cheia",
+     20,
+5,
+     135
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Curau de milho",
+     "2/3 xícara de chá",
+     140,
+33,
+     162
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Curry",
+     "colher de sopa cheia",
+     9,
+5,
+     34
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cuscuz de milho",
+     "pedaço pequeno",
+     85,
+34,
+     161
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "cuscuz paulista",
+     "01 fatia pequena",
+     80,
+34,
+     161
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Cuscuz paulista",
+     "01 fatia pequena",
+     80,
+34,
+     161
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Damasco seco",
+     "01 unidade pequena",
+     7,
+2,
+     9
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Damasco, geléia de",
+     "colher de sopa",
+     20,
+13,
+     52
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Danette®",
+     "unidade",
+     110,
+25,
+     166
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Dobradinha",
+     "concha pequena",
+     100,
+8,
+     111
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de abacaxi",
+     "colher de sopa cheia",
+     40,
+32,
+     130
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de abóbora cremoso",
+     "colher de sopa cheia",
+     40,
+22,
+     80
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de abóbora e coco",
+     "colher de sopa cheia",
+     40,
+18,
+     83
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de arroz de leite",
+     "colher de sopa cheia",
+     40,
+13,
+     66
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de batata doce",
+     "porção pequena",
+     30,
+22,
+     121
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de buriti",
+     "colher de sopa cheia",
+     50,
+41,
+     165
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de cidra",
+     "colher de sopa",
+     50,
+20,
+     81
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de coco",
+     "colher de sopa cheia",
+     40,
+21,
+     219
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de cupuaçu",
+     "colher de sopa",
+     40,
+30,
+     118
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de goiaba",
+     "colher de sopa cheia",
+     50,
+21,
+     86
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de goiaba em calda Diet House®",
+     "colher de sopa",
+     20,
+6,
+     23
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de laranja azeda",
+     "colher de sopa cheia",
+     50,
+40,
+     153
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de laranja Diet House®",
+     "colher de sopa",
+     20,
+2,
+     9
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de leite",
+     "colher de sopa cheia",
+     40,
+22,
+     116
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de limão",
+     "colher de sopa cheia",
+     50,
+27,
+     107
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de mamão verde",
+     "colher de sopa",
+     40,
+19,
+     78
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de manga",
+     "colher de sopa cheia",
+     50,
+27,
+     140
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doce de ovos",
+     "colher de sopa cheia",
+     40,
+6,
+     52
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Docinhos variados (média)",
+     "01 unidade média",
+     30,
+16,
+     125
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Docinhos variados (média)",
+     "01 unidade média",
+     30,
+16,
+     125
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doriana® cremosa",
+     "colher de sopa",
+     10,
+0,
+     59
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Doriana® light",
+     "colher de sopa",
+     10,
+0,
+     32
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Double cheddar (Bob’s®)",
+     "unidade",
+     210,
+32,
+     484
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Double cheddar (Habib’s®)",
+     "unidade",
+     335,
+35,
+     668
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Double cheeseburguer (Bob’s®)",
+     "unidade",
+     185,
+33,
+     512
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Double grill bacon (Bob’s®)",
+     "unidade",
+     488,
+58,
+     1314
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Drops comum",
+     "unidade",
+     3,
+3,
+     11
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Empada de frango",
+     "unidade média",
+     55,
+14,
+     197
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Empada de Palmito",
+     "unidade",
+     55,
+14,
+     129
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Empadão goiano",
+     "unidade média",
+     300,
+48,
+     618
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Empadinha",
+     "unidade pequena",
+     12,
+4,
+     56
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Enrolado de presunto e queijo",
+     "unidade média",
+     40,
+15,
+     114
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Enrolado de Presunto e Queijo",
+     "unidade",
+     40,
+15,
+     114
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Enrolado de salsicha",
+     "unidade média",
+     27,
+3,
+     79
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Ervilha em conserva",
+     "colher de sopa cheia",
+     27,
+4,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Ervilha verde cozida",
+     "colher de sopa cheia",
+     30,
+4,
+     26
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Esfiha de calabresa (Habib’s®)",
+     "unidade",
+     75,
+17,
+     130
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Esfiha de carne aberta",
+     "unidade",
+     75,
+18,
+     125
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Esfiha de carne fechada",
+     "unidade média",
+     80,
+29,
+     203
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Esfiha de espinafre (Habib’s®)",
+     "unidade",
+     80,
+17,
+     122
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Esfiha de frango (Habib’s®)",
+     "unidade",
+     75,
+18,
+     115
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Esfiha folhada de cheddar com pepperoni (Habib’s®)",
+     "unidade",
+     55,
+11,
+     201
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Esfiha folhada de chocolate (Habib’s®)",
+     "unidade",
+     45,
+16,
+     199
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Esfiha folhada de chocolate com M&M’s®",
+     "unidade",
+     65,
+28,
+     295
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Esfiha folhada de chocolate com M&M’s® (Habib’s)",
+     "unidade",
+     65,
+28,
+     295
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Espinafre cru",
+     "colher de sopa cheia",
+     20,
+0,
+     4
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Espinafre refogado",
+     "colher do sopa cheia",
+     25,
+2,
+     27
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Estrogonoff de filé mignon (Backed Potato®)",
+     "concha",
+     85,
+0,
+     146
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Estrogonoffe de carne",
+     "colher do sopa cheia",
+     25,
+1,
+     39
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Estrogonoffe de frango",
+     "colher do sopa cheia",
+     25,
+1,
+     43
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Falafel",
+     "1 porção",
+     100,
+38,
+     152
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Falafel (bolinho de grão de bico)",
+     "porção",
+     100,
+20,
+     155
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Falafel (bolinho de grâo de bico)",
+     "porção",
+     100,
+20,
+     155
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fanta® laranja",
+     "copo",
+     200,
+22,
+     90
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farelo de trigo",
+     "colher de sopa cheia",
+     9,
+5,
+     28
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farinha d’água-do-pará",
+     "copo descartável",
+     50,
+41,
+     166
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farinha de arroz",
+     "colher de sopa cheia",
+     17,
+14,
+     60
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farinha de centeio integral",
+     "colher de sopa cheia",
+     15,
+11,
+     54
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farinha de mandioca",
+     "colher de sopa cheia",
+     16,
+14,
+     57
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farinha de milho",
+     "colher de sopa cheia",
+     15,
+12,
+     54
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farinha de milho integral",
+     "colher de sopa cheia",
+     15,
+11,
+     53
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farinha de rosca",
+     "colher de sopa cheia",
+     15,
+11,
+     61
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farinha de tapioca com coco e açúcar",
+     "colher de sopa cheia",
+     25,
+21,
+     107
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farinha de trigo",
+     "colher de sopa cheia",
+     20,
+15,
+     71
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farinha láctea (Nestlé®)",
+     "colher de sopa rasa",
+     8,
+6,
+     30
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farofa",
+     "colher de sopa cheia",
+     15,
+12,
+     71
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farofa com Bacon",
+     "01 colher de sopa cheia",
+     45,
+26,
+     206
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farofa com lingüiça",
+     "colher de sopa cheia",
+     15,
+7,
+     54
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farofa com tempero/óleo",
+     "colher de sopa cheia",
+     15,
+12,
+     71
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Farofa de farinha de mandioca",
+     "colher de sopa cheia",
+     25,
+20,
+     96
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fatouche",
+     "1 porção",
+     100,
+5,
+     163
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Feijão branco cozido",
+     "colher de sopa cheia",
+     17,
+4,
+     20
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Feijão carioquinha cozido",
+     "colher de sopa cheia",
+     17,
+3,
+     19
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Feijão preto cozido",
+     "colher de sopa cheia",
+     17,
+2,
+     12
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Feijão tropeiro",
+     "colher de sopa cheia",
+     15,
+7,
+     50
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Feijão-fradinho",
+     "colher de sopa cheia",
+     17,
+2,
+     13
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Feijoada caseira",
+     "concha média cheia",
+     225,
+24,
+     346
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fermento biológico",
+     "tablete",
+     15,
+1,
+     14
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fermento em pó",
+     "colher de sopa rasa",
+     10,
+4,
+     17
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fettuccine",
+     "01 pegador",
+     110,
+24,
+     150
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fettuccine a bolonhesa (Perdigão®)",
+     "porção",
+     350,
+49,
+     458
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fígado de boi grelhado",
+     "bife médio",
+     100,
+4,
+     225
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fígado de galinha cru",
+     "unidade média",
+     30,
+1,
+     53
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Figo",
+     "unidade média",
+     55,
+8,
+     38
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Figo cristalizado",
+     "unidade",
+     30,
+22,
+     86
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Figo enlatado em calda",
+     "unidade",
+     20,
+10,
+     38
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Filé a parmeggiana",
+     "01 unidade pequena",
+     150,
+13,
+     490
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "File ao molho madeira",
+     "01 unidade pequena",
+     180,
+12,
+     227
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Flocos de milho",
+     "colher de sopa",
+     10,
+9,
+     38
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Focaccia",
+     "fatia",
+     50,
+22,
+     136
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fogazza de calabresa (Habib’s®)",
+     "unidade",
+     70,
+22,
+     186
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fogazza de mussarela (Habib’s®)",
+     "unidade",
+     70,
+21,
+     200
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Folhado de frango",
+     "unidade média",
+     40,
+9,
+     109
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fondue de carne",
+     "bife médio",
+     90,
+0,
+     180
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fondue de chocolate",
+     "colher sopa",
+     30,
+15,
+     105
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fondue de queijo (Gramado®)",
+     "colher de sopa (molho)",
+     30,
+1,
+     70
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Framboesa",
+     "unidade média",
+     15,
+2,
+     8
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Framboesa, doce em pasta",
+     "colher de sopa cheia",
+     50,
+35,
+     143
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Framboesa, geléia de",
+     "colher de sopa cheia",
+     34,
+24,
+     97
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Frango à milanesa",
+     "filé pequeno",
+     100,
+14,
+     311
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Frango assado",
+     "sobrecoxa média",
+     65,
+0,
+     78
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Frango com requeijão (Backed Potato®)",
+     "concha",
+     85,
+0,
+     110
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Frango cozido",
+     "sobrecoxa média",
+     65,
+0,
+     82
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Frango filé cozido",
+     "filé pequeno",
+     100,
+0,
+     163
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Frango frito",
+     "sobrecoxa média",
+     65,
+0,
+     94
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Franlitos (Bob’s®)",
+     "porção de 6 unidades",
+     120,
+28,
+     272
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Frigideira de repolho com camarão seco",
+     "colher de sopa",
+     25,
+1,
+     25
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fruta - pão",
+     "unidade",
+     100,
+24,
+     96
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fruta-de-conde ou pinha",
+     "unidade pequena",
+     60,
+8,
+     41
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Frutas cristalizadas industrializadas",
+     "colher de sopa cheia",
+     15,
+12,
+     48
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Fubá",
+     "colher de sopa cheia",
+     20,
+16,
+     71
+     );
+  INSERT INTO Food (
+    foodName,
+    measure,
+    volumeMlOrGram,
+    cho,
+    kcal)
+    VALUES(
+     "Funghi",
+     "colher de sopa cheia",
+     20,
+10,
+     71
+     );
+
+  */
+
+
+  CREATE TABLE Food (
+    foodName VARCHAR(80) NOT NULL,
+    measure VARCHAR(40) NOT NULL,
+    volumeMlOrGram INTEGER(4),
+    cho INTEGER(4),
+    kcal INTEGER(4),
+  );
